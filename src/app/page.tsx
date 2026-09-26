@@ -1,46 +1,326 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { 
+  ArrowRight, Sparkles, Eye, Phone, ShieldCheck, CheckCircle2, 
+  Award, Play, Film, MessageCircle, ChevronRight, Layers, LayoutGrid
+} from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import CategoryCarousel from '@/components/CategoryCarousel';
-import ProductExplorer from '@/components/ProductExplorer';
-import BrandLegacy from '@/components/BrandLegacy';
-import VideoGallery from '@/components/VideoGallery';
-import BannerShowcase from '@/components/BannerShowcase';
-import ContactSection from '@/components/ContactSection';
+import ProductModal from '@/components/ProductModal';
+import { ALL_PRODUCTS, BRAND_VIDEOS, COMPANY_INFO, ProductItem } from '@/data/productsData';
 
 export default function HomePage() {
-  const [activeCategory, setActiveCategory] = useState<string>('all');
+  const [selectedProduct, setSelectedProduct] = useState<ProductItem | null>(null);
 
-  const handleSelectCategory = (catId: string) => {
-    setActiveCategory(catId);
-  };
+  // Curate 8 featured flagship bestsellers for the homepage
+  const featuredProducts = [
+    ALL_PRODUCTS.find(p => p.id === 'pickle-01') || ALL_PRODUCTS[0],
+    ALL_PRODUCTS.find(p => p.id === 'spice-01') || ALL_PRODUCTS[16],
+    ALL_PRODUCTS.find(p => p.id === 'salt-01') || ALL_PRODUCTS[34],
+    ALL_PRODUCTS.find(p => p.id === 'oil-01') || ALL_PRODUCTS[50],
+    ALL_PRODUCTS.find(p => p.id === 'rice-01') || ALL_PRODUCTS[45],
+    ALL_PRODUCTS.find(p => p.id === 'bev-01') || ALL_PRODUCTS[60],
+    ALL_PRODUCTS.find(p => p.id === 'pickle-02') || ALL_PRODUCTS[1],
+    ALL_PRODUCTS.find(p => p.id === 'sweet-01') || ALL_PRODUCTS[80],
+  ].filter(Boolean);
 
   return (
     <div className="flex flex-col">
-      {/* 1. Hero Section with 3D Emblem & Actions */}
+      {/* 1. Hero Section */}
       <HeroSection />
 
-      {/* 2. Modern Horizontal Category Carousel */}
-      <CategoryCarousel onSelectCategory={handleSelectCategory} />
+      {/* 2. Interactive Category Carousel */}
+      <CategoryCarousel />
 
-      {/* 3. Comprehensive Filterable Product Catalog Explorer */}
-      <ProductExplorer
-        activeCategory={activeCategory}
-        setActiveCategory={setActiveCategory}
+      {/* 3. Featured Bestsellers Showcase */}
+      <section className="py-20 bg-white border-b border-slate-200 relative">
+        <div className="container">
+          
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524] mb-2">
+                <Sparkles className="w-3.5 h-3.5 text-[#8b1524]" />
+                <span>FEATURED SELECTIONS</span>
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
+                BESTSELLING <span className="crimson-gradient-text">PRODUCTS</span>
+              </h2>
+              <p className="text-slate-600 text-sm mt-1 max-w-xl">
+                A handpicked selection of our most loved pickles, pristine Himalayan rock salts, and pure spices.
+              </p>
+            </div>
+
+            <Link
+              href="/products"
+              className="btn-primary text-xs !py-3 !px-6 flex items-center gap-2"
+            >
+              <span>View All 100+ Products</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          {/* Featured Grid (4:6 Portrait cards with object-cover) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {featuredProducts.map((product) => (
+              <div
+                key={product.id}
+                className="glass-card rounded-2xl p-4 flex flex-col justify-between group border border-slate-200 hover:border-[#8b1524]/40 hover:shadow-xl relative bg-white transition-all shadow-sm"
+              >
+                <div>
+                  <div 
+                    onClick={() => setSelectedProduct(product)}
+                    className="product-img-wrapper cursor-pointer mb-4 relative"
+                  >
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+
+                    {/* Quick View Hover Button */}
+                    <div className="absolute inset-0 bg-black/40 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 z-10">
+                      <span className="px-3.5 py-1.5 rounded-full bg-[#8b1524] text-white font-bold text-xs flex items-center gap-1.5 shadow-lg">
+                        <Eye className="w-3.5 h-3.5 text-[#f5d77f]" />
+                        <span>Quick View</span>
+                      </span>
+                    </div>
+
+                    {/* Pack Size Pill */}
+                    <div className="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md border border-slate-200 text-[10px] font-bold text-slate-800 shadow-sm z-10">
+                      {product.packSize}
+                    </div>
+
+                    {/* Halal Badge */}
+                    <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-[#8b1524] text-[9px] font-bold text-white flex items-center gap-1 z-10 shadow-sm">
+                      <ShieldCheck className="w-3 h-3 text-[#f5d77f]" />
+                      <span>Halal</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <span className="text-[11px] font-bold text-[#8b1524] uppercase tracking-wider block">
+                      {product.category}
+                    </span>
+                    <h3 
+                      onClick={() => setSelectedProduct(product)}
+                      className="font-heading text-base font-bold text-slate-900 group-hover:text-[#8b1524] transition-colors line-clamp-2 cursor-pointer"
+                    >
+                      {product.name}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                  <button
+                    onClick={() => setSelectedProduct(product)}
+                    className="text-xs font-semibold text-slate-600 hover:text-[#8b1524] flex items-center gap-1 transition-colors"
+                  >
+                    <Eye className="w-3.5 h-3.5 text-[#8b1524]" />
+                    <span>Details</span>
+                  </button>
+
+                  <a
+                    href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20am%20interested%20in%20"${encodeURIComponent(product.name)}"%20(${encodeURIComponent(product.packSize)}).%20Please%20share%20details.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 rounded-full bg-[#8b1524] hover:bg-[#a81c2f] text-white text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
+                  >
+                    <Phone className="w-3 h-3 text-[#f5d77f]" />
+                    <span>Inquire</span>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/products"
+              className="btn-outline !py-3.5 !px-8 text-sm inline-flex items-center gap-2"
+            >
+              <span>Explore All 100+ Products & Categories</span>
+              <ChevronRight className="w-4 h-4 text-[#8b1524]" />
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 4. Brand Legacy Teaser */}
+      <section className="py-20 bg-slate-50 border-b border-slate-200">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative w-full max-w-[400px] aspect-square rounded-3xl p-6 bg-white border border-slate-200 shadow-xl flex flex-col items-center justify-center text-center space-y-4">
+                <div className="relative w-36 h-36">
+                  <Image
+                    src="/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.jpeg"
+                    alt="Buttar Since 2005"
+                    fill
+                    className="object-contain drop-shadow-md"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-heading text-lg font-bold text-slate-900">BUTTAR SINCE 2005</h3>
+                  <p className="text-xs text-[#8b1524] font-bold">25+ Years of Authenticity</p>
+                </div>
+                <div className="w-full pt-3 border-t border-slate-100 flex justify-around text-xs text-slate-600 font-semibold">
+                  <span>Pure Heritage</span>
+                  <span>•</span>
+                  <span>100% Halal</span>
+                  <span>•</span>
+                  <span>Export Grade</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-7 space-y-6">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524]">
+                <Award className="w-3.5 h-3.5 text-[#8b1524]" />
+                <span>ROOTED IN TRADITION</span>
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+                CRAFTED WITH INTEGRITY, <br />
+                <span className="crimson-gradient-text">TRUSTED WORLDWIDE</span>
+              </h2>
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                From hand-selected mustard seed oils to sun-cured green mangoes and mineral-rich Khewra rock salts, 
+                United Foods has been delivering purity and rich culinary heritage to homes and kitchens globally.
+              </p>
+
+              <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                  <div className="text-xl font-extrabold text-[#8b1524] font-heading">0% Chemical</div>
+                  <p className="text-xs text-slate-500">Pure natural preservation</p>
+                </div>
+                <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                  <div className="text-xl font-extrabold text-[#b8860b] font-heading">Global Exports</div>
+                  <p className="text-xs text-slate-500">Certified Halal standards</p>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <Link href="/heritage" className="btn-primary text-xs !py-3 !px-6 inline-flex items-center gap-2">
+                  <span>Read Full Brand Story & Pillars</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Video Media Teaser */}
+      <section className="py-20 bg-white border-b border-slate-200">
+        <div className="container">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524] mb-2">
+                <Film className="w-3.5 h-3.5 text-[#8b1524]" />
+                <span>EXPERIENCE IN MOTION</span>
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
+                PROMOTIONAL <span className="crimson-gradient-text">VIDEOS & REELS</span>
+              </h2>
+              <p className="text-slate-600 text-sm mt-1 max-w-xl">
+                Watch our high-definition promotional videos and product reels showcasing authentic preparations.
+              </p>
+            </div>
+
+            <Link
+              href="/media"
+              className="btn-outline text-xs !py-3 !px-6 flex items-center gap-2"
+            >
+              <Play className="w-4 h-4 text-[#8b1524]" />
+              <span>Watch All Videos & Banners</span>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {BRAND_VIDEOS.slice(0, 3).map((video) => (
+              <Link
+                key={video.id}
+                href="/media"
+                className="glass-card rounded-2xl overflow-hidden group cursor-pointer border border-slate-200 hover:border-[#8b1524]/40 hover:shadow-xl relative flex flex-col justify-between bg-white shadow-sm"
+              >
+                <div className="relative w-full aspect-video bg-slate-950 flex items-center justify-center overflow-hidden">
+                  <video
+                    src={video.videoUrl}
+                    preload="metadata"
+                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
+                    muted
+                  />
+                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/15 transition-colors flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-[#8b1524] flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                      <Play className="w-5 h-5 ml-0.5 fill-current text-[#f5d77f]" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 space-y-1">
+                  <span className="text-[10px] font-bold text-[#8b1524] uppercase tracking-wider block">
+                    {video.category}
+                  </span>
+                  <h3 className="font-heading text-sm font-bold text-slate-900 group-hover:text-[#8b1524] transition-colors">
+                    {video.name}
+                  </h3>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Quick CTA Banner */}
+      <section className="py-16 bg-gradient-to-r from-[#8b1524] via-[#7a0c16] to-[#5c0b15] text-white">
+        <div className="container text-center max-w-3xl space-y-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-xs font-bold text-[#fde68a] border border-[#fde68a]/30">
+            <MessageCircle className="w-4 h-4" />
+            <span>WHOLESALE & EXPORT INQUIRIES</span>
+          </div>
+
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-white">
+            READY TO ORDER OR DISTRIBUTE?
+          </h2>
+
+          <p className="text-slate-200 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
+            Contact our sales team today for wholesale price lists, sample requests, export containers, or retail partnerships.
+          </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <Link
+              href="/contact"
+              className="px-6 py-3.5 rounded-full bg-white text-[#8b1524] font-extrabold text-sm shadow-xl hover:bg-slate-100 transition-all"
+            >
+              Submit Business Inquiry
+            </Link>
+
+            <a
+              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20am%20interested%20in%20wholesale%20distribution.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-sm flex items-center gap-2 shadow-xl transition-all"
+            >
+              <Phone className="w-4 h-4" />
+              <span>WhatsApp Direct (+92 300 8292550)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick View Modal */}
+      <ProductModal
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
       />
-
-      {/* 4. Buttar Since 2005 & United Foods Brand Heritage & Pillars */}
-      <BrandLegacy />
-
-      {/* 5. Promotional Videos & Reels Showcase */}
-      <VideoGallery />
-
-      {/* 6. Campaign & Marketing Banners Lightbox */}
-      <BannerShowcase />
-
-      {/* 7. Wholesale Inquiry & Contact Section */}
-      <ContactSection />
     </div>
   );
 }

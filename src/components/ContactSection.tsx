@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Send, MessageCircle, Sparkles, CheckCircle2, Clock, Globe } from 'lucide-react';
+import { Phone, Mail, Send, MessageCircle, Sparkles, CheckCircle2, Clock, Globe } from 'lucide-react';
 import { COMPANY_INFO } from '@/data/productsData';
 
 export default function ContactSection() {
@@ -20,19 +20,19 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#090d16] relative">
+    <section id="contact" className="py-20 bg-white relative border-b border-slate-200">
       <div className="container">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#8b1524]/30 border border-[#d4af37]/30 text-xs font-semibold text-[#f3cf65]">
-            <Sparkles className="w-3.5 h-3.5 text-[#f3cf65]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524]">
+            <Sparkles className="w-3.5 h-3.5 text-[#8b1524]" />
             <span>GLOBAL & DOMESTIC INQUIRIES</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white">
-            GET IN TOUCH WITH <span className="gold-gradient-text">UNITED FOODS</span>
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900">
+            GET IN TOUCH WITH <span className="crimson-gradient-text">UNITED FOODS</span>
           </h2>
-          <p className="text-slate-400 text-sm md:text-base">
+          <p className="text-slate-600 text-sm md:text-base">
             Whether you are a retailer, bulk importer, distributor, or food service partner, our team is ready to assist you.
           </p>
         </div>
@@ -43,18 +43,18 @@ export default function ContactSection() {
           <div className="lg:col-span-5 space-y-6">
             
             {/* WhatsApp Quick Connect Card */}
-            <div className="glass-card p-6 rounded-2xl border border-[#d4af37]/40 bg-gradient-to-br from-[#8b1524]/30 via-slate-900/60 to-[#090d16] space-y-4">
+            <div className="glass-card p-6 rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50/50 via-white to-slate-50 space-y-4 shadow-sm">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-[#25D366]/20 border border-[#25D366]/40 flex items-center justify-center text-[#25D366]">
+                <div className="w-12 h-12 rounded-xl bg-[#25D366]/15 border border-[#25D366]/30 flex items-center justify-center text-[#25D366]">
                   <MessageCircle className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-heading text-lg font-bold text-white">Instant WhatsApp Connect</h3>
-                  <p className="text-xs text-slate-300">Fast response for wholesale orders & price list</p>
+                  <h3 className="font-heading text-lg font-bold text-slate-900">Instant WhatsApp Connect</h3>
+                  <p className="text-xs text-slate-600">Fast response for wholesale orders & price list</p>
                 </div>
               </div>
 
-              <p className="text-xs text-slate-300">
+              <p className="text-xs text-slate-600">
                 Connect directly with our sales team via WhatsApp for instant catalog PDFs, sample requests, and export quotes.
               </p>
 
@@ -62,7 +62,7 @@ export default function ContactSection() {
                 href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20would%20like%20to%20inquire%20about%20your%20product%20catalog%20and%20wholesale%20pricing.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-gold w-full text-center text-xs !py-3 flex items-center justify-center gap-2 shadow-lg"
+                className="w-full py-3 px-4 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all"
               >
                 <Phone className="w-4 h-4" />
                 <span>Chat on WhatsApp (+92 300 8292550)</span>
@@ -70,51 +70,51 @@ export default function ContactSection() {
             </div>
 
             {/* Direct Info List */}
-            <div className="glass-card p-6 rounded-2xl border border-white/10 space-y-5">
+            <div className="glass-card p-6 rounded-2xl border border-slate-200 space-y-5 bg-white shadow-sm">
               
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#8b1524]/40 border border-[#d4af37]/30 flex items-center justify-center text-[#f3cf65] flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] flex-shrink-0 mt-0.5">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-xs text-slate-400 font-medium">Direct Telephone & WhatsApp</p>
-                  <a href={`tel:${COMPANY_INFO.phone}`} className="text-sm font-bold text-white hover:text-[#f3cf65] transition-colors">
+                  <p className="text-xs text-slate-500 font-medium">Direct Telephone & WhatsApp</p>
+                  <a href={`tel:${COMPANY_INFO.phone}`} className="text-sm font-bold text-slate-900 hover:text-[#8b1524] transition-colors">
                     {COMPANY_INFO.phone}
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#8b1524]/40 border border-[#d4af37]/30 flex items-center justify-center text-[#f3cf65] flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] flex-shrink-0 mt-0.5">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-xs text-slate-400 font-medium">Official Inquiry Email</p>
-                  <a href={`mailto:${COMPANY_INFO.email}`} className="text-sm font-bold text-white hover:text-[#f3cf65] transition-colors break-all">
+                  <p className="text-xs text-slate-500 font-medium">Official Inquiry Email</p>
+                  <a href={`mailto:${COMPANY_INFO.email}`} className="text-sm font-bold text-slate-900 hover:text-[#8b1524] transition-colors break-all">
                     {COMPANY_INFO.email}
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#8b1524]/40 border border-[#d4af37]/30 flex items-center justify-center text-[#f3cf65] flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] flex-shrink-0 mt-0.5">
                   <Globe className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-xs text-slate-400 font-medium">Official Website</p>
-                  <span className="text-sm font-bold text-white">
+                  <p className="text-xs text-slate-500 font-medium">Official Website</p>
+                  <span className="text-sm font-bold text-slate-900">
                     {COMPANY_INFO.website}
                   </span>
                 </div>
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#8b1524]/40 border border-[#d4af37]/30 flex items-center justify-center text-[#f3cf65] flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] flex-shrink-0 mt-0.5">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-xs text-slate-400 font-medium">Business Hours</p>
-                  <p className="text-sm font-medium text-slate-200">
+                  <p className="text-xs text-slate-500 font-medium">Business Hours</p>
+                  <p className="text-sm font-semibold text-slate-700">
                     Mon – Sat: 9:00 AM – 7:00 PM (PKT)
                   </p>
                 </div>
@@ -126,22 +126,22 @@ export default function ContactSection() {
 
           {/* Contact Inquiry Form */}
           <div className="lg:col-span-7">
-            <div className="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 relative">
+            <div className="glass-card p-6 sm:p-8 rounded-3xl border border-slate-200 bg-white relative shadow-sm">
               
-              <h3 className="font-heading text-xl sm:text-2xl font-bold text-white mb-2">
+              <h3 className="font-heading text-xl sm:text-2xl font-bold text-slate-900 mb-2">
                 Send a Business Inquiry
               </h3>
-              <p className="text-xs sm:text-sm text-slate-300 mb-6">
+              <p className="text-xs sm:text-sm text-slate-600 mb-6">
                 Fill out the form below and our export & sales representative will get back to you within 24 business hours.
               </p>
 
               {submitted ? (
                 <div className="py-12 text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
+                  <div className="w-16 h-16 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mx-auto">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h4 className="font-heading text-xl font-bold text-white">Inquiry Received</h4>
-                  <p className="text-sm text-slate-300 max-w-md mx-auto">
+                  <h4 className="font-heading text-xl font-bold text-slate-900">Inquiry Received</h4>
+                  <p className="text-sm text-slate-600 max-w-md mx-auto">
                     Thank you for reaching out to United Foods. Our sales team has received your message and will respond shortly.
                   </p>
                   <button
@@ -155,47 +155,47 @@ export default function ContactSection() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
-                      <label className="text-xs font-semibold text-slate-300">Your Full Name *</label>
+                      <label className="text-xs font-semibold text-slate-700">Your Full Name *</label>
                       <input
                         type="text"
                         required
                         placeholder="e.g. John Doe"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 focus:border-[#d4af37] text-white text-xs outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all"
                       />
                     </div>
                     <div className="space-y-1.5">
-                      <label className="text-xs font-semibold text-slate-300">Phone / WhatsApp Number *</label>
+                      <label className="text-xs font-semibold text-slate-700">Phone / WhatsApp Number *</label>
                       <input
                         type="tel"
                         required
                         placeholder="e.g. +92 300 0000000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 focus:border-[#d4af37] text-white text-xs outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
-                      <label className="text-xs font-semibold text-slate-300">Email Address *</label>
+                      <label className="text-xs font-semibold text-slate-700">Email Address *</label>
                       <input
                         type="email"
                         required
                         placeholder="name@company.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 focus:border-[#d4af37] text-white text-xs outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all"
                       />
                     </div>
                     <div className="space-y-1.5">
-                      <label className="text-xs font-semibold text-slate-300">Inquiry Type</label>
+                      <label className="text-xs font-semibold text-slate-700">Inquiry Type</label>
                       <select
                         value={formData.subject}
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#111728] border border-white/10 focus:border-[#d4af37] text-white text-xs outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all"
                       >
                         <option value="Wholesale Inquiry">Domestic Wholesale Order</option>
                         <option value="Export Inquiry">International Export Inquiry</option>
@@ -207,14 +207,14 @@ export default function ContactSection() {
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-semibold text-slate-300">Your Message / Requirement Details *</label>
+                    <label className="text-xs font-semibold text-slate-700">Your Message / Requirement Details *</label>
                     <textarea
                       required
                       rows={4}
                       placeholder="Please specify desired products, estimated quantities, and delivery location..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 focus:border-[#d4af37] text-white text-xs outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all resize-none"
                     />
                   </div>
 

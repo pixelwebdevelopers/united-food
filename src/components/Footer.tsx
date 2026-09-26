@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Phone, Mail, Globe, MapPin, Sparkles, Heart, ShieldCheck, ArrowUp } from 'lucide-react';
+import { Phone, Mail, Globe, Sparkles, Heart, ShieldCheck, ArrowUp } from 'lucide-react';
 import { COMPANY_INFO, CATEGORIES_LIST } from '@/data/productsData';
 
 export default function Footer() {
@@ -12,7 +12,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#060910] border-t border-[#d4af37]/25 text-slate-300 pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-[#090d16] border-t border-[#d4af37]/25 text-slate-300 pt-16 pb-12 relative overflow-hidden">
       
       {/* Subtle Glow in Footer */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#8b1524]/15 to-transparent blur-3xl pointer-events-none -z-10" />
@@ -24,7 +24,7 @@ export default function Footer() {
           
           {/* Col 1: Brand Info & Master Logo (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full overflow-hidden bg-black/40 border border-[#d4af37]/40 flex items-center justify-center p-1">
                 <Image
                   src="/assets/01_Logos_and_Branding/United_Foods_3D_Gold_Camels_Emblem.jpeg"
@@ -36,21 +36,21 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="font-heading text-lg font-bold text-white tracking-wider">UNITED FOODS</h3>
-                <p className="text-xs text-[#f3cf65]">Global Flavors, Authentic Tastes</p>
+                <p className="text-xs text-[#fde68a] font-semibold">Global Flavors, Authentic Tastes</p>
               </div>
-            </div>
+            </Link>
 
-            <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
+            <p className="text-xs text-slate-300 leading-relaxed max-w-sm">
               United Foods is a premier food enterprise providing traditional slow-cured pickles (achar), 
               pure ground and whole spices, Himalayan salts, extra long-grain Basmati rice, cold-pressed oils, 
               and refreshing fruit juices.
             </p>
 
             <div className="flex items-center gap-3 text-xs text-[#f5d77f]">
-              <span className="px-2.5 py-1 rounded-md bg-white/5 border border-[#d4af37]/30">
+              <span className="px-2.5 py-1 rounded-md bg-white/10 border border-[#d4af37]/40 font-semibold text-white">
                 ⭐ {COMPANY_INFO.legacy}
               </span>
-              <span className="px-2.5 py-1 rounded-md bg-white/5 border border-[#d4af37]/30">
+              <span className="px-2.5 py-1 rounded-md bg-white/10 border border-[#d4af37]/40 font-semibold text-white">
                 100% Halal
               </span>
             </div>
@@ -58,78 +58,80 @@ export default function Footer() {
 
           {/* Col 2: Quick Links (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-heading text-sm font-bold text-white uppercase tracking-wider">
-              Quick Links
+            <h4 className="font-heading text-sm font-extrabold !text-white uppercase tracking-wider flex items-center gap-2">
+              <span className="w-1.5 h-3.5 bg-[#8b1524] rounded-full inline-block"></span>
+              <span>Navigation</span>
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#home" className="hover:text-[#f3cf65] transition-colors">Home</a></li>
-              <li><a href="#categories" className="hover:text-[#f3cf65] transition-colors">Categories</a></li>
-              <li><a href="#products" className="hover:text-[#f3cf65] transition-colors">Product Catalog</a></li>
-              <li><a href="#heritage" className="hover:text-[#f3cf65] transition-colors">Brand Heritage</a></li>
-              <li><a href="#videos" className="hover:text-[#f3cf65] transition-colors">Videos & Reels</a></li>
-              <li><a href="#banners" className="hover:text-[#f3cf65] transition-colors">Promotions</a></li>
-              <li><a href="#contact" className="hover:text-[#f3cf65] transition-colors">Contact Us</a></li>
+              <li><Link href="/" className="text-slate-300 hover:text-[#fde68a] transition-colors">Home</Link></li>
+              <li><Link href="/products" className="text-slate-300 hover:text-[#fde68a] transition-colors">Product Catalog</Link></li>
+              <li><Link href="/categories" className="text-slate-300 hover:text-[#fde68a] transition-colors">Categories</Link></li>
+              <li><Link href="/heritage" className="text-slate-300 hover:text-[#fde68a] transition-colors">Brand Heritage</Link></li>
+              <li><Link href="/media" className="text-slate-300 hover:text-[#fde68a] transition-colors">Videos & Media</Link></li>
+              <li><Link href="/contact" className="text-slate-300 hover:text-[#fde68a] transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
           {/* Col 3: Categories Links (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="font-heading text-sm font-bold text-white uppercase tracking-wider">
-              Our Products
+            <h4 className="font-heading text-sm font-extrabold !text-white uppercase tracking-wider flex items-center gap-2">
+              <span className="w-1.5 h-3.5 bg-[#8b1524] rounded-full inline-block"></span>
+              <span>Our Products</span>
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#products" className="hover:text-[#f3cf65] transition-colors">Traditional Pickles (Achar)</a></li>
-              <li><a href="#products" className="hover:text-[#f3cf65] transition-colors">Pure Spices & Herb Powders</a></li>
-              <li><a href="#products" className="hover:text-[#f3cf65] transition-colors">Himalayan Pink Salt & Lamps</a></li>
-              <li><a href="#products" className="hover:text-[#f3cf65] transition-colors">Long-Grain Basmati Rice</a></li>
-              <li><a href="#products" className="hover:text-[#f3cf65] transition-colors">Pure Olive, Mustard & Sunflower Oils</a></li>
-              <li><a href="#products" className="hover:text-[#f3cf65] transition-colors">Natural Fruit Juices & Milks</a></li>
-              <li><a href="#products" className="hover:text-[#f3cf65] transition-colors">Natural Jaggery & Sweeteners</a></li>
+              <li><Link href="/products?category=pickles" className="text-slate-300 hover:text-[#fde68a] transition-colors">Traditional Pickles (Achar)</Link></li>
+              <li><Link href="/products?category=spices" className="text-slate-300 hover:text-[#fde68a] transition-colors">Pure Spices & Herb Powders</Link></li>
+              <li><Link href="/products?category=salts" className="text-slate-300 hover:text-[#fde68a] transition-colors">Himalayan Pink Salt & Lamps</Link></li>
+              <li><Link href="/products?category=rice" className="text-slate-300 hover:text-[#fde68a] transition-colors">Long-Grain Basmati Rice</Link></li>
+              <li><Link href="/products?category=oils" className="text-slate-300 hover:text-[#fde68a] transition-colors">Pure Olive & Mustard Oils</Link></li>
+              <li><Link href="/products?category=beverages" className="text-slate-300 hover:text-[#fde68a] transition-colors">Natural Fruit Juices & Milks</Link></li>
+              <li><Link href="/products?category=sweeteners" className="text-slate-300 hover:text-[#fde68a] transition-colors">Natural Jaggery & Sweeteners</Link></li>
             </ul>
           </div>
 
           {/* Col 4: Contact & Buttar Seal (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="font-heading text-sm font-bold text-white uppercase tracking-wider">
-              Contact & Inquiries
+            <h4 className="font-heading text-sm font-extrabold !text-white uppercase tracking-wider flex items-center gap-2">
+              <span className="w-1.5 h-3.5 bg-[#8b1524] rounded-full inline-block"></span>
+              <span>Contact & Inquiries</span>
             </h4>
             
             <div className="space-y-2.5 text-xs">
               <a 
                 href={`tel:${COMPANY_INFO.phone}`}
-                className="flex items-center gap-2 text-slate-300 hover:text-[#f3cf65] transition-colors"
+                className="flex items-center gap-2 text-slate-300 hover:text-[#fde68a] transition-colors"
               >
-                <Phone className="w-4 h-4 text-[#d4af37] flex-shrink-0" />
+                <Phone className="w-4 h-4 text-[#f3cf65] flex-shrink-0" />
                 <span>{COMPANY_INFO.phone}</span>
               </a>
 
               <a 
                 href={`mailto:${COMPANY_INFO.email}`}
-                className="flex items-center gap-2 text-slate-300 hover:text-[#f3cf65] transition-colors break-all"
+                className="flex items-center gap-2 text-slate-300 hover:text-[#fde68a] transition-colors break-all"
               >
-                <Mail className="w-4 h-4 text-[#d4af37] flex-shrink-0" />
+                <Mail className="w-4 h-4 text-[#f3cf65] flex-shrink-0" />
                 <span>{COMPANY_INFO.email}</span>
               </a>
 
               <div className="flex items-center gap-2 text-slate-300">
-                <Globe className="w-4 h-4 text-[#d4af37] flex-shrink-0" />
+                <Globe className="w-4 h-4 text-[#f3cf65] flex-shrink-0" />
                 <span>{COMPANY_INFO.website}</span>
               </div>
             </div>
 
             {/* BUTTAR EMBEDDED LOGO SECTION */}
-            <div className="pt-2 flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-[#d4af37]/30">
+            <div className="pt-2 flex items-center gap-3 p-3 rounded-xl bg-white/10 border border-[#d4af37]/40">
               <div className="relative w-12 h-12 flex-shrink-0">
                 <Image
                   src="/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.jpeg"
                   alt="Buttar Since 2005"
                   fill
-                  className="object-contain"
+                  className="object-contain drop-shadow"
                 />
               </div>
               <div className="text-left">
-                <p className="text-[11px] font-bold text-white font-heading">BUTTAR SINCE 2005</p>
-                <p className="text-[10px] text-[#f3cf65]">Trust & Quality Guarantee</p>
+                <p className="text-[12px] font-extrabold !text-white font-heading">BUTTAR SINCE 2005</p>
+                <p className="text-[10px] text-[#f3cf65] font-semibold">Trust & Quality Guarantee</p>
               </div>
             </div>
 
@@ -153,7 +155,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-[#f3cf65] font-semibold hover:underline transition-all"
             >
-              Pixel Web Developers (pixelwebdevelopes.com)
+              Pixel Web Developers
             </a>
           </div>
 
@@ -173,3 +175,4 @@ export default function Footer() {
     </footer>
   );
 }
+

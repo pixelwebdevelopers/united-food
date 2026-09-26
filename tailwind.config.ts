@@ -2,9 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -21,9 +19,9 @@ const config: Config = {
         }
       },
       fontFamily: {
-        heading: ["Cinzel", "serif"],
-        body: ["Outfit", "sans-serif"],
-        sans: ["Plus Jakarta Sans", "sans-serif"],
+        heading: ["var(--font-heading)", "Outfit", "Plus Jakarta Sans", "sans-serif"],
+        body: ["var(--font-body)", "Plus Jakarta Sans", "Outfit", "sans-serif"],
+        sans: ["var(--font-sans)", "Plus Jakarta Sans", "Outfit", "sans-serif"],
       }
     },
   },
