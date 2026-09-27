@@ -69,7 +69,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           {/* Close Modal Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-black/60 hover:bg-black/80 text-white transition-colors cursor-pointer shadow-md"
+            className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-black/60 hover:bg-[#34070c] text-white transition-colors cursor-pointer shadow-md"
             aria-label="Close details"
           >
             <X className="w-5 h-5" />
@@ -229,8 +229,9 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
           {/* Bottom Title Pill for Mobile */}
           <div className="fixed bottom-4 inset-x-4 z-50 sm:hidden text-center pointer-events-none">
-            <div className="inline-block px-4 py-2 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-white text-xs font-semibold shadow-xl max-w-xs truncate">
-              {product.name} ({product.packSize})
+            <div className="inline-block px-4 py-2 rounded-full bg-[#34070c]/95 backdrop-blur-md border border-[#f5d77f]/40 text-white text-xs font-semibold shadow-2xl max-w-xs truncate">
+              <span className="text-[#f5d77f] font-bold block text-[10px]">{product.category} • {product.packSize}</span>
+              <span className="text-white">{product.name}</span>
             </div>
           </div>
 

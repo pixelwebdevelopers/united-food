@@ -106,15 +106,16 @@ body::after {
 }
 
 /* Typography Helpers */
-h1, h2, h3, h4, .font-heading {
+h1, h2, h3, h4 {
   font-family: var(--font-heading);
   letter-spacing: 0.02em;
-  color: var(--text-main);
 }
 
-footer h1, footer h2, footer h3, footer h4 {
-  color: #ffffff !important;
+.font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
 }
+
 
 .gold-gradient-text {
   background: linear-gradient(135deg, #34070c 0%, #b8860b 60%, #34070c 100%);

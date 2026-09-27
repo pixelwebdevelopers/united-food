@@ -125,28 +125,28 @@ function VideoGalleryContent() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-85"
                   />
                   
-                  {/* Dark Vignette Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/85 pointer-events-none" />
+                  {/* Dark High-Contrast Scrim Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-black/60 pointer-events-none" />
 
                   {/* Format Badge (Top Left) */}
-                  <div className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-[9px] sm:text-[10px] font-bold text-[#f5d77f] flex items-center gap-1 z-10 shadow-sm">
-                    <Film className="w-3 h-3" />
+                  <div className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/25 text-[9px] sm:text-[10px] font-bold text-[#f5d77f] flex items-center gap-1 z-10 shadow-md">
+                    <Film className="w-3 h-3 text-[#f5d77f]" />
                     <span>{isReel ? 'Portrait Reel' : 'HD Promo'}</span>
                   </div>
 
                   {/* Center Play Button Overlay */}
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#34070c]/90 border border-[#f5d77f]/60 flex items-center justify-center text-white shadow-2xl group-hover:scale-115 group-hover:bg-[#4e0b12] transition-transform duration-300">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#34070c]/90 border border-[#f5d77f]/70 flex items-center justify-center text-white shadow-2xl group-hover:scale-115 group-hover:bg-[#4e0b12] transition-transform duration-300">
                       <Play className="w-5 h-5 sm:w-6 sm:h-6 ml-0.5 fill-[#f5d77f] text-[#f5d77f]" />
                     </div>
                   </div>
 
                   {/* Bottom Text Information */}
                   <div className="absolute bottom-0 inset-x-0 p-3 sm:p-4 space-y-1 z-10">
-                    <span className="text-[9px] sm:text-[10px] font-bold text-[#f5d77f] uppercase tracking-wider block drop-shadow-sm">
+                    <span className="text-[9px] sm:text-[10px] font-extrabold !text-[#f5d77f] uppercase tracking-wider block drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
                       {video.category}
                     </span>
-                    <h3 className="font-heading text-xs sm:text-sm md:text-base font-bold text-white line-clamp-2 leading-snug drop-shadow-md group-hover:text-[#f5d77f] transition-colors">
+                    <h3 className="font-heading text-xs sm:text-sm md:text-base font-bold !text-white line-clamp-2 leading-snug drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)] group-hover:!text-[#f5d77f] transition-colors">
                       {video.name}
                     </h3>
                   </div>
@@ -177,11 +177,11 @@ function VideoGalleryContent() {
             </button>
 
             {/* Video Title in Center for Desktop */}
-            <div className="hidden sm:block text-center max-w-md mx-auto">
-              <span className="text-[10px] uppercase font-bold text-[#f5d77f] tracking-wider block">
+            <div className="hidden sm:block text-center max-w-md mx-auto px-5 py-2 rounded-full bg-[#34070c]/90 backdrop-blur-md border border-[#f5d77f]/30 shadow-2xl">
+              <span className="text-[10px] uppercase font-bold !text-[#f5d77f] tracking-wider block">
                 {activeVideo.category}
               </span>
-              <p className="text-sm font-bold text-white truncate drop-shadow">
+              <p className="text-sm font-bold !text-white truncate drop-shadow">
                 {activeVideo.name}
               </p>
             </div>
@@ -216,8 +216,9 @@ function VideoGalleryContent() {
 
           {/* Mobile Video Bottom Title Pill */}
           <div className="fixed bottom-4 inset-x-4 z-50 sm:hidden text-center pointer-events-none">
-            <div className="inline-block px-4 py-2 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white text-xs font-semibold shadow-lg max-w-xs truncate">
-              {activeVideo.name}
+            <div className="inline-block px-4 py-2 rounded-full bg-[#34070c]/95 backdrop-blur-md border border-[#f5d77f]/40 text-white text-xs font-semibold shadow-2xl max-w-xs truncate">
+              <span className="!text-[#f5d77f] font-bold block text-[10px]">{activeVideo.category}</span>
+              <span className="!text-white">{activeVideo.name}</span>
             </div>
           </div>
 

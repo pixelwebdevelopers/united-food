@@ -100,33 +100,33 @@ export default function HomeVideoCarousel() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-85"
                   />
 
-                  {/* Gradient Overlay for Legibility */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/85 pointer-events-none" />
+                  {/* Deep Gradient Overlay for Maximum Legibility */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-black/60 pointer-events-none" />
 
                   {/* Format Pill (Top Left) */}
-                  <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-[10px] font-bold text-[#f5d77f] flex items-center gap-1 z-10 shadow-sm">
-                    <Film className="w-3 h-3" />
+                  <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/25 text-[10px] font-bold text-[#f5d77f] flex items-center gap-1 z-10 shadow-lg">
+                    <Film className="w-3 h-3 text-[#f5d77f]" />
                     <span>{isReel ? 'Portrait Reel' : 'HD Promo'}</span>
                   </div>
 
                   {/* Center Glowing Play Button */}
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-14 h-14 rounded-full bg-[#34070c]/90 border border-[#f5d77f]/60 flex items-center justify-center text-white shadow-2xl group-hover:scale-115 group-hover:bg-[#4e0b12] transition-transform duration-300">
+                    <div className="w-14 h-14 rounded-full bg-[#34070c]/90 border border-[#f5d77f]/70 flex items-center justify-center text-white shadow-2xl group-hover:scale-115 group-hover:bg-[#4e0b12] transition-transform duration-300">
                       <Play className="w-6 h-6 ml-0.5 fill-[#f5d77f] text-[#f5d77f]" />
                     </div>
                   </div>
 
-                  {/* Bottom Text Information */}
+                  {/* Bottom Text Information - High Contrast White & Gold */}
                   <div className="absolute bottom-0 inset-x-0 p-4 space-y-1.5 z-10">
-                    <span className="text-[10px] font-bold text-[#f5d77f] uppercase tracking-wider block drop-shadow-sm">
+                    <span className="text-[10px] font-extrabold !text-[#f5d77f] uppercase tracking-wider block drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
                       {video.category}
                     </span>
-                    <h3 className="font-heading text-sm sm:text-base font-bold text-white line-clamp-2 leading-snug drop-shadow-md group-hover:text-[#f5d77f] transition-colors">
+                    <h3 className="font-heading text-sm sm:text-base font-bold !text-white line-clamp-2 leading-snug drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)] group-hover:!text-[#f5d77f] transition-colors">
                       {video.name}
                     </h3>
-                    <div className="pt-2 flex items-center gap-1.5 text-xs font-semibold text-white/90 group-hover:text-[#f5d77f] transition-colors">
+                    <div className="pt-2 flex items-center gap-1.5 text-xs font-semibold !text-white group-hover:!text-[#f5d77f] transition-colors drop-shadow-md">
                       <span>Watch Full Video</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-3.5 h-3.5 text-[#f5d77f] group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </div>
