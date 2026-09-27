@@ -40,8 +40,8 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524]">
-            <Layers className="w-3.5 h-3.5 text-[#8b1524]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-50 border border-[#34070c]/20 text-xs font-bold text-[#34070c]">
+            <Layers className="w-3.5 h-3.5 text-[#34070c]" />
             <span>FULL PRODUCT PORTFOLIO ({ALL_PRODUCTS.length} ITEMS)</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900">
@@ -66,12 +66,12 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
                 setSearchQuery(e.target.value);
                 setVisibleCount(24);
               }}
-              className="w-full pl-12 pr-12 py-3.5 rounded-full bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 placeholder-slate-400 text-sm outline-none transition-all shadow-sm"
+              className="w-full pl-12 pr-12 py-3.5 rounded-full bg-slate-50 border border-slate-200 focus:border-[#34070c] focus:bg-white text-slate-900 placeholder-slate-400 text-sm outline-none transition-all shadow-sm"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-semibold text-slate-400 hover:text-[#8b1524]"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-semibold text-slate-400 hover:text-[#34070c]"
               >
                 Clear
               </button>
@@ -91,8 +91,8 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
                   }}
                   className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-2 ${
                     isActive
-                      ? 'bg-[#8b1524] text-white shadow-md shadow-[#8b1524]/20 scale-105 border border-[#8b1524]'
-                      : 'bg-white text-slate-700 hover:text-[#8b1524] hover:bg-slate-50 border border-slate-200 shadow-sm'
+                      ? 'bg-[#34070c] text-white shadow-md shadow-[#34070c]/20 scale-105 border border-[#34070c]'
+                      : 'bg-white text-slate-700 hover:text-[#34070c] hover:bg-slate-50 border border-slate-200 shadow-sm'
                   }`}
                 >
                   <span>{cat.name}</span>
@@ -114,7 +114,7 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
             {displayedProducts.map((product) => (
               <div
                 key={product.id}
-                className="glass-card rounded-2xl p-4 flex flex-col justify-between group border border-slate-200 hover:border-[#8b1524]/40 hover:shadow-xl relative bg-white"
+                className="glass-card rounded-2xl p-4 flex flex-col justify-between group border border-slate-200 hover:border-[#34070c]/40 hover:shadow-xl relative bg-white"
               >
                 <div>
                   {/* Image Container with Portrait 3:4.2 Cover Fit */}
@@ -133,7 +133,7 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
 
                     {/* Quick View Hover Button */}
                     <div className="absolute inset-0 bg-black/40 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 z-10">
-                      <span className="px-3.5 py-1.5 rounded-full bg-[#8b1524] text-white font-bold text-xs flex items-center gap-1.5 shadow-lg">
+                      <span className="px-3.5 py-1.5 rounded-full bg-[#34070c] text-white font-bold text-xs flex items-center gap-1.5 shadow-lg">
                         <Eye className="w-3.5 h-3.5 text-[#f5d77f]" />
                         <span>Quick View</span>
                       </span>
@@ -145,7 +145,7 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
                     </div>
 
                     {/* Halal Badge */}
-                    <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-[#8b1524] text-[9px] font-bold text-white flex items-center gap-1 z-10 shadow-sm">
+                    <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-[#34070c] text-[9px] font-bold text-white flex items-center gap-1 z-10 shadow-sm">
                       <ShieldCheck className="w-3 h-3 text-[#f5d77f]" />
                       <span>Halal</span>
                     </div>
@@ -153,12 +153,12 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
 
                   {/* Info */}
                   <div className="space-y-1.5">
-                    <span className="text-[11px] font-bold text-[#8b1524] uppercase tracking-wider block">
+                    <span className="text-[11px] font-bold text-[#34070c] uppercase tracking-wider block">
                       {product.category}
                     </span>
                     <h3 
                       onClick={() => setSelectedProduct(product)}
-                      className="font-heading text-base font-bold text-slate-900 group-hover:text-[#8b1524] transition-colors line-clamp-2 cursor-pointer"
+                      className="font-heading text-base font-bold text-slate-900 group-hover:text-[#34070c] transition-colors line-clamp-2 cursor-pointer"
                     >
                       {product.name}
                     </h3>
@@ -169,9 +169,9 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
                 <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
                   <button
                     onClick={() => setSelectedProduct(product)}
-                    className="text-xs font-semibold text-slate-600 hover:text-[#8b1524] flex items-center gap-1 transition-colors"
+                    className="text-xs font-semibold text-slate-600 hover:text-[#34070c] flex items-center gap-1 transition-colors"
                   >
-                    <Eye className="w-3.5 h-3.5 text-[#8b1524]" />
+                    <Eye className="w-3.5 h-3.5 text-[#34070c]" />
                     <span>Details</span>
                   </button>
 
@@ -179,7 +179,7 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
                     href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20am%20interested%20in%20"${encodeURIComponent(product.name)}"%20(${encodeURIComponent(product.packSize)}).%20Please%20share%20details.`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1.5 rounded-full bg-[#8b1524] hover:bg-[#a81c2f] text-white text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
+                    className="px-3 py-1.5 rounded-full bg-[#34070c] hover:bg-[#4e0b12] text-white text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
                   >
                     <Phone className="w-3 h-3 text-[#f5d77f]" />
                     <span>Inquire</span>
@@ -211,7 +211,7 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
               className="btn-outline !py-3 !px-8 text-sm"
             >
               <span>Load More Products ({filteredProducts.length - visibleCount} remaining)</span>
-              <ChevronDown className="w-4 h-4 text-[#8b1524]" />
+              <ChevronDown className="w-4 h-4 text-[#34070c]" />
             </button>
           </div>
         )}

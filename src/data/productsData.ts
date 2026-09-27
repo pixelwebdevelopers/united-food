@@ -49,8 +49,8 @@ export const BRAND_LOGOS = [
     "group": "brand",
     "tag": "Official Brand Asset",
     "packSize": "Standard Pack",
-    "image": "/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.jpeg",
-    "file": "Buttar_Since_2005_Gold_Shield_Logo.jpeg",
+    "image": "/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.png",
+    "file": "Buttar_Since_2005_Gold_Shield_Logo.png",
     "isHalal": true,
     "isNatural": true
   },

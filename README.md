@@ -18,7 +18,7 @@ This repository contains all cleaned, deduplicated, and professionally structure
 
 
 ### 📂 `01_Logos_and_Branding`
-- `Buttar_Since_2005_Gold_Shield_Logo.jpeg` *(55.7 KB)*
+- `Buttar_Since_2005_Gold_Shield_Logo.png` *(55.7 KB)*
 - `United_Foods_3D_Gold_Camels_Emblem.jpeg` *(110.0 KB)*
 - `United_Foods_Master_Hero_Emblem_With_Spices.jpeg` *(136.5 KB)*
 - `United_Foods_Spice_Up_Your_Life_Gold_Emblem.jpeg` *(113.0 KB)*

@@ -86,18 +86,18 @@ export default function CategoriesPage() {
         
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8">
-          <Link href="/" className="hover:text-[#8b1524] transition-colors flex items-center gap-1">
+          <Link href="/" className="hover:text-[#34070c] transition-colors flex items-center gap-1">
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Home</span>
           </Link>
           <span>/</span>
-          <span className="text-[#8b1524] font-bold">Categories</span>
+          <span className="text-[#34070c] font-bold">Categories</span>
         </div>
 
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524]">
-            <Sparkles className="w-3.5 h-3.5 text-[#8b1524]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-[#34070c]/20 text-xs font-bold text-[#34070c]">
+            <Sparkles className="w-3.5 h-3.5 text-[#34070c]" />
             <span>EXPLORE OUR CULINARY DOMAINS</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900">
@@ -114,7 +114,7 @@ export default function CategoriesPage() {
           {categoryDetails.map((cat) => (
             <div 
               key={cat.id}
-              className="bg-white rounded-3xl border border-slate-200 hover:border-[#8b1524]/40 hover:shadow-xl transition-all p-6 flex flex-col justify-between group shadow-sm"
+              className="bg-white rounded-3xl border border-slate-200 hover:border-[#34070c]/40 hover:shadow-xl transition-all p-6 flex flex-col justify-between group shadow-sm"
             >
               <div>
                 {/* Image Container with 3:3.8 Aspect Ratio */}
@@ -128,23 +128,23 @@ export default function CategoriesPage() {
                   />
 
                   {/* Badge */}
-                  <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#8b1524] text-white text-[11px] font-bold shadow-md z-10">
+                  <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#34070c] text-white text-[11px] font-bold shadow-md z-10">
                     {cat.badge}
                   </div>
 
                   {/* Count */}
                   <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-slate-900 border border-slate-200 text-[11px] font-bold shadow-md z-10 flex items-center gap-1.5">
-                    <PackageCheck className="w-3.5 h-3.5 text-[#8b1524]" />
+                    <PackageCheck className="w-3.5 h-3.5 text-[#34070c]" />
                     <span>{cat.itemCount} Products</span>
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="space-y-2">
-                  <h3 className="font-heading text-xl font-bold text-slate-900 group-hover:text-[#8b1524] transition-colors">
+                  <h3 className="font-heading text-xl font-bold text-slate-900 group-hover:text-[#34070c] transition-colors">
                     {cat.name}
                   </h3>
-                  <p className="text-xs font-semibold text-[#8b1524]">
+                  <p className="text-xs font-semibold text-[#34070c]">
                     {cat.tagline}
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed pt-1">
@@ -157,7 +157,7 @@ export default function CategoriesPage() {
               <div className="pt-6 mt-6 border-t border-slate-100">
                 <Link
                   href={`/products?category=${cat.id}`}
-                  className="w-full py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-[#8b1524] text-slate-800 hover:text-white font-bold text-xs flex items-center justify-center gap-2 border border-slate-200 hover:border-[#8b1524] transition-all shadow-sm"
+                  className="w-full py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-[#34070c] text-slate-800 hover:text-white font-bold text-xs flex items-center justify-center gap-2 border border-slate-200 hover:border-[#34070c] transition-all shadow-sm"
                 >
                   <span>Browse {cat.name}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

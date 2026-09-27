@@ -14,8 +14,8 @@ export default function BannerShowcase() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524]">
-            <ImageIcon className="w-3.5 h-3.5 text-[#8b1524]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-50 border border-[#34070c]/20 text-xs font-bold text-[#34070c]">
+            <ImageIcon className="w-3.5 h-3.5 text-[#34070c]" />
             <span>MARKETING & CAMPAIGNS ({PROMOTIONAL_BANNERS.length} BANNERS)</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900">
@@ -32,7 +32,7 @@ export default function BannerShowcase() {
             <div
               key={banner.id}
               onClick={() => setSelectedBanner(banner)}
-              className="glass-card rounded-2xl overflow-hidden group cursor-pointer border border-slate-200 hover:border-[#8b1524]/40 hover:shadow-xl relative flex flex-col bg-white"
+              className="glass-card rounded-2xl overflow-hidden group cursor-pointer border border-slate-200 hover:border-[#34070c]/40 hover:shadow-xl relative flex flex-col bg-white"
             >
               {/* Image Container with Contain */}
               <div className="relative w-full aspect-[4/3] bg-white p-4 flex items-center justify-center overflow-hidden border-b border-slate-100">
@@ -47,7 +47,7 @@ export default function BannerShowcase() {
 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="px-3.5 py-1.5 rounded-full bg-[#8b1524] text-white font-bold text-xs flex items-center gap-1.5 shadow-lg">
+                  <span className="px-3.5 py-1.5 rounded-full bg-[#34070c] text-white font-bold text-xs flex items-center gap-1.5 shadow-lg">
                     <Eye className="w-3.5 h-3.5 text-[#f5d77f]" />
                     <span>View High-Res Banner</span>
                   </span>
@@ -56,10 +56,10 @@ export default function BannerShowcase() {
 
               {/* Title & Tag */}
               <div className="p-4 space-y-1">
-                <span className="text-[10px] font-bold text-[#8b1524] uppercase tracking-wider block">
+                <span className="text-[10px] font-bold text-[#34070c] uppercase tracking-wider block">
                   Campaign Artwork
                 </span>
-                <h3 className="font-heading text-sm font-bold text-slate-900 group-hover:text-[#8b1524] transition-colors line-clamp-1">
+                <h3 className="font-heading text-sm font-bold text-slate-900 group-hover:text-[#34070c] transition-colors line-clamp-1">
                   {banner.name}
                 </h3>
               </div>
@@ -78,7 +78,7 @@ export default function BannerShowcase() {
           />
 
           <div className="relative w-full max-w-4xl bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-2xl z-10 animate-scaleUp my-8">
-            <div className="p-4 border-b border-slate-100 flex items-center justify-between bg-[#8b1524] text-white">
+            <div className="p-4 border-b border-slate-100 flex items-center justify-between bg-[#34070c] text-white">
               <h3 className="font-heading text-base sm:text-lg font-bold text-white">{selectedBanner.name}</h3>
               <button
                 onClick={() => setSelectedBanner(null)}

@@ -17,7 +17,7 @@ export default function MarqueeBanner() {
   ];
 
   return (
-    <div className="relative overflow-hidden bg-[#090d16] text-[#f8fafc] border-b border-[#d4af37]/30 py-2.5 z-50 text-xs font-medium tracking-wide shadow-sm">
+    <div className="relative overflow-hidden bg-[#1f0306] text-[#f8fafc] border-b border-[#d4af37]/25 py-2.5 z-50 text-xs font-medium tracking-wide shadow-sm">
       <div className="marquee-track flex items-center gap-8 whitespace-nowrap">
         {/* Repeat twice for continuous marquee loop */}
         {[...marqueeItems, ...marqueeItems].map((item, idx) => {

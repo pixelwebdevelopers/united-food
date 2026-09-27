@@ -25,8 +25,8 @@ export default function ContactSection() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524]">
-            <Sparkles className="w-3.5 h-3.5 text-[#8b1524]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-50 border border-[#34070c]/20 text-xs font-bold text-[#34070c]">
+            <Sparkles className="w-3.5 h-3.5 text-[#34070c]" />
             <span>GLOBAL & DOMESTIC INQUIRIES</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900">
@@ -73,31 +73,31 @@ export default function ContactSection() {
             <div className="glass-card p-6 rounded-2xl border border-slate-200 space-y-5 bg-white shadow-sm">
               
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#34070c]/20 flex items-center justify-center text-[#34070c] flex-shrink-0 mt-0.5">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
                   <p className="text-xs text-slate-500 font-medium">Direct Telephone & WhatsApp</p>
-                  <a href={`tel:${COMPANY_INFO.phone}`} className="text-sm font-bold text-slate-900 hover:text-[#8b1524] transition-colors">
+                  <a href={`tel:${COMPANY_INFO.phone}`} className="text-sm font-bold text-slate-900 hover:text-[#34070c] transition-colors">
                     {COMPANY_INFO.phone}
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#34070c]/20 flex items-center justify-center text-[#34070c] flex-shrink-0 mt-0.5">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <p className="text-xs text-slate-500 font-medium">Official Inquiry Email</p>
-                  <a href={`mailto:${COMPANY_INFO.email}`} className="text-sm font-bold text-slate-900 hover:text-[#8b1524] transition-colors break-all">
+                  <a href={`mailto:${COMPANY_INFO.email}`} className="text-sm font-bold text-slate-900 hover:text-[#34070c] transition-colors break-all">
                     {COMPANY_INFO.email}
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#34070c]/20 flex items-center justify-center text-[#34070c] flex-shrink-0 mt-0.5">
                   <Globe className="w-4 h-4" />
                 </div>
                 <div>
@@ -109,7 +109,7 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#34070c]/20 flex items-center justify-center text-[#34070c] flex-shrink-0 mt-0.5">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
@@ -162,7 +162,7 @@ export default function ContactSection() {
                         placeholder="e.g. John Doe"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#34070c] focus:bg-white text-slate-900 text-xs outline-none transition-all"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -173,7 +173,7 @@ export default function ContactSection() {
                         placeholder="e.g. +92 300 0000000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#34070c] focus:bg-white text-slate-900 text-xs outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -187,7 +187,7 @@ export default function ContactSection() {
                         placeholder="name@company.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#34070c] focus:bg-white text-slate-900 text-xs outline-none transition-all"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -195,7 +195,7 @@ export default function ContactSection() {
                       <select
                         value={formData.subject}
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#34070c] focus:bg-white text-slate-900 text-xs outline-none transition-all"
                       >
                         <option value="Wholesale Inquiry">Domestic Wholesale Order</option>
                         <option value="Export Inquiry">International Export Inquiry</option>
@@ -214,7 +214,7 @@ export default function ContactSection() {
                       placeholder="Please specify desired products, estimated quantities, and delivery location..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#8b1524] focus:bg-white text-slate-900 text-xs outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#34070c] focus:bg-white text-slate-900 text-xs outline-none transition-all resize-none"
                     />
                   </div>
 

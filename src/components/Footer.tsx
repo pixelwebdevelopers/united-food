@@ -12,10 +12,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#090d16] border-t border-[#d4af37]/25 text-slate-300 pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-[#180306] border-t border-[#d4af37]/25 text-slate-300 pt-16 pb-12 relative overflow-hidden">
       
       {/* Subtle Glow in Footer */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#8b1524]/15 to-transparent blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#34070c]/30 to-transparent blur-3xl pointer-events-none -z-10" />
 
       <div className="container">
         
@@ -59,7 +59,7 @@ export default function Footer() {
           {/* Col 2: Quick Links (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="font-heading text-sm font-extrabold !text-white uppercase tracking-wider flex items-center gap-2">
-              <span className="w-1.5 h-3.5 bg-[#8b1524] rounded-full inline-block"></span>
+              <span className="w-1.5 h-3.5 bg-[#d4af37] rounded-full inline-block"></span>
               <span>Navigation</span>
             </h4>
             <ul className="space-y-2 text-xs">
@@ -75,7 +75,7 @@ export default function Footer() {
           {/* Col 3: Categories Links (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="font-heading text-sm font-extrabold !text-white uppercase tracking-wider flex items-center gap-2">
-              <span className="w-1.5 h-3.5 bg-[#8b1524] rounded-full inline-block"></span>
+              <span className="w-1.5 h-3.5 bg-[#d4af37] rounded-full inline-block"></span>
               <span>Our Products</span>
             </h4>
             <ul className="space-y-2 text-xs">
@@ -92,7 +92,7 @@ export default function Footer() {
           {/* Col 4: Contact & Buttar Seal (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="font-heading text-sm font-extrabold !text-white uppercase tracking-wider flex items-center gap-2">
-              <span className="w-1.5 h-3.5 bg-[#8b1524] rounded-full inline-block"></span>
+              <span className="w-1.5 h-3.5 bg-[#d4af37] rounded-full inline-block"></span>
               <span>Contact & Inquiries</span>
             </h4>
             
@@ -123,7 +123,7 @@ export default function Footer() {
             <div className="pt-2 flex items-center gap-3 p-3 rounded-xl bg-white/10 border border-[#d4af37]/40">
               <div className="relative w-12 h-12 flex-shrink-0">
                 <Image
-                  src="/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.jpeg"
+                  src="/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.png"
                   alt="Buttar Since 2005"
                   fill
                   className="object-contain drop-shadow"

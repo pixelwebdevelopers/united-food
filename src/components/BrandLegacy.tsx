@@ -37,14 +37,14 @@ export default function BrandLegacy() {
           
           {/* Left Visual: Buttar & United Foods Crest Display */}
           <div className="lg:col-span-5 relative flex justify-center">
-            <div className="relative w-full max-w-[420px] aspect-square rounded-3xl p-4 bg-gradient-to-tr from-red-50 via-white to-amber-50 border border-[#8b1524]/20 shadow-xl shadow-slate-200">
+            <div className="relative w-full max-w-[420px] aspect-square rounded-3xl p-4 bg-gradient-to-tr from-red-50 via-white to-amber-50 border border-[#34070c]/20 shadow-xl shadow-slate-200">
               
               <div className="w-full h-full rounded-2xl bg-white border border-slate-100 p-6 flex flex-col items-center justify-center text-center space-y-4 relative overflow-hidden shadow-inner">
                 
                 {/* Buttar Gold Shield Logo */}
                 <div className="relative w-36 h-36">
                   <Image
-                    src="/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.jpeg"
+                    src="/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.png"
                     alt="Buttar Since 2005 Brand Seal"
                     fill
                     className="object-contain drop-shadow-md"
@@ -55,18 +55,18 @@ export default function BrandLegacy() {
                   <h3 className="font-heading text-xl font-bold text-slate-900 tracking-wider">
                     BUTTAR & UNITED FOODS
                   </h3>
-                  <p className="text-xs text-[#8b1524] font-bold">
+                  <p className="text-xs text-[#34070c] font-bold">
                     Global Flavors • Authentic Tastes
                   </p>
                 </div>
 
                 <div className="w-full pt-3 border-t border-slate-100 flex items-center justify-around text-slate-600 text-xs font-semibold">
                   <div className="flex items-center gap-1">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#8b1524]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#34070c]" />
                     <span>Pure Heritage</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#8b1524]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#34070c]" />
                     <span>Halal Certified</span>
                   </div>
                 </div>
@@ -80,8 +80,8 @@ export default function BrandLegacy() {
           <div className="lg:col-span-7 space-y-8">
             
             <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524]">
-                <Clock className="w-3.5 h-3.5 text-[#8b1524]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#34070c]/20 text-xs font-bold text-[#34070c]">
+                <Clock className="w-3.5 h-3.5 text-[#34070c]" />
                 <span>OUR TRADITION & QUALITY PROMISE</span>
               </div>
               <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
@@ -102,9 +102,9 @@ export default function BrandLegacy() {
                 return (
                   <div 
                     key={idx}
-                    className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-[#8b1524]/40 hover:shadow-md transition-all space-y-2 shadow-sm"
+                    className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-[#34070c]/40 hover:shadow-md transition-all space-y-2 shadow-sm"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#8b1524]/20 flex items-center justify-center text-[#8b1524] shadow-sm">
+                    <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#34070c]/20 flex items-center justify-center text-[#34070c] shadow-sm">
                       <Icon className="w-5 h-5" />
                     </div>
                     <h3 className="font-heading text-base font-bold text-slate-900">

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { 
-  Menu, X, Phone, Mail, ChevronRight, Sparkles
+  Menu, X, Phone, Mail, ChevronRight, Sparkles, Globe
 } from 'lucide-react';
 import { COMPANY_INFO, CATEGORIES_LIST } from '@/data/productsData';
 
@@ -49,8 +49,8 @@ export default function Navbar() {
       <header 
         className={`sticky top-0 z-40 transition-all duration-300 ${
           isScrolled 
-            ? 'bg-[#7a0c16]/95 backdrop-blur-xl border-b border-[#d4af37]/40 shadow-xl py-3' 
-            : 'bg-[#8b1524] border-b border-[#d4af37]/30 py-3.5 shadow-md'
+            ? 'bg-[#290509]/95 backdrop-blur-xl border-b border-[#d4af37]/40 shadow-xl py-3' 
+            : 'bg-[#34070c] border-b border-[#d4af37]/30 py-3.5 shadow-md'
         }`}
       >
         <div className="container flex items-center justify-between">
@@ -104,15 +104,13 @@ export default function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
-            <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20would%20like%20to%20inquire%20about%20your%20products.`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 rounded-full bg-[#fde68a] hover:bg-[#fef08a] text-[#5c0b15] text-xs font-extrabold flex items-center gap-2 shadow-md hover:shadow-lg transition-all"
+            <Link
+              href="/contact"
+              className="px-5 py-2 rounded-full border border-[#d4af37]/70 bg-[#290509]/80 hover:bg-[#4e0b12] text-[#f5d77f] hover:text-white text-xs font-bold flex items-center gap-2 shadow-sm transition-all"
             >
-              <Phone className="w-3.5 h-3.5 text-[#7a0c16]" />
-              <span>+92 300 8292550</span>
-            </a>
+              <Globe className="w-3.5 h-3.5 text-[#f5d77f]" />
+              <span>Export Inquiries</span>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle Button */}
@@ -149,7 +147,7 @@ export default function Navbar() {
           }`}
         >
           {/* Top Bar of Drawer */}
-          <div className="p-5 border-b border-[#d4af37]/30 flex items-center justify-between bg-[#8b1524] text-white">
+          <div className="p-5 border-b border-[#d4af37]/30 flex items-center justify-between bg-[#34070c] text-white">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full overflow-hidden bg-black/40 border border-[#f3cf65]/40 flex items-center justify-center">
                 <Image
@@ -179,7 +177,7 @@ export default function Navbar() {
           <div className="flex-1 overflow-y-auto px-5 py-6 space-y-6">
             {/* Quick Navigation Links */}
             <div className="space-y-1">
-              <p className="text-[11px] font-bold text-[#8b1524] uppercase tracking-wider mb-2 px-3">
+              <p className="text-[11px] font-bold text-[#34070c] uppercase tracking-wider mb-2 px-3">
                 Main Navigation
               </p>
               {navLinks.map((link) => {
@@ -191,8 +189,8 @@ export default function Navbar() {
                     onClick={() => setMobileMenuOpen(false)}
                     className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all text-sm font-bold ${
                       isActive
-                        ? 'bg-[#8b1524] text-white'
-                        : 'text-slate-800 hover:text-[#8b1524] hover:bg-[#8b1524]/5'
+                        ? 'bg-[#34070c] text-white'
+                        : 'text-slate-800 hover:text-[#34070c] hover:bg-[#34070c]/5'
                     }`}
                   >
                     <span>{link.name}</span>
@@ -204,7 +202,7 @@ export default function Navbar() {
 
             {/* Product Category Shortcuts */}
             <div className="pt-4 border-t border-slate-100">
-              <p className="text-[11px] font-bold text-[#8b1524] uppercase tracking-wider mb-3 px-3">
+              <p className="text-[11px] font-bold text-[#34070c] uppercase tracking-wider mb-3 px-3">
                 Product Categories ({CATEGORIES_LIST.length - 1})
               </p>
               <div className="grid grid-cols-2 gap-2">
@@ -213,18 +211,18 @@ export default function Navbar() {
                     key={cat.id}
                     href={`/products?category=${cat.id}`}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 hover:border-[#8b1524] hover:bg-[#8b1524]/5 transition-all text-xs flex flex-col gap-0.5 text-slate-700 hover:text-[#8b1524]"
+                    className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 hover:border-[#34070c] hover:bg-[#34070c]/5 transition-all text-xs flex flex-col gap-0.5 text-slate-700 hover:text-[#34070c]"
                   >
                     <span className="font-bold truncate">{cat.name}</span>
-                    <span className="text-[10px] text-[#8b1524] font-semibold">{cat.count} Items</span>
+                    <span className="text-[10px] text-[#34070c] font-semibold">{cat.count} Items</span>
                   </Link>
                 ))}
               </div>
             </div>
 
             {/* Direct Contact Card */}
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-[#8b1524]/10 to-[#8b1524]/5 border border-[#8b1524]/20">
-              <p className="text-xs font-bold text-[#8b1524] mb-1 flex items-center gap-1.5">
+            <div className="p-4 rounded-2xl bg-gradient-to-br from-[#34070c]/10 to-[#34070c]/5 border border-[#34070c]/20">
+              <p className="text-xs font-bold text-[#34070c] mb-1 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-[#b8860b]" />
                 <span>Direct Inquiries</span>
               </p>
@@ -234,16 +232,16 @@ export default function Navbar() {
               <div className="space-y-1.5">
                 <a 
                   href={`tel:${COMPANY_INFO.phone}`}
-                  className="flex items-center gap-2 text-xs font-bold text-slate-800 hover:text-[#8b1524]"
+                  className="flex items-center gap-2 text-xs font-bold text-slate-800 hover:text-[#34070c]"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#8b1524]" />
+                  <Phone className="w-3.5 h-3.5 text-[#34070c]" />
                   <span>{COMPANY_INFO.phone}</span>
                 </a>
                 <a 
                   href={`mailto:${COMPANY_INFO.email}`}
-                  className="flex items-center gap-2 text-xs font-bold text-slate-800 hover:text-[#8b1524] truncate"
+                  className="flex items-center gap-2 text-xs font-bold text-slate-800 hover:text-[#34070c] truncate"
                 >
-                  <Mail className="w-3.5 h-3.5 text-[#8b1524]" />
+                  <Mail className="w-3.5 h-3.5 text-[#34070c]" />
                   <span className="truncate">{COMPANY_INFO.email}</span>
                 </a>
               </div>

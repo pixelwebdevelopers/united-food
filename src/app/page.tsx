@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import CategoryCarousel from '@/components/CategoryCarousel';
+import HomeVideoCarousel from '@/components/HomeVideoCarousel';
 import ProductModal from '@/components/ProductModal';
 import { ALL_PRODUCTS, BRAND_VIDEOS, COMPANY_INFO, ProductItem } from '@/data/productsData';
 
@@ -41,8 +42,8 @@ export default function HomePage() {
           
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524] mb-2">
-                <Sparkles className="w-3.5 h-3.5 text-[#8b1524]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#34070c]/20 text-xs font-bold text-[#34070c] mb-2">
+                <Sparkles className="w-3.5 h-3.5 text-[#34070c]" />
                 <span>FEATURED SELECTIONS</span>
               </div>
               <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
@@ -67,7 +68,7 @@ export default function HomePage() {
             {featuredProducts.map((product) => (
               <div
                 key={product.id}
-                className="glass-card rounded-2xl p-4 flex flex-col justify-between group border border-slate-200 hover:border-[#8b1524]/40 hover:shadow-xl relative bg-white transition-all shadow-sm"
+                className="glass-card rounded-2xl p-4 flex flex-col justify-between group border border-slate-200 hover:border-[#34070c]/40 hover:shadow-xl relative bg-white transition-all shadow-sm"
               >
                 <div>
                   <div 
@@ -85,7 +86,7 @@ export default function HomePage() {
 
                     {/* Quick View Hover Button */}
                     <div className="absolute inset-0 bg-black/40 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 z-10">
-                      <span className="px-3.5 py-1.5 rounded-full bg-[#8b1524] text-white font-bold text-xs flex items-center gap-1.5 shadow-lg">
+                      <span className="px-3.5 py-1.5 rounded-full bg-[#34070c] text-white font-bold text-xs flex items-center gap-1.5 shadow-lg">
                         <Eye className="w-3.5 h-3.5 text-[#f5d77f]" />
                         <span>Quick View</span>
                       </span>
@@ -97,19 +98,19 @@ export default function HomePage() {
                     </div>
 
                     {/* Halal Badge */}
-                    <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-[#8b1524] text-[9px] font-bold text-white flex items-center gap-1 z-10 shadow-sm">
+                    <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-[#34070c] text-[9px] font-bold text-white flex items-center gap-1 z-10 shadow-sm">
                       <ShieldCheck className="w-3 h-3 text-[#f5d77f]" />
                       <span>Halal</span>
                     </div>
                   </div>
 
                   <div className="space-y-1.5">
-                    <span className="text-[11px] font-bold text-[#8b1524] uppercase tracking-wider block">
+                    <span className="text-[11px] font-bold text-[#34070c] uppercase tracking-wider block">
                       {product.category}
                     </span>
                     <h3 
                       onClick={() => setSelectedProduct(product)}
-                      className="font-heading text-base font-bold text-slate-900 group-hover:text-[#8b1524] transition-colors line-clamp-2 cursor-pointer"
+                      className="font-heading text-base font-bold text-slate-900 group-hover:text-[#34070c] transition-colors line-clamp-2 cursor-pointer"
                     >
                       {product.name}
                     </h3>
@@ -119,9 +120,9 @@ export default function HomePage() {
                 <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
                   <button
                     onClick={() => setSelectedProduct(product)}
-                    className="text-xs font-semibold text-slate-600 hover:text-[#8b1524] flex items-center gap-1 transition-colors"
+                    className="text-xs font-semibold text-slate-600 hover:text-[#34070c] flex items-center gap-1 transition-colors"
                   >
-                    <Eye className="w-3.5 h-3.5 text-[#8b1524]" />
+                    <Eye className="w-3.5 h-3.5 text-[#34070c]" />
                     <span>Details</span>
                   </button>
 
@@ -129,7 +130,7 @@ export default function HomePage() {
                     href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20am%20interested%20in%20"${encodeURIComponent(product.name)}"%20(${encodeURIComponent(product.packSize)}).%20Please%20share%20details.`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1.5 rounded-full bg-[#8b1524] hover:bg-[#a81c2f] text-white text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
+                    className="px-3 py-1.5 rounded-full bg-[#34070c] hover:bg-[#4e0b12] text-white text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
                   >
                     <Phone className="w-3 h-3 text-[#f5d77f]" />
                     <span>Inquire</span>
@@ -145,7 +146,7 @@ export default function HomePage() {
               className="btn-outline !py-3.5 !px-8 text-sm inline-flex items-center gap-2"
             >
               <span>Explore All 100+ Products & Categories</span>
-              <ChevronRight className="w-4 h-4 text-[#8b1524]" />
+              <ChevronRight className="w-4 h-4 text-[#34070c]" />
             </Link>
           </div>
 
@@ -161,7 +162,7 @@ export default function HomePage() {
               <div className="relative w-full max-w-[400px] aspect-square rounded-3xl p-6 bg-white border border-slate-200 shadow-xl flex flex-col items-center justify-center text-center space-y-4">
                 <div className="relative w-36 h-36">
                   <Image
-                    src="/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.jpeg"
+                    src="/assets/01_Logos_and_Branding/Buttar_Since_2005_Gold_Shield_Logo.png"
                     alt="Buttar Since 2005"
                     fill
                     className="object-contain drop-shadow-md"
@@ -169,7 +170,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h3 className="font-heading text-lg font-bold text-slate-900">BUTTAR SINCE 2005</h3>
-                  <p className="text-xs text-[#8b1524] font-bold">25+ Years of Authenticity</p>
+                  <p className="text-xs text-[#34070c] font-bold">25+ Years of Authenticity</p>
                 </div>
                 <div className="w-full pt-3 border-t border-slate-100 flex justify-around text-xs text-slate-600 font-semibold">
                   <span>Pure Heritage</span>
@@ -182,8 +183,8 @@ export default function HomePage() {
             </div>
 
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524]">
-                <Award className="w-3.5 h-3.5 text-[#8b1524]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#34070c]/20 text-xs font-bold text-[#34070c]">
+                <Award className="w-3.5 h-3.5 text-[#34070c]" />
                 <span>ROOTED IN TRADITION</span>
               </div>
               <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
@@ -197,7 +198,7 @@ export default function HomePage() {
 
               <div className="grid grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                  <div className="text-xl font-extrabold text-[#8b1524] font-heading">0% Chemical</div>
+                  <div className="text-xl font-extrabold text-[#34070c] font-heading">0% Chemical</div>
                   <p className="text-xs text-slate-500">Pure natural preservation</p>
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
@@ -218,69 +219,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. Video Media Teaser */}
-      <section className="py-20 bg-white border-b border-slate-200">
-        <div className="container">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-[#8b1524]/20 text-xs font-bold text-[#8b1524] mb-2">
-                <Film className="w-3.5 h-3.5 text-[#8b1524]" />
-                <span>EXPERIENCE IN MOTION</span>
-              </div>
-              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
-                PROMOTIONAL <span className="crimson-gradient-text">VIDEOS & REELS</span>
-              </h2>
-              <p className="text-slate-600 text-sm mt-1 max-w-xl">
-                Watch our high-definition promotional videos and product reels showcasing authentic preparations.
-              </p>
-            </div>
-
-            <Link
-              href="/media"
-              className="btn-outline text-xs !py-3 !px-6 flex items-center gap-2"
-            >
-              <Play className="w-4 h-4 text-[#8b1524]" />
-              <span>Watch All Videos & Banners</span>
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {BRAND_VIDEOS.slice(0, 3).map((video) => (
-              <Link
-                key={video.id}
-                href="/media"
-                className="glass-card rounded-2xl overflow-hidden group cursor-pointer border border-slate-200 hover:border-[#8b1524]/40 hover:shadow-xl relative flex flex-col justify-between bg-white shadow-sm"
-              >
-                <div className="relative w-full aspect-video bg-slate-950 flex items-center justify-center overflow-hidden">
-                  <video
-                    src={video.videoUrl}
-                    preload="metadata"
-                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
-                    muted
-                  />
-                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/15 transition-colors flex items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-[#8b1524] flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
-                      <Play className="w-5 h-5 ml-0.5 fill-current text-[#f5d77f]" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-4 space-y-1">
-                  <span className="text-[10px] font-bold text-[#8b1524] uppercase tracking-wider block">
-                    {video.category}
-                  </span>
-                  <h3 className="font-heading text-sm font-bold text-slate-900 group-hover:text-[#8b1524] transition-colors">
-                    {video.name}
-                  </h3>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* 5. Video Media Carousel (Portrait format on mobile and desktop) */}
+      <HomeVideoCarousel />
 
       {/* 6. Quick CTA Banner */}
-      <section className="py-16 bg-gradient-to-r from-[#8b1524] via-[#7a0c16] to-[#5c0b15] text-white">
+      <section className="py-16 bg-gradient-to-r from-[#34070c] via-[#4e0b12] to-[#200407] text-white">
         <div className="container text-center max-w-3xl space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-xs font-bold text-[#fde68a] border border-[#fde68a]/30">
             <MessageCircle className="w-4 h-4" />
@@ -298,7 +241,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <Link
               href="/contact"
-              className="px-6 py-3.5 rounded-full bg-white text-[#8b1524] font-extrabold text-sm shadow-xl hover:bg-slate-100 transition-all"
+              className="px-6 py-3.5 rounded-full bg-white text-[#34070c] font-extrabold text-sm shadow-xl hover:bg-slate-100 transition-all"
             >
               Submit Business Inquiry
             </Link>
