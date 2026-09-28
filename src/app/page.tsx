@@ -18,14 +18,14 @@ export default function HomePage() {
 
   // Curate 8 featured flagship bestsellers for the homepage
   const featuredProducts = [
-    ALL_PRODUCTS.find(p => p.id === 'pickle-01') || ALL_PRODUCTS[0],
-    ALL_PRODUCTS.find(p => p.id === 'spice-01') || ALL_PRODUCTS[16],
-    ALL_PRODUCTS.find(p => p.id === 'salt-01') || ALL_PRODUCTS[34],
-    ALL_PRODUCTS.find(p => p.id === 'oil-01') || ALL_PRODUCTS[50],
-    ALL_PRODUCTS.find(p => p.id === 'rice-01') || ALL_PRODUCTS[45],
-    ALL_PRODUCTS.find(p => p.id === 'bev-01') || ALL_PRODUCTS[60],
-    ALL_PRODUCTS.find(p => p.id === 'pickle-02') || ALL_PRODUCTS[1],
-    ALL_PRODUCTS.find(p => p.id === 'sweet-01') || ALL_PRODUCTS[80],
+    ALL_PRODUCTS.find(p => p.id === 'uf-006') || ALL_PRODUCTS[0],
+    ALL_PRODUCTS.find(p => p.id === 'uf-033') || ALL_PRODUCTS[7],
+    ALL_PRODUCTS.find(p => p.id === 'uf-036') || ALL_PRODUCTS[20],
+    ALL_PRODUCTS.find(p => p.id === 'uf-061') || ALL_PRODUCTS[30],
+    ALL_PRODUCTS.find(p => p.id === 'uf-059') || ALL_PRODUCTS[28],
+    ALL_PRODUCTS.find(p => p.id === 'uf-073') || ALL_PRODUCTS[40],
+    ALL_PRODUCTS.find(p => p.id === 'uf-012') || ALL_PRODUCTS[4],
+    ALL_PRODUCTS.find(p => p.id === 'uf-103') || ALL_PRODUCTS[70],
   ].filter(Boolean);
 
   return (

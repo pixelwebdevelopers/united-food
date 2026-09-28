@@ -105,6 +105,9 @@ export const BRAND_LOGOS = [
 ];
 
 export const ALL_PRODUCTS: ProductItem[] = [
+  // ==========================================
+  // 1. PICKLES (ACHAR) - 12 Items
+  // ==========================================
   {
     "id": "uf-006",
     "name": "Adrak Lehsan Pickle Ginger Garlic Achar Jar",
@@ -142,18 +145,6 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-009",
-    "name": "Garlic Pickle Lehsan Achar Jar 400g",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "400G",
-    "image": "/assets/02_Pickles/Garlic_Pickle_Lehsan_Achar_Jar_400g.jpeg",
-    "file": "Garlic_Pickle_Lehsan_Achar_Jar_400g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
     "id": "uf-010",
     "name": "Garlic in Vinegar Preserve Jar 100Percent Natural",
     "category": "Pickles (Achar)",
@@ -166,18 +157,6 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-011",
-    "name": "Garlic in Vinegar Preserve Jar 500g",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "500G",
-    "image": "/assets/02_Pickles/Garlic_in_Vinegar_Preserve_Jar_500g.jpeg",
-    "file": "Garlic_in_Vinegar_Preserve_Jar_500g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
     "id": "uf-012",
     "name": "Green Chilli Pickle Hari Mirch Achar Jar",
     "category": "Pickles (Achar)",
@@ -186,18 +165,6 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "packSize": "Standard Pack",
     "image": "/assets/02_Pickles/Green_Chilli_Pickle_Hari_Mirch_Achar_Jar.jpeg",
     "file": "Green_Chilli_Pickle_Hari_Mirch_Achar_Jar.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-013",
-    "name": "Hari Mirch Kacha Aam Pickle Green Chilli Raw Mango Jar 400g",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "400G",
-    "image": "/assets/02_Pickles/Hari_Mirch_Kacha_Aam_Pickle_Green_Chilli_Raw_Mango_Jar_400g.jpeg",
-    "file": "Hari_Mirch_Kacha_Aam_Pickle_Green_Chilli_Raw_Mango_Jar_400g.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -215,7 +182,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-015",
-    "name": "Lasoora Pickle Gunda Achar Jar",
+    "name": "Mango Pickle (Aam Ka Achar) Jar",
     "category": "Pickles (Achar)",
     "group": "pickles",
     "tag": "Traditional Recipe",
@@ -238,20 +205,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-017",
-    "name": "Mango Pickle Aam Ka Achar Jar 400g",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "400G",
-    "image": "/assets/02_Pickles/Mango_Pickle_Aam_Ka_Achar_Jar_400g.jpeg",
-    "file": "Mango_Pickle_Aam_Ka_Achar_Jar_400g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
     "id": "uf-018",
-    "name": "Mango Pickle Aam Ka Achar Jar Premium",
+    "name": "Premium Achar Jar",
     "category": "Pickles (Achar)",
     "group": "pickles",
     "tag": "Traditional Recipe",
@@ -287,13 +242,53 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-021",
-    "name": "Red Chilli Pickle Lal Mirch Achar Jar",
+    "name": "Green Chilli Pickle Jar",
     "category": "Pickles (Achar)",
     "group": "pickles",
     "tag": "Traditional Recipe",
     "packSize": "Standard Pack",
     "image": "/assets/02_Pickles/Red_Chilli_Pickle_Lal_Mirch_Achar_Jar.jpeg",
     "file": "Red_Chilli_Pickle_Lal_Mirch_Achar_Jar.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+
+  // ==========================================
+  // 2. PASTES & CHUTNEYS - 6 Items
+  // ==========================================
+  {
+    "id": "uf-009",
+    "name": "Garlic Chutney Jar 400g",
+    "category": "Pastes & Chutneys",
+    "group": "chutneys",
+    "tag": "Sweet & Tangy",
+    "packSize": "400G",
+    "image": "/assets/02_Pickles/Garlic_Pickle_Lehsan_Achar_Jar_400g.jpeg",
+    "file": "Garlic_Pickle_Lehsan_Achar_Jar_400g.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-011",
+    "name": "Garlic & Vinegar Paste Jar 500g",
+    "category": "Pastes & Chutneys",
+    "group": "chutneys",
+    "tag": "Traditional Paste",
+    "packSize": "500G",
+    "image": "/assets/02_Pickles/Garlic_in_Vinegar_Preserve_Jar_500g.jpeg",
+    "file": "Garlic_in_Vinegar_Preserve_Jar_500g.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-013",
+    "name": "Green Chilli & Raw Mango Chutney Jar 400g",
+    "category": "Pastes & Chutneys",
+    "group": "chutneys",
+    "tag": "Sweet & Tangy",
+    "packSize": "400G",
+    "image": "/assets/02_Pickles/Hari_Mirch_Kacha_Aam_Pickle_Green_Chilli_Raw_Mango_Jar_400g.jpeg",
+    "file": "Hari_Mirch_Kacha_Aam_Pickle_Green_Chilli_Raw_Mango_Jar_400g.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -333,6 +328,10 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
+
+  // ==========================================
+  // 3. SPICES & SEASONINGS - 17 Items
+  // ==========================================
   {
     "id": "uf-025",
     "name": "Crispy Fried Onions Baryani Pack 100Percent Natural",
@@ -406,18 +405,6 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-031",
-    "name": "Red Chilli Powder Lal Mirch Jar 200g",
-    "category": "Ground Spices",
-    "group": "spices",
-    "tag": "100% Pure",
-    "packSize": "200G",
-    "image": "/assets/04_Spices_and_Seasonings/Ground_Spices/Red_Chilli_Powder_Lal_Mirch_Jar_200g.jpeg",
-    "file": "Red_Chilli_Powder_Lal_Mirch_Jar_200g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
     "id": "uf-032",
     "name": "Red Chilli Powder Lal Mirch Jar 250g",
     "category": "Ground Spices",
@@ -442,150 +429,6 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-034",
-    "name": "Black Salt Kala Namak Plastic Jar 250g",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "250G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Black_Salt_Kala_Namak_Plastic_Jar_250g.jpeg",
-    "file": "Black_Salt_Kala_Namak_Plastic_Jar_250g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-035",
-    "name": "Himalayan Pink Salt Coarse Crystals Jar",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "Standard Pack",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Coarse_Crystals_Jar.jpeg",
-    "file": "Himalayan_Pink_Salt_Coarse_Crystals_Jar.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-036",
-    "name": "Himalayan Pink Salt Export Quality Jar 800g",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "800G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Export_Quality_Jar_800g.jpeg",
-    "file": "Himalayan_Pink_Salt_Export_Quality_Jar_800g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-037",
-    "name": "Himalayan Pink Salt Fine Jar 800g",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "800G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Fine_Jar_800g.jpeg",
-    "file": "Himalayan_Pink_Salt_Fine_Jar_800g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-038",
-    "name": "Himalayan Pink Salt Lamps Carved Display",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "Standard Pack",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Lamps_Carved_Display.jpeg",
-    "file": "Himalayan_Pink_Salt_Lamps_Carved_Display.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-039",
-    "name": "Himalayan Pink Salt Plastic Jar 250g",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "250G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Plastic_Jar_250g.jpeg",
-    "file": "Himalayan_Pink_Salt_Plastic_Jar_250g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-040",
-    "name": "Himalayan Pink Salt Pouch Pack 500g 01",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "500G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Pouch_Pack_500g_01.jpeg",
-    "file": "Himalayan_Pink_Salt_Pouch_Pack_500g_01.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-041",
-    "name": "Himalayan Pink Salt Pouch Pack 500g 02",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "500G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Pouch_Pack_500g_02.jpeg",
-    "file": "Himalayan_Pink_Salt_Pouch_Pack_500g_02.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-042",
-    "name": "Himalayan Pink Salt Pouch Pack 500g 03",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "500G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Pouch_Pack_500g_03.jpeg",
-    "file": "Himalayan_Pink_Salt_Pouch_Pack_500g_03.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-043",
-    "name": "Himalayan Pink Salt With Onion Red Crushed Pepper 360g 01",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "360G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_With_Onion_Red_Crushed_Pepper_360g_01.jpeg",
-    "file": "Himalayan_Pink_Salt_With_Onion_Red_Crushed_Pepper_360g_01.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-044",
-    "name": "Himalayan Pink Salt With Onion Red Crushed Pepper 360g 02",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "360G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_With_Onion_Red_Crushed_Pepper_360g_02.jpeg",
-    "file": "Himalayan_Pink_Salt_With_Onion_Red_Crushed_Pepper_360g_02.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-045",
-    "name": "Himalayan Pink Salt With Onion Red Crushed Pepper 360g 03",
-    "category": "Himalayan Pink Salt",
-    "group": "salts",
-    "tag": "84+ Minerals",
-    "packSize": "360G",
-    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_With_Onion_Red_Crushed_Pepper_360g_03.jpeg",
-    "file": "Himalayan_Pink_Salt_With_Onion_Red_Crushed_Pepper_360g_03.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
     "id": "uf-046",
     "name": "Bitter Gourd Karela Powder Jar 200g",
     "category": "Herbal & Vegetable Powders",
@@ -606,18 +449,6 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "packSize": "200G",
     "image": "/assets/04_Spices_and_Seasonings/Vegetable_and_Herb_Powders/Garlic_Powder_Lehsan_Powder_Jar_200g.jpeg",
     "file": "Garlic_Powder_Lehsan_Powder_Jar_200g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-048",
-    "name": "Garlic Powder Lehsan Powder Jar Label 200g",
-    "category": "Herbal & Vegetable Powders",
-    "group": "spices",
-    "tag": "Superfood",
-    "packSize": "200G",
-    "image": "/assets/04_Spices_and_Seasonings/Vegetable_and_Herb_Powders/Garlic_Powder_Lehsan_Powder_Jar_Label_200g.jpeg",
-    "file": "Garlic_Powder_Lehsan_Powder_Jar_Label_200g.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -705,18 +536,98 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
+
+  // ==========================================
+  // 4. HIMALAYAN PINK SALT - 7 Items
+  // ==========================================
   {
-    "id": "uf-056",
-    "name": "Basmati Rice Long Grain Range 5kg 10kg 20kg Showcase",
-    "category": "Premium Basmati Rice",
-    "group": "rice",
-    "tag": "Extra Long Grain",
-    "packSize": "20KG",
-    "image": "/assets/05_Rice_and_Grains/Basmati_Rice_Long_Grain_Range_5kg_10kg_20kg_Showcase.jpeg",
-    "file": "Basmati_Rice_Long_Grain_Range_5kg_10kg_20kg_Showcase.jpeg",
+    "id": "uf-034",
+    "name": "Black Salt Kala Namak Plastic Jar 250g",
+    "category": "Himalayan Pink Salt",
+    "group": "salts",
+    "tag": "84+ Minerals",
+    "packSize": "250G",
+    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Black_Salt_Kala_Namak_Plastic_Jar_250g.jpeg",
+    "file": "Black_Salt_Kala_Namak_Plastic_Jar_250g.jpeg",
     "isHalal": true,
     "isNatural": true
   },
+  {
+    "id": "uf-035",
+    "name": "Himalayan Pink Salt Coarse Crystals Jar",
+    "category": "Himalayan Pink Salt",
+    "group": "salts",
+    "tag": "84+ Minerals",
+    "packSize": "Standard Pack",
+    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Coarse_Crystals_Jar.jpeg",
+    "file": "Himalayan_Pink_Salt_Coarse_Crystals_Jar.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-036",
+    "name": "Himalayan Pink Salt Export Quality Jar 800g",
+    "category": "Himalayan Pink Salt",
+    "group": "salts",
+    "tag": "84+ Minerals",
+    "packSize": "800G",
+    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Export_Quality_Jar_800g.jpeg",
+    "file": "Himalayan_Pink_Salt_Export_Quality_Jar_800g.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-038",
+    "name": "Himalayan Pink Salt Lamps Carved Display",
+    "category": "Himalayan Pink Salt",
+    "group": "salts",
+    "tag": "84+ Minerals",
+    "packSize": "Standard Pack",
+    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Lamps_Carved_Display.jpeg",
+    "file": "Himalayan_Pink_Salt_Lamps_Carved_Display.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-039",
+    "name": "Himalayan Pink Salt Plastic Jar 250g",
+    "category": "Himalayan Pink Salt",
+    "group": "salts",
+    "tag": "84+ Minerals",
+    "packSize": "250G",
+    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Plastic_Jar_250g.jpeg",
+    "file": "Himalayan_Pink_Salt_Plastic_Jar_250g.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-040",
+    "name": "Himalayan Pink Salt Pouch Pack 500g",
+    "category": "Himalayan Pink Salt",
+    "group": "salts",
+    "tag": "84+ Minerals",
+    "packSize": "500G",
+    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_Pouch_Pack_500g_01.jpeg",
+    "file": "Himalayan_Pink_Salt_Pouch_Pack_500g_01.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-043",
+    "name": "Himalayan Pink Salt With Onion Red Crushed Pepper 360g",
+    "category": "Himalayan Pink Salt",
+    "group": "salts",
+    "tag": "84+ Minerals",
+    "packSize": "360G",
+    "image": "/assets/04_Spices_and_Seasonings/Himalayan_Salts/Himalayan_Pink_Salt_With_Onion_Red_Crushed_Pepper_360g_01.jpeg",
+    "file": "Himalayan_Pink_Salt_With_Onion_Red_Crushed_Pepper_360g_01.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+
+  // ==========================================
+  // 5. PREMIUM BASMATI RICE - 4 Items
+  // ==========================================
   {
     "id": "uf-057",
     "name": "Basmati Rice Premium Quality Aromatic Bag",
@@ -765,9 +676,13 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
+
+  // ==========================================
+  // 6. PURE EDIBLE OILS - 3 Items
+  // ==========================================
   {
     "id": "uf-061",
-    "name": "Extra Virgin Olive Oil From Tunisia Bottle 01",
+    "name": "Extra Virgin Olive Oil From Tunisia Bottle",
     "category": "Pure Edible Oils",
     "group": "oils",
     "tag": "Cold Pressed / Refined",
@@ -778,20 +693,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-062",
-    "name": "Extra Virgin Olive Oil From Tunisia Bottle 02",
-    "category": "Pure Edible Oils",
-    "group": "oils",
-    "tag": "Cold Pressed / Refined",
-    "packSize": "Standard Pack",
-    "image": "/assets/06_Edible_Oils/Extra_Virgin_Olive_Oil_From_Tunisia_Bottle_02.jpeg",
-    "file": "Extra_Virgin_Olive_Oil_From_Tunisia_Bottle_02.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
     "id": "uf-063",
-    "name": "Pure Mustard Oil Sarson Ka Tel Bottle 01",
+    "name": "Pure Mustard Oil Sarson Ka Tel Bottle",
     "category": "Pure Edible Oils",
     "group": "oils",
     "tag": "Cold Pressed / Refined",
@@ -802,32 +705,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-064",
-    "name": "Pure Mustard Oil Sarson Ka Tel Bottle 02",
-    "category": "Pure Edible Oils",
-    "group": "oils",
-    "tag": "Cold Pressed / Refined",
-    "packSize": "Standard Pack",
-    "image": "/assets/06_Edible_Oils/Pure_Mustard_Oil_Sarson_Ka_Tel_Bottle_02.jpeg",
-    "file": "Pure_Mustard_Oil_Sarson_Ka_Tel_Bottle_02.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-065",
-    "name": "Pure Mustard Oil Sarson Ka Tel Bottle 03",
-    "category": "Pure Edible Oils",
-    "group": "oils",
-    "tag": "Cold Pressed / Refined",
-    "packSize": "Standard Pack",
-    "image": "/assets/06_Edible_Oils/Pure_Mustard_Oil_Sarson_Ka_Tel_Bottle_03.jpeg",
-    "file": "Pure_Mustard_Oil_Sarson_Ka_Tel_Bottle_03.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
     "id": "uf-066",
-    "name": "Refined Sunflower Oil Healthy Heart Bottle 01",
+    "name": "Refined Sunflower Oil Healthy Heart Bottle",
     "category": "Pure Edible Oils",
     "group": "oils",
     "tag": "Cold Pressed / Refined",
@@ -837,18 +716,10 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
-  {
-    "id": "uf-067",
-    "name": "Sunflower Oil Cholesterol Free Bottle 02",
-    "category": "Pure Edible Oils",
-    "group": "oils",
-    "tag": "Cold Pressed / Refined",
-    "packSize": "Standard Pack",
-    "image": "/assets/06_Edible_Oils/Sunflower_Oil_Cholesterol_Free_Bottle_02.jpeg",
-    "file": "Sunflower_Oil_Cholesterol_Free_Bottle_02.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
+
+  // ==========================================
+  // 7. BEVERAGES, JUICES & TEA - 26 Items
+  // ==========================================
   {
     "id": "uf-068",
     "name": "Strawberry Flavored Milk Bottle 200ml",
@@ -935,7 +806,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-075",
-    "name": "Pure Natural Fruit Juice Bottle 250ml 01",
+    "name": "Grape Juice Bottle 250ml",
     "category": "Fruit Juices (250ml)",
     "group": "beverages",
     "tag": "100% Natural Fruit",
@@ -947,7 +818,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-076",
-    "name": "Pure Natural Fruit Juice Bottle 250ml 02",
+    "name": "Guava Juice Bottle 250ml",
     "category": "Fruit Juices (250ml)",
     "group": "beverages",
     "tag": "100% Natural Fruit",
@@ -1127,11 +998,11 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-091",
-    "name": "Dates and Saffron Mix Juice Bottle 250ml 02",
+    "name": "Dates, Saffron & Cardamom Powder",
     "category": "Tea & Kashmiri Qahwa",
     "group": "beverages",
     "tag": "Royal Wellness",
-    "packSize": "250ML",
+    "packSize": "200G",
     "image": "/assets/07_Beverages_and_Dairy/Tea_and_Qahwa/Dates_and_Saffron_Mix_Juice_Bottle_250ml_02.jpeg",
     "file": "Dates_and_Saffron_Mix_Juice_Bottle_250ml_02.jpeg",
     "isHalal": true,
@@ -1150,20 +1021,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-093",
-    "name": "Premium Kashmiri Qahwa Saffron Cardamom Jar 02",
-    "category": "Tea & Kashmiri Qahwa",
-    "group": "beverages",
-    "tag": "Royal Wellness",
-    "packSize": "Standard Pack",
-    "image": "/assets/07_Beverages_and_Dairy/Tea_and_Qahwa/Premium_Kashmiri_Qahwa_Saffron_Cardamom_Jar_02.jpeg",
-    "file": "Premium_Kashmiri_Qahwa_Saffron_Cardamom_Jar_02.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
     "id": "uf-094",
-    "name": "Royal Kashmiri Qahwa Saffron Cardamom Jar 01",
+    "name": "Royal Kashmiri Qahwa Saffron Cardamom Jar",
     "category": "Tea & Kashmiri Qahwa",
     "group": "beverages",
     "tag": "Royal Wellness",
@@ -1185,9 +1044,13 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
+
+  // ==========================================
+  // 8. SPECIALTY & NATURAL SWEETENERS - 8 Items
+  // ==========================================
   {
     "id": "uf-096",
-    "name": "Milk Powder With Saffron and Cardamom Jar",
+    "name": "Date Powder With Saffron & Cardamom Jar",
     "category": "Specialty & Natural Sweeteners",
     "group": "sweeteners",
     "tag": "Chemical Free",
@@ -1230,30 +1093,6 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "packSize": "500G",
     "image": "/assets/08_Specialty_and_Sweeteners/Natural_Brown_Sugar_Shakkar_500g_Jar.jpeg",
     "file": "Natural_Brown_Sugar_Shakkar_500g_Jar.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-100",
-    "name": "Natural Brown Sugar Shakkar Pack 01",
-    "category": "Specialty & Natural Sweeteners",
-    "group": "sweeteners",
-    "tag": "Chemical Free",
-    "packSize": "Standard Pack",
-    "image": "/assets/08_Specialty_and_Sweeteners/Natural_Brown_Sugar_Shakkar_Pack_01.jpeg",
-    "file": "Natural_Brown_Sugar_Shakkar_Pack_01.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-101",
-    "name": "Natural Brown Sugar Shakkar Pack 02",
-    "category": "Specialty & Natural Sweeteners",
-    "group": "sweeteners",
-    "tag": "Chemical Free",
-    "packSize": "Standard Pack",
-    "image": "/assets/08_Specialty_and_Sweeteners/Natural_Brown_Sugar_Shakkar_Pack_02.jpeg",
-    "file": "Natural_Brown_Sugar_Shakkar_Pack_02.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -1564,14 +1403,14 @@ export const BRAND_VIDEOS: VideoItem[] = [
 
 export const CATEGORIES_LIST = [
   { id: "all", name: "All Products", icon: "Grid" },
-  { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 16 },
-  { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 19 },
-  { id: "salts", name: "Himalayan Pink Salt", icon: "Mountain", count: 12 },
-  { id: "chutneys", name: "Pastes & Chutneys", icon: "Flame", count: 3 },
-  { id: "rice", name: "Basmati Rice & Grains", icon: "Wheat", count: 5 },
-  { id: "oils", name: "Pure Edible Oils", icon: "Droplet", count: 7 },
-  { id: "beverages", name: "Juices, Milks & Tea", icon: "Coffee", count: 28 },
-  { id: "sweeteners", name: "Natural Sweeteners & Powders", icon: "Heart", count: 10 }
+  { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 12 },
+  { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 17 },
+  { id: "salts", name: "Himalayan Pink Salt", icon: "Mountain", count: 7 },
+  { id: "chutneys", name: "Pastes & Chutneys", icon: "Flame", count: 6 },
+  { id: "rice", name: "Basmati Rice & Grains", icon: "Wheat", count: 4 },
+  { id: "oils", name: "Pure Edible Oils", icon: "Droplet", count: 3 },
+  { id: "beverages", name: "Juices, Milks & Tea", icon: "Coffee", count: 26 },
+  { id: "sweeteners", name: "Natural Sweeteners & Powders", icon: "Heart", count: 8 }
 ];
 
 export const COMPANY_INFO = {
