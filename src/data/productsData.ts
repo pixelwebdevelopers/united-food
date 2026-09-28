@@ -158,7 +158,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-012",
-    "name": "Green Chilli Pickle Hari Mirch Achar Jar",
+    "name": "Mixed Pickle Achar Jar",
     "category": "Pickles (Achar)",
     "group": "pickles",
     "tag": "Traditional Recipe",
@@ -394,7 +394,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-030",
-    "name": "Natural Spices Blend Powder Jar",
+    "name": "Mint Powder Jar",
     "category": "Ground Spices",
     "group": "spices",
     "tag": "100% Pure",
@@ -1074,7 +1074,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-098",
-    "name": "Natural Banana Fruit Powder Jar Premium",
+    "name": "Natural Banana, Mango & Malta Fruit Powder Jar Premium",
     "category": "Specialty & Natural Sweeteners",
     "group": "sweeteners",
     "tag": "Chemical Free",
