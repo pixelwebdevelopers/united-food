@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Eye, X, Image as ImageIcon, Sparkles, Phone, CheckCircle, ShieldCheck, Maximize2, ArrowLeft, Download } from 'lucide-react';
+import { Eye, X, Image as ImageIcon, Sparkles, Phone, Mail, CheckCircle, ShieldCheck, Maximize2, ArrowLeft, Download } from 'lucide-react';
 import { PROMOTIONAL_BANNERS, BannerItem, COMPANY_INFO } from '@/data/productsData';
 
 export default function BannerShowcase() {
@@ -235,7 +235,7 @@ export default function BannerShowcase() {
                 </div>
 
                 {/* Actions */}
-                <div className="space-y-2.5 pt-4 border-t border-slate-100">
+                <div className="space-y-2 pt-4 border-t border-slate-100">
                   <a
                     href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Hello United Foods, I would like to request marketing materials for campaign: "${selectedBanner.name}".`)}`}
                     target="_blank"
@@ -243,12 +243,20 @@ export default function BannerShowcase() {
                     className="btn-primary w-full text-center text-xs !py-3 flex items-center justify-center gap-2"
                   >
                     <Phone className="w-4 h-4 text-[#f5d77f]" />
-                    <span>Inquire About Campaign</span>
+                    <span>Inquire on WhatsApp</span>
+                  </a>
+
+                  <a
+                    href={`mailto:${COMPANY_INFO.email}?subject=${encodeURIComponent(`Marketing Campaign Inquiry: ${selectedBanner.name}`)}&body=${encodeURIComponent(`Hello United Foods,\n\nI am interested in receiving marketing kits and promotional distribution materials for: "${selectedBanner.name}" (${selectedBanner.category}).\n\nPlease share high-res print assets and details.\n\nThank you.`)}`}
+                    className="btn-outline w-full text-center text-xs !py-2.5 flex items-center justify-center gap-2 hover:bg-slate-50"
+                  >
+                    <Mail className="w-4 h-4 text-[#34070c]" />
+                    <span>Inquire via Email</span>
                   </a>
 
                   <button
                     onClick={() => setIsFullScreenImage(true)}
-                    className="btn-outline w-full text-center text-xs !py-2.5 flex items-center justify-center gap-2"
+                    className="w-full text-center text-xs py-2 text-slate-600 hover:text-[#34070c] font-semibold flex items-center justify-center gap-1.5 transition-colors"
                   >
                     <Maximize2 className="w-3.5 h-3.5 text-[#34070c]" />
                     <span>View Fullscreen High-Res</span>

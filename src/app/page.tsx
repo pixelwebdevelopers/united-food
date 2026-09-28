@@ -5,12 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { 
   ArrowRight, Sparkles, Eye, Phone, ShieldCheck, CheckCircle2, 
-  Award, Play, Film, MessageCircle, ChevronRight, Layers, LayoutGrid
+  Award, Play, Film, MessageCircle, ChevronRight, Layers, LayoutGrid, Mail
 } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import CategoryCarousel from '@/components/CategoryCarousel';
 import HomeVideoCarousel from '@/components/HomeVideoCarousel';
 import ProductModal from '@/components/ProductModal';
+import LoadingScreen from '@/components/LoadingScreen';
 import { ALL_PRODUCTS, BRAND_VIDEOS, COMPANY_INFO, ProductItem } from '@/data/productsData';
 
 export default function HomePage() {
@@ -30,6 +31,9 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col">
+      {/* 0. Cinematic Splash / Loading Screen Animation */}
+      <LoadingScreen />
+
       {/* 1. Hero Section */}
       <HeroSection />
 
@@ -254,6 +258,14 @@ export default function HomePage() {
             >
               <Phone className="w-4 h-4" />
               <span>WhatsApp Direct (+92 300 8292550)</span>
+            </a>
+
+            <a
+              href={`mailto:${COMPANY_INFO.email}?subject=Wholesale%20%26%20Distribution%20Inquiry%20-%20United%20Foods`}
+              className="px-6 py-3.5 rounded-full bg-[#f5d77f] hover:bg-[#e5bc53] text-[#2c060a] font-extrabold text-sm flex items-center gap-2 shadow-xl transition-all"
+            >
+              <Mail className="w-4 h-4 text-[#2c060a]" />
+              <span>Email Direct ({COMPANY_INFO.email})</span>
             </a>
           </div>
         </div>

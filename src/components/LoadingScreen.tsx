@@ -1,0 +1,103 @@
+'use client';
+
+import React, { useState, useEffect, useRef } from 'react';
+
+export default function LoadingScreen() {
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [isFading, setIsFading] = useState(false);
+  const [isMounted, setIsMounted] = useState(true);
+  
+  const desktopVideoRef = useRef<HTMLVideoElement>(null);
+  const mobileVideoRef = useRef<HTMLVideoElement>(null);
+
+  const handleFinish = () => {
+    if (isFading || !isPlaying) return;
+    setIsFading(true);
+    // Allow smooth fade-out animation before unmounting
+    setTimeout(() => {
+      setIsPlaying(false);
+      setIsMounted(false);
+    }, 700);
+  };
+
+  useEffect(() => {
+    // Lock background scroll during the intro splash animation
+    if (isPlaying) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isPlaying]);
+
+  useEffect(() => {
+    // Safety fallback timeout in case video loading or autoplay stalls
+    const fallbackTimer = setTimeout(() => {
+      handleFinish();
+    }, 4500);
+
+    // Attempt autoplay immediately
+    const playDesktop = desktopVideoRef.current?.play();
+    if (playDesktop !== undefined) {
+      playDesktop.catch(() => {
+        // Autoplay policy or error fallback
+      });
+    }
+
+    const playMobile = mobileVideoRef.current?.play();
+    if (playMobile !== undefined) {
+      playMobile.catch(() => {
+        // Autoplay policy or error fallback
+      });
+    }
+
+    return () => clearTimeout(fallbackTimer);
+  }, []);
+
+  if (!isMounted) return null;
+
+  return (
+    <div
+      onClick={handleFinish}
+      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#000000] overflow-hidden select-none transition-all duration-700 ease-out cursor-default ${
+        isFading ? 'opacity-0 scale-105 pointer-events-none' : 'opacity-100 scale-100'
+      }`}
+      aria-label="Loading United Foods..."
+    >
+      {/* Subtle background ambient pulse glow */}
+      <div className="absolute inset-0 bg-radial from-[#34070c]/20 via-black to-black pointer-events-none" />
+
+      {/* Desktop Video (Landscape - visible on md and larger) */}
+      <video
+        ref={desktopVideoRef}
+        src="/loading-screen/desktop.mp4"
+        autoPlay
+        muted
+        playsInline
+        preload="auto"
+        controls={false}
+        disablePictureInPicture
+        disableRemotePlayback
+        onEnded={handleFinish}
+        className="hidden md:block w-full h-full object-cover object-center pointer-events-none"
+      />
+
+      {/* Mobile Video (Portrait - visible on mobile screens) */}
+      <video
+        ref={mobileVideoRef}
+        src="/loading-screen/mobile.mp4"
+        autoPlay
+        muted
+        playsInline
+        preload="auto"
+        controls={false}
+        disablePictureInPicture
+        disableRemotePlayback
+        onEnded={handleFinish}
+        className="block md:hidden w-full h-full object-cover object-center pointer-events-none"
+      />
+    </div>
+  );
+}

@@ -64,7 +64,7 @@ export default function Navbar() {
                   alt="United Foods Logo"
                   width={52}
                   height={52}
-                  className="object-contain w-full h-full scale-110"
+                  className="object-cover w-full h-full scale-110"
                   priority
                 />
               </div>
@@ -249,7 +249,7 @@ export default function Navbar() {
           </div>
 
           {/* Drawer Footer Actions */}
-          <div className="p-5 border-t border-slate-200 bg-slate-50 space-y-2.5">
+          <div className="p-5 border-t border-slate-200 bg-slate-50 space-y-2">
             <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20would%20like%20to%20place%20an%20order.`}
               target="_blank"
@@ -257,9 +257,18 @@ export default function Navbar() {
               className="btn-primary w-full text-center text-xs !py-3 flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4" />
-              <span>WhatsApp Direct Inquire</span>
+              <span>WhatsApp Direct (+92 300 8292550)</span>
             </a>
-            <p className="text-[10px] text-center text-slate-500 font-medium">
+
+            <a
+              href={`mailto:${COMPANY_INFO.email}?subject=Order%20%26%20Inquiry%20-%20United%20Foods`}
+              className="btn-outline w-full text-center text-xs !py-2.5 flex items-center justify-center gap-2 bg-white hover:bg-slate-50"
+            >
+              <Mail className="w-4 h-4 text-[#34070c]" />
+              <span>Email Us ({COMPANY_INFO.email})</span>
+            </a>
+
+            <p className="text-[10px] text-center text-slate-500 font-medium pt-1">
               {COMPANY_INFO.legacy} • Certified Pure
             </p>
           </div>

@@ -24,15 +24,17 @@ export default function Footer() {
           
           {/* Col 1: Brand Info & Master Logo (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full overflow-hidden bg-black/40 border border-[#d4af37]/40 flex items-center justify-center p-1">
-                <Image
-                  src="/assets/01_Logos_and_Branding/United_Foods_3D_Gold_Camels_Emblem.jpeg"
-                  alt="United Foods Logo"
-                  width={48}
-                  height={48}
-                  className="object-contain"
-                />
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative w-12 h-12 rounded-full p-0.5 bg-gradient-to-tr from-[#f3cf65] via-white to-[#d4af37] shadow-md flex-shrink-0 group-hover:scale-105 transition-transform">
+                <div className="w-full h-full rounded-full overflow-hidden bg-[#090d16] flex items-center justify-center">
+                  <Image
+                    src="/assets/01_Logos_and_Branding/United_Foods_3D_Gold_Camels_Emblem.jpeg"
+                    alt="United Foods Logo"
+                    width={48}
+                    height={48}
+                    className="object-cover w-full h-full scale-110"
+                  />
+                </div>
               </div>
               <div>
                 <h3 className="font-heading text-lg font-bold text-white tracking-wider">UNITED FOODS</h3>
@@ -79,13 +81,14 @@ export default function Footer() {
               <span>Our Products</span>
             </h4>
             <ul className="space-y-2 text-xs">
+              <li><Link href="/products?category=masalas" className="text-slate-300 hover:text-[#fde68a] transition-colors">Recipe Masala Mixes</Link></li>
+              <li><Link href="/products?category=desserts" className="text-slate-300 hover:text-[#fde68a] transition-colors">Desserts & Custard Powders</Link></li>
               <li><Link href="/products?category=pickles" className="text-slate-300 hover:text-[#fde68a] transition-colors">Traditional Pickles (Achar)</Link></li>
               <li><Link href="/products?category=spices" className="text-slate-300 hover:text-[#fde68a] transition-colors">Pure Spices & Herb Powders</Link></li>
               <li><Link href="/products?category=salts" className="text-slate-300 hover:text-[#fde68a] transition-colors">Himalayan Pink Salt & Lamps</Link></li>
               <li><Link href="/products?category=rice" className="text-slate-300 hover:text-[#fde68a] transition-colors">Long-Grain Basmati Rice</Link></li>
               <li><Link href="/products?category=oils" className="text-slate-300 hover:text-[#fde68a] transition-colors">Pure Olive & Mustard Oils</Link></li>
               <li><Link href="/products?category=beverages" className="text-slate-300 hover:text-[#fde68a] transition-colors">Natural Fruit Juices & Milks</Link></li>
-              <li><Link href="/products?category=sweeteners" className="text-slate-300 hover:text-[#fde68a] transition-colors">Natural Jaggery & Sweeteners</Link></li>
             </ul>
           </div>
 

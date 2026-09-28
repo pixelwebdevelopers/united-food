@@ -58,15 +58,25 @@ export default function ContactSection() {
                 Connect directly with our sales team via WhatsApp for instant catalog PDFs, sample requests, and export quotes.
               </p>
 
-              <a
-                href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20would%20like%20to%20inquire%20about%20your%20product%20catalog%20and%20wholesale%20pricing.`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-3 px-4 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all"
-              >
-                <Phone className="w-4 h-4" />
-                <span>Chat on WhatsApp (+92 300 8292550)</span>
-              </a>
+              <div className="flex flex-col sm:flex-row gap-2.5 pt-1">
+                <a
+                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20would%20like%20to%20inquire%20about%20your%20product%20catalog%20and%20wholesale%20pricing.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3 px-4 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>WhatsApp Chat</span>
+                </a>
+
+                <a
+                  href={`mailto:${COMPANY_INFO.email}?subject=Wholesale%20%26%20Export%20Inquiry%20-%20United%20Foods`}
+                  className="flex-1 py-3 px-4 rounded-full bg-[#34070c] hover:bg-[#4e0b12] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all"
+                >
+                  <Mail className="w-4 h-4 text-[#f5d77f]" />
+                  <span>Email Directly</span>
+                </a>
+              </div>
             </div>
 
             {/* Direct Info List */}

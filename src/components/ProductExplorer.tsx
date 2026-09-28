@@ -14,15 +14,39 @@ interface ProductExplorerProps {
   setActiveCategory: (cat: string) => void;
 }
 
+const normalizeCategory = (cat: string): string => {
+  const lower = (cat || '').toLowerCase().trim().replace(/[-_ ]+/g, '');
+  if (['masalas', 'masala', 'recipemasalas', 'recipemasala', 'recipie', 'recipe', 'recipemix', 'recipemixes', 'recipies'].includes(lower)) return 'masalas';
+  if (['desserts', 'dessert', 'custards', 'custard', 'custardpowder', 'custardpowders', 'jelly'].includes(lower)) return 'desserts';
+  if (['pickles', 'pickle', 'achar'].includes(lower)) return 'pickles';
+  if (['spices', 'spice', 'seasonings', 'seasoning', 'groundspices'].includes(lower)) return 'spices';
+  if (['salts', 'salt', 'himalayansalt', 'himalayansalts', 'pinksalt'].includes(lower)) return 'salts';
+  if (['chutneys', 'chutney', 'pastes', 'paste'].includes(lower)) return 'chutneys';
+  if (['rice', 'grains', 'grain', 'basmati', 'basmatirice'].includes(lower)) return 'rice';
+  if (['oils', 'oil', 'edibleoils', 'edibleoil', 'oliveoil'].includes(lower)) return 'oils';
+  if (['beverages', 'beverage', 'juices', 'juice', 'tea', 'milk', 'milks'].includes(lower)) return 'beverages';
+  if (['sweeteners', 'sweetener', 'jaggery', 'gur'].includes(lower)) return 'sweeteners';
+  return lower;
+};
+
 export default function ProductExplorer({ activeCategory, setActiveCategory }: ProductExplorerProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedProduct, setSelectedProduct] = useState<ProductItem | null>(null);
   const [visibleCount, setVisibleCount] = useState(24);
 
+  const normalizedActive = useMemo(() => normalizeCategory(activeCategory), [activeCategory]);
+
   // Filter products based on category and search query
   const filteredProducts = useMemo(() => {
     return ALL_PRODUCTS.filter((product) => {
-      const matchesCategory = activeCategory === 'all' || product.group === activeCategory;
+      const normalizedGroup = normalizeCategory(product.group);
+      const matchesCategory = 
+        normalizedActive === 'all' || 
+        normalizedActive === '' ||
+        normalizedGroup === normalizedActive ||
+        product.group.toLowerCase() === activeCategory.toLowerCase() ||
+        product.category.toLowerCase().includes(activeCategory.toLowerCase());
+
       const matchesSearch = 
         searchQuery.trim() === '' ||
         product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -30,7 +54,16 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
         product.packSize.toLowerCase().includes(searchQuery.toLowerCase());
       return matchesCategory && matchesSearch;
     });
-  }, [activeCategory, searchQuery]);
+  }, [activeCategory, normalizedActive, searchQuery]);
+
+  const handleCategoryChange = (catId: string) => {
+    setActiveCategory(catId);
+    setVisibleCount(24);
+    if (typeof window !== 'undefined') {
+      const url = catId === 'all' ? '/products' : `/products?category=${catId}`;
+      window.history.replaceState(null, '', url);
+    }
+  };
 
   const displayedProducts = filteredProducts.slice(0, visibleCount);
 
@@ -81,14 +114,11 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
           {/* Category Filter Tabs */}
           <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
             {CATEGORIES_LIST.map((cat) => {
-              const isActive = activeCategory === cat.id;
+              const isActive = (normalizedActive === 'all' && cat.id === 'all') || normalizedActive === cat.id;
               return (
                 <button
                   key={cat.id}
-                  onClick={() => {
-                    setActiveCategory(cat.id);
-                    setVisibleCount(24);
-                  }}
+                  onClick={() => handleCategoryChange(cat.id)}
                   className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-2 ${
                     isActive
                       ? 'bg-[#34070c] text-white shadow-md shadow-[#34070c]/20 scale-105 border border-[#34070c]'

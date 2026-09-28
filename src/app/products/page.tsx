@@ -9,11 +9,13 @@ import Link from 'next/link';
 function ProductsContent() {
   const searchParams = useSearchParams();
   const catQuery = searchParams.get('category');
-  const [activeCategory, setActiveCategory] = useState<string>('all');
+  const [activeCategory, setActiveCategory] = useState<string>(() => catQuery || 'all');
 
   useEffect(() => {
     if (catQuery) {
       setActiveCategory(catQuery);
+    } else {
+      setActiveCategory('all');
     }
   }, [catQuery]);
 

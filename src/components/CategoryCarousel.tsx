@@ -22,6 +22,22 @@ export default function CategoryCarousel({ onSelectCategory }: { onSelectCategor
 
   const categoryCards: CategoryCard[] = [
     {
+      id: 'masalas',
+      name: 'Recipe Masala Mixes',
+      tagline: 'Authentic Biryani, Haleem, Curry & Kabab Mixes',
+      itemCount: 14,
+      image: '/assets/11_Recipe_Masalas/Chicken_Biryani_Recipe_Mix_Box.jpeg',
+      accent: 'from-red-600/10 to-[#34070c]/10',
+    },
+    {
+      id: 'desserts',
+      name: 'Desserts & Custards',
+      tagline: 'Creamy Fruit Custard & Crystal Jelly Powders',
+      itemCount: 5,
+      image: '/assets/12_Desserts_and_Custards/Mango_Custard_Powder_Box.jpeg',
+      accent: 'from-yellow-500/10 to-[#34070c]/10',
+    },
+    {
       id: 'pickles',
       name: 'Pickles (Achar)',
       tagline: 'Traditional Slow-Cured Recipes',

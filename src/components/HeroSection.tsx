@@ -1,29 +1,69 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Play, Leaf, ShieldCheck, Globe, Plane } from 'lucide-react';
 
+const HERO_SLIDES = [
+  {
+    image: '/hero-slides/hero_slide_heritage_staples.webp',
+    alt: 'United Foods Authentic Basmati Rice, Traditional Pickles, Spices and Himalayan Pink Salt',
+  },
+  {
+    image: '/hero-slides/hero_slide_spices_salts.jpg',
+    alt: 'Pure Pakistani Ground & Whole Spices with Himalayan Pink Rock Salt',
+  },
+  {
+    image: '/hero-slides/hero_slide_oils_rice.jpg',
+    alt: 'Extra Virgin Olive Oil, Pure Mustard Oil and Aged Long Grain Basmati Rice',
+  },
+  {
+    image: '/hero-slides/hero_slide_juices_qahwa.jpg',
+    alt: 'Pure Natural Fruit Juices, Medjool Dates, Saffron and Royal Kashmiri Qahwa',
+  },
+];
+
 export default function HeroSection() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Automatic slide transition every 5.5 seconds without any manual controls
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 5500);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative w-full bg-[#34070c] text-white overflow-hidden">
       
       {/* ========================================================================= */}
-      {/* DESKTOP BACKGROUND (Seamlessly blended from left to right) */}
+      {/* DESKTOP BACKGROUND SLIDESHOW (Automatic crossfade, seamless left-to-right blend) */}
       {/* ========================================================================= */}
-      <div className="hidden lg:block absolute inset-0 z-0 pointer-events-none">
-        <Image
-          src="/united-food-hero-section.webp"
-          alt="United Foods Authentic Basmati Rice, Traditional Pickles, Spices and Himalayan Pink Salt"
-          fill
-          priority
-          quality={95}
-          className="object-cover object-right xl:object-center opacity-100"
-        />
+      <div className="hidden lg:block absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        {HERO_SLIDES.map((slide, index) => (
+          <div
+            key={slide.image}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.alt}
+              fill
+              priority={index === 0}
+              quality={90}
+              className={`object-cover object-right xl:object-center transition-transform duration-[6000ms] ease-out ${
+                index === currentSlide ? 'scale-105' : 'scale-100'
+              }`}
+            />
+          </div>
+        ))}
         {/* Smooth horizontal gradient blend from dark burgundy on left to transparent on right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#34070c] via-[#34070c]/90 to-transparent w-[62%]" />
-        <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
+        <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#34070c] via-[#34070c]/90 to-transparent w-[62%]" />
+        <div className="absolute inset-0 z-20 ring-1 ring-inset ring-white/10" />
       </div>
 
       {/* ========================================================================= */}
@@ -217,28 +257,40 @@ export default function HeroSection() {
       </div>
 
       {/* ========================================================================= */}
-      {/* MOBILE SEAMLESSLY BLENDED BOTTOM VISUAL (No hard card borders) */}
-      {/* Positioned right-center to reveal rice, pickle jar, spices & pink salt */}
+      {/* MOBILE SEAMLESSLY BLENDED BOTTOM VISUAL SLIDESHOW */}
+      {/* Positioned right-center to reveal products with smooth auto-transition */}
       {/* ========================================================================= */}
       <div className="lg:hidden relative w-full h-[250px] xs:h-[280px] sm:h-[340px] -mt-2 overflow-hidden">
         
-        {/* Background Image seamlessly integrated */}
-        <Image
-          src="/united-food-hero-section.webp"
-          alt="United Foods Traditional Spices, Pickles, Rice and Himalayan Salt"
-          fill
-          quality={95}
-          className="object-cover object-[76%_center] sm:object-[74%_center]"
-        />
+        {/* Background Slideshow seamlessly integrated */}
+        {HERO_SLIDES.map((slide, index) => (
+          <div
+            key={slide.image}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.alt}
+              fill
+              priority={index === 0}
+              quality={90}
+              className={`object-cover object-[76%_center] sm:object-[74%_center] transition-transform duration-[6000ms] ease-out ${
+                index === currentSlide ? 'scale-105' : 'scale-100'
+              }`}
+            />
+          </div>
+        ))}
 
         {/* Soft top-fade gradient so the image melts seamlessly into the solid burgundy above */}
-        <div className="absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#34070c] via-[#34070c]/60 to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#34070c] via-[#34070c]/60 to-transparent pointer-events-none z-10" />
 
         {/* Soft bottom vignette */}
-        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#34070c]/80 to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#34070c]/80 to-transparent pointer-events-none z-10" />
 
         {/* Rotating Gold Stamp Badge (Floating directly on the blended visual) */}
-        <div className="absolute top-2 left-4 z-10">
+        <div className="absolute top-2 left-4 z-20">
           <div className="relative w-20 h-20 xs:w-22 xs:h-22 sm:w-26 sm:h-26 flex items-center justify-center bg-[#34070c]/70 backdrop-blur-sm rounded-full p-1 border border-[#f5d77f]/40 shadow-xl">
             <svg
               viewBox="0 0 160 160"
@@ -285,7 +337,7 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom Right Sign-off (Floating directly on image) */}
-        <div className="absolute bottom-3 right-4 text-right select-none bg-[#34070c]/50 backdrop-blur-xs px-3 py-1 rounded-full border border-[#f5d77f]/20">
+        <div className="absolute bottom-3 right-4 text-right select-none bg-[#34070c]/50 backdrop-blur-xs px-3 py-1 rounded-full border border-[#f5d77f]/20 z-20">
           <p className="font-serif italic text-xs sm:text-sm text-[#f5d77f] tracking-wide font-normal leading-tight drop-shadow-md">
             Taste • Tradition • Trust
           </p>

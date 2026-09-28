@@ -7,6 +7,24 @@ import { CATEGORIES_LIST } from '@/data/productsData';
 export default function CategoriesPage() {
   const categoryDetails = [
     {
+      id: 'masalas',
+      name: 'Recipe Masala Mixes',
+      tagline: 'Authentic Traditional Recipe Mixes & Pure Spices',
+      description: 'Masterfully blended recipe spice mixes for Chicken Biryani, Kofta, Haleem, Achar Gosht, Fish, Paya, Shami Kabab, Chat Masala, Curry Powder, Kasuri Meethi, and pure boxed spices.',
+      itemCount: 14,
+      image: '/assets/11_Recipe_Masalas/Chicken_Biryani_Recipe_Mix_Box.jpeg',
+      badge: 'Chef Choice',
+    },
+    {
+      id: 'desserts',
+      name: 'Desserts & Custard Powders',
+      tagline: 'Velvety Fruit Custards & Crystal Jelly Powders',
+      description: 'Indulgent mango, vanilla, banana, and strawberry custard powders alongside instant crystal mango jelly dessert mixes for delightful celebrations.',
+      itemCount: 5,
+      image: '/assets/12_Desserts_and_Custards/Mango_Custard_Powder_Box.jpeg',
+      badge: 'Sweet Delight',
+    },
+    {
       id: 'pickles',
       name: 'Pickles (Achar)',
       tagline: 'Traditional Slow-Cured Authentic Recipes',

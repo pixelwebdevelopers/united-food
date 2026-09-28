@@ -12,6 +12,7 @@ export interface ProductItem {
   isHalal: boolean;
   isNatural: boolean;
   description?: string;
+  videoUrl?: string;
 }
 
 export interface VideoItem {
@@ -20,12 +21,13 @@ export interface VideoItem {
   category: string;
   group: string;
   tag: string;
-  videoUrl: string;
+  videoUrl?: string;
   file: string;
   image?: string;
   packSize?: string;
   isHalal?: boolean;
   isNatural?: boolean;
+  description?: string;
 }
 
 export interface BannerItem {
@@ -1143,6 +1145,261 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "file": "Pure_Psyllium_Husk_Ispaghol_Chilka_Pack_200g.jpeg",
     "isHalal": true,
     "isNatural": true
+  },
+
+  // ==========================================
+  // 11. RECIPE MASALA MIXES - 14 Items
+  // ==========================================
+  {
+    "id": "uf-126",
+    "name": "Curry Powder Recipe Mix Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Authentic Recipe Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Curry_Powder_Recipe_Mix_Box.jpeg",
+    "file": "Curry_Powder_Recipe_Mix_Box.jpeg",
+    "description": "United Foods authentic Curry Powder Recipe Mix (کری پاؤڈر) crafted with 100% natural, pure ground spices for rich, hearty aromatic curry gravies.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-127",
+    "name": "Chicken Biryani Recipe Mix Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Authentic Recipe Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Chicken_Biryani_Recipe_Mix_Box.jpeg",
+    "file": "Chicken_Biryani_Recipe_Mix_Box.jpeg",
+    "description": "United Foods Chicken Biryani Recipe Mix (چکن بریانی) prepared with authentic fragrant spices for traditional, mouthwatering layered biryani rice.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-128",
+    "name": "Kofta Recipe Mix Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Authentic Recipe Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Kofta_Recipe_Mix_Box.jpeg",
+    "file": "Kofta_Recipe_Mix_Box.jpeg",
+    "description": "United Foods Kofta Recipe Mix (کوفتہ) formulated for delicious, tender spiced meatballs in luscious savory gravy.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-129",
+    "name": "Haleem Recipe Mix Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Authentic Recipe Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Haleem_Recipe_Mix_Box.jpeg",
+    "file": "Haleem_Recipe_Mix_Box.jpeg",
+    "description": "United Foods Haleem Recipe Mix (حلیم) blended with classic lentils and wholesome aromatic spices for authentic slow-cooked haleem.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-130",
+    "name": "Achar Gosht Recipe Mix Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Authentic Recipe Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Achar_Gosht_Recipe_Mix_Box.jpeg",
+    "file": "Achar_Gosht_Recipe_Mix_Box.jpeg",
+    "description": "United Foods Achar Gosht Recipe Mix (اچار گوشت) with tangy pickling spices for zesty, lip-smacking meat dishes.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-131",
+    "name": "Fish Recipe Mix Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Authentic Recipe Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Fish_Recipe_Mix_Box.jpeg",
+    "file": "Fish_Recipe_Mix_Box.jpeg",
+    "description": "United Foods Fish Recipe Mix (مچھی) specifically crafted for pan-fried, grilled, or curried fish with crispy golden crust and rich aroma.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-132",
+    "name": "Red Chilli Powder Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Hot & Natural Red",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Red_Chilli_Powder_Box.jpeg",
+    "file": "Red_Chilli_Powder_Box.jpeg",
+    "description": "United Foods 100% pure Red Chilli Powder Box (لال مرچ), stone-ground from sun-dried premium red chillies for vibrant natural color and rich heat.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-133",
+    "name": "Shami Kabab Recipe Mix Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Authentic Recipe Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Shami_Kabab_Recipe_Mix_Box.jpeg",
+    "file": "Shami_Kabab_Recipe_Mix_Box.jpeg",
+    "description": "United Foods Shami Kabab Recipe Mix (شامی کباب) with balanced lentils and whole spices for melt-in-mouth traditional shami kababs.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-134",
+    "name": "Paya Recipe Mix Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Authentic Recipe Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Paya_Recipe_Mix_Box.jpeg",
+    "file": "Paya_Recipe_Mix_Box.jpeg",
+    "description": "United Foods Paya Recipe Mix (پایا) expertly seasoned for slow-simmered trotters with rich, gelatinous, savory broth.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-135",
+    "name": "Turmeric Powder Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "100% Pure Spice",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Turmeric_Powder_Box.jpeg",
+    "file": "Turmeric_Powder_Box.jpeg",
+    "description": "United Foods Turmeric Powder Box (ہلدی پاؤڈر), 100% natural and curcumin-rich for golden color and wholesome everyday cooking.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-136",
+    "name": "Black Pepper Powder Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "100% Pure Spice",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Black_Pepper_Powder_Box.jpeg",
+    "file": "Black_Pepper_Powder_Box.jpeg",
+    "description": "United Foods Black Pepper Powder Box (سیاہ مرچ), finely ground from premium black peppercorns for sharp aroma and bold pungent flavor.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-137",
+    "name": "Chat Masala Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Tangy Seasoning",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Chat_Masala_Box.jpeg",
+    "file": "Chat_Masala_Box.jpeg",
+    "description": "United Foods Chat Masala Box (چاٹ مصالحہ), the quintessential tangy, spicy street-style seasoning for samosas, fruit chaat, dahi baray, and snacks.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-138",
+    "name": "Garam Masala Powder Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Aromatic Whole Blend",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Garam_Masala_Powder_Box.jpeg",
+    "file": "Garam_Masala_Powder_Box.jpeg",
+    "description": "United Foods Garam Masala Powder Box (گرم مصالحہ), roasted and finely ground blend of royal cinnamon, cloves, cardamom, and cumin.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-139",
+    "name": "Kasuri Meethi Powder Box",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Aromatic Herb",
+    "packSize": "Box Pack",
+    "image": "/assets/11_Recipe_Masalas/Kasuri_Meethi_Powder_Box.jpeg",
+    "file": "Kasuri_Meethi_Powder_Box.jpeg",
+    "description": "United Foods Kasuri Meethi Box (قصوری میتھی), hand-picked and naturally dried fenugreek leaves providing distinct aroma to curries and breads.",
+    "isHalal": true,
+    "isNatural": true
+  },
+
+  // ==========================================
+  // 12. DESSERTS & CUSTARD POWDERS - 5 Items
+  // ==========================================
+  {
+    "id": "uf-140",
+    "name": "Mango Jelly Powder Box",
+    "category": "Desserts & Custard Powders",
+    "group": "desserts",
+    "tag": "Sweet Dessert Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/12_Desserts_and_Custards/Mango_Jelly_Powder_Box.jpeg",
+    "file": "Mango_Jelly_Powder_Box.jpeg",
+    "description": "United Foods Mango Jelly Powder Box (مینگو جیلی), 100% natural, halal certified crystal dessert jelly for puddings, trifles, and refreshing treats.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-141",
+    "name": "Mango Flavored Custard Powder Box",
+    "category": "Desserts & Custard Powders",
+    "group": "desserts",
+    "tag": "Sweet Dessert Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/12_Desserts_and_Custards/Mango_Custard_Powder_Box.jpeg",
+    "file": "Mango_Custard_Powder_Box.jpeg",
+    "description": "United Foods Mango Flavored Custard Powder Box (مینگو کسٹرد پاؤڈر), velvety smooth texture and real mango aroma for royal fruit custards.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-142",
+    "name": "Banana Flavored Custard Powder Box",
+    "category": "Desserts & Custard Powders",
+    "group": "desserts",
+    "tag": "Sweet Dessert Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/12_Desserts_and_Custards/Banana_Custard_Powder_Box.jpeg",
+    "file": "Banana_Custard_Powder_Box.jpeg",
+    "description": "United Foods Banana Flavored Custard Powder Box (بنانا کسٹرد پاؤڈر), quick and creamy custard mix packed with sweet banana goodness.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-143",
+    "name": "Vanilla Flavored Custard Powder Box",
+    "category": "Desserts & Custard Powders",
+    "group": "desserts",
+    "tag": "Sweet Dessert Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/12_Desserts_and_Custards/Vanilla_Custard_Powder_Box.jpeg",
+    "file": "Vanilla_Custard_Powder_Box.jpeg",
+    "description": "United Foods Vanilla Flavored Custard Powder Box (ونیلا کسٹرد پاؤڈر), classic creamy vanilla dessert mix perfect for cakes, tarts, and trifles.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-144",
+    "name": "Strawberry Flavored Custard Powder Box",
+    "category": "Desserts & Custard Powders",
+    "group": "desserts",
+    "tag": "Sweet Dessert Mix",
+    "packSize": "Box Pack",
+    "image": "/assets/12_Desserts_and_Custards/Strawberry_Custard_Powder_Box.jpeg",
+    "file": "Strawberry_Custard_Powder_Box.jpeg",
+    "description": "United Foods Strawberry Flavored Custard Powder Box (سٹرابیری کسٹرد پاؤڈر), vibrant pink dessert powder with sweet berry aroma.",
+    "isHalal": true,
+    "isNatural": true
   }
 ];
 
@@ -1403,6 +1660,8 @@ export const BRAND_VIDEOS: VideoItem[] = [
 
 export const CATEGORIES_LIST = [
   { id: "all", name: "All Products", icon: "Grid" },
+  { id: "masalas", name: "Recipe Masala Mixes", icon: "Flame", count: 14 },
+  { id: "desserts", name: "Desserts & Custards", icon: "Sparkles", count: 5 },
   { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 12 },
   { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 17 },
   { id: "salts", name: "Himalayan Pink Salt", icon: "Mountain", count: 7 },
@@ -1418,7 +1677,7 @@ export const COMPANY_INFO = {
   tagline: "Global Flavors, Authentic Tastes",
   slogan: "Spice Up Your Life",
   legacy: "Since 2005 (25+ Years Legacy of Trust)",
-  email: "info@camelunitedfoods.com",
+  email: "camelunitedfoods@gmail.com",
   phone: "+92 300 8292550",
   whatsapp: "923008292550",
   website: "www.camelunitedfoods.com",

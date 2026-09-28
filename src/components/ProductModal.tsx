@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { X, ShieldCheck, Phone, CheckCircle, Package, Maximize2, ArrowLeft } from 'lucide-react';
+import { X, ShieldCheck, Phone, Mail, CheckCircle, Package, Maximize2, ArrowLeft } from 'lucide-react';
 import { ProductItem, COMPANY_INFO } from '@/data/productsData';
 
 interface ProductModalProps {
@@ -148,7 +148,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </div>
 
               {/* Actions */}
-              <div className="space-y-3 pt-4 border-t border-slate-100">
+              <div className="space-y-2.5 pt-4 border-t border-slate-100">
                 <a
                   href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${whatsappMessage}`}
                   target="_blank"
@@ -157,6 +157,14 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 >
                   <Phone className="w-4 h-4 text-[#f5d77f]" />
                   <span>Inquire on WhatsApp</span>
+                </a>
+
+                <a
+                  href={`mailto:${COMPANY_INFO.email}?subject=${encodeURIComponent(`Product Inquiry: ${product.name} (${product.packSize})`)}&body=${encodeURIComponent(`Hello United Foods,\n\nI am interested in ordering/inquiring about "${product.name}" (${product.packSize}, Category: ${product.category}).\n\nPlease share wholesale pricing and availability details.\n\nThank you.`)}`}
+                  className="btn-outline w-full text-center text-xs !py-3 flex items-center justify-center gap-2 hover:bg-slate-50"
+                >
+                  <Mail className="w-4 h-4 text-[#34070c]" />
+                  <span>Inquire via Email</span>
                 </a>
 
                 <p className="text-[10px] text-center text-slate-400">
