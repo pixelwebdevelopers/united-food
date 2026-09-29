@@ -52,8 +52,9 @@ export default function BrandLegacy() {
                 </div>
 
                 <div className="space-y-1">
-                  <h3 className="font-heading text-xl font-bold text-slate-900 tracking-wider">
-                    BUTTAR & UNITED FOODS
+                  <h3 className="font-heading text-xl font-bold text-slate-900 tracking-wider inline-flex items-center justify-center">
+                    <span>BUTTAR & UNITED FOODS</span>
+                    <sup className="text-[10px] font-bold text-[#34070c] ml-0.5 align-super">TM</sup>
                   </h3>
                   <p className="text-xs text-[#34070c] font-bold">
                     Global Flavors • Authentic Tastes
@@ -89,7 +90,7 @@ export default function BrandLegacy() {
                 <span className="crimson-gradient-text">ROOTED IN AUTHENTICITY</span>
               </h2>
               <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-                At United Foods, we uphold a rich heritage of flavor and trust. Every jar of pickle, every sachet 
+                At United Foods™, we uphold a rich heritage of flavor and trust. Every jar of pickle, every sachet 
                 of ground spice, and every grain of Basmati rice undergoes rigorous curation to ensure our customers 
                 receive the real, untainted taste of nature.
               </p>

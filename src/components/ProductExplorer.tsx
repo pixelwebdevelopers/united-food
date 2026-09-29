@@ -24,7 +24,8 @@ const normalizeCategory = (cat: string): string => {
   if (['chutneys', 'chutney', 'pastes', 'paste'].includes(lower)) return 'chutneys';
   if (['rice', 'grains', 'grain', 'basmati', 'basmatirice'].includes(lower)) return 'rice';
   if (['oils', 'oil', 'edibleoils', 'edibleoil', 'oliveoil'].includes(lower)) return 'oils';
-  if (['beverages', 'beverage', 'juices', 'juice', 'tea', 'milk', 'milks'].includes(lower)) return 'beverages';
+  if (['qehwa', 'qahwa', 'tea', 'teas', 'kashmiriqehwa', 'kashmiriqahwa', 'herbaltea', 'qehwas'].includes(lower)) return 'qehwa';
+  if (['beverages', 'beverage', 'juices', 'juice', 'milk', 'milks'].includes(lower)) return 'beverages';
   if (['sweeteners', 'sweetener', 'jaggery', 'gur'].includes(lower)) return 'sweeteners';
   return lower;
 };

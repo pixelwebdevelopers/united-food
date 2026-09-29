@@ -65,7 +65,7 @@ function VideoGalleryContent() {
           </h2>
           <p className="text-slate-600 text-sm md:text-base">
             Watch our high-definition promotional videos and vertical mobile reels showcasing authentic preparation, 
-            rich ingredients, and vibrant packaging of United Foods.
+            rich ingredients, and vibrant packaging of United Foods™.
           </p>
         </div>
 

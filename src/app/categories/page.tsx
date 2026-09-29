@@ -79,11 +79,20 @@ export default function CategoriesPage() {
       badge: 'Cold Pressed',
     },
     {
+      id: 'qehwa',
+      name: 'Tea & Kashmiri Qehwa',
+      tagline: 'Pure Royal Saffron Qehwa, Dust Teas & Ispaghol Husk',
+      description: 'Authentic Kashmiri saffron cardamom qehwa jars, premium dust black tea leaves, and pure psyllium husk (Ispaghol chilka).',
+      itemCount: 3,
+      image: '/assets/07_Beverages_and_Dairy/Tea_and_Qahwa/Royal_Kashmiri_Qahwa_Saffron_Cardamom_Jar_01.jpeg',
+      badge: 'Royal Wellness',
+    },
+    {
       id: 'beverages',
-      name: 'Fruit Juices, Milks & Tea',
-      tagline: '100% Pure Mango, Guava, Apple Juices & Kashmiri Qahwa',
-      description: 'Refreshing fruit nectar bottles (250ml & 750ml), premium dairy flavored milks, and invigorating herbal green teas & Kashmiri Qahwa.',
-      itemCount: 26,
+      name: 'Fruit Juices & Flavored Milks',
+      tagline: '100% Pure Mango, Guava, Apple Juices & Dairy',
+      description: 'Refreshing fruit nectar bottles (250ml & 750ml) made with pure fruit pulp, date & saffron wellness drinks, alongside nutrient-rich dairy flavored milks.',
+      itemCount: 23,
       image: '/assets/07_Beverages_and_Dairy/Fruit_Juices_250ml/Mango_Juice_Bottle_250ml.jpeg',
       badge: 'Natural Nectar',
     },
@@ -91,7 +100,7 @@ export default function CategoriesPage() {
       id: 'sweeteners',
       name: 'Natural Jaggery & Sweeteners',
       tagline: 'Traditional Cane Gur Cups, Brown Sugar & Dates',
-      description: 'Pure chemical-free cane jaggery (Gur) tea cups, raw brown crystals, crushed shakkar, date powders, and wholesome Ispaghol husk.',
+      description: 'Pure chemical-free cane jaggery (Gur) tea cups, raw brown sugar crystals, crushed shakkar, and pure date & saffron powder sweeteners.',
       itemCount: 8,
       image: '/assets/08_Specialty_and_Sweeteners/Pure_Natural_Jaggery_Gur_60_Cups_Tea_Pack.jpeg',
       badge: 'Unrefined',
@@ -122,7 +131,7 @@ export default function CategoriesPage() {
             PRODUCT <span className="crimson-gradient-text">CATEGORIES</span>
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Discover the comprehensive range of United Foods products. From traditional kitchen staples to 
+            Discover the comprehensive range of United Foods™ products. From traditional kitchen staples to 
             international export-quality delicacies, click any category to view all available pack sizes and specifications.
           </p>
         </div>

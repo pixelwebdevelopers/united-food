@@ -30,7 +30,7 @@ export default function ContactSection() {
             <span>GLOBAL & DOMESTIC INQUIRIES</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900">
-            GET IN TOUCH WITH <span className="crimson-gradient-text">UNITED FOODS</span>
+            GET IN TOUCH WITH <span className="crimson-gradient-text inline-flex items-center"><span>UNITED FOODS</span><sup className="text-base sm:text-2xl font-bold ml-0.5 align-super">TM</sup></span>
           </h2>
           <p className="text-slate-600 text-sm md:text-base">
             Whether you are a retailer, bulk importer, distributor, or food service partner, our team is ready to assist you.
@@ -152,7 +152,7 @@ export default function ContactSection() {
                   </div>
                   <h4 className="font-heading text-xl font-bold text-slate-900">Inquiry Received</h4>
                   <p className="text-sm text-slate-600 max-w-md mx-auto">
-                    Thank you for reaching out to United Foods. Our sales team has received your message and will respond shortly.
+                    Thank you for reaching out to United Foods™. Our sales team has received your message and will respond shortly.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}

@@ -20,13 +20,13 @@ export default function HomePage() {
   // Curate 8 featured flagship bestsellers for the homepage
   const featuredProducts = [
     ALL_PRODUCTS.find(p => p.id === 'uf-006') || ALL_PRODUCTS[0],
+    ALL_PRODUCTS.find(p => p.id === 'uf-094') || ALL_PRODUCTS[1],
     ALL_PRODUCTS.find(p => p.id === 'uf-033') || ALL_PRODUCTS[7],
     ALL_PRODUCTS.find(p => p.id === 'uf-036') || ALL_PRODUCTS[20],
     ALL_PRODUCTS.find(p => p.id === 'uf-061') || ALL_PRODUCTS[30],
     ALL_PRODUCTS.find(p => p.id === 'uf-059') || ALL_PRODUCTS[28],
     ALL_PRODUCTS.find(p => p.id === 'uf-073') || ALL_PRODUCTS[40],
-    ALL_PRODUCTS.find(p => p.id === 'uf-012') || ALL_PRODUCTS[4],
-    ALL_PRODUCTS.find(p => p.id === 'uf-103') || ALL_PRODUCTS[70],
+    ALL_PRODUCTS.find(p => p.id === 'uf-105') || ALL_PRODUCTS[70],
   ].filter(Boolean);
 
   return (
@@ -197,7 +197,7 @@ export default function HomePage() {
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                 From hand-selected mustard seed oils to sun-cured green mangoes and mineral-rich Khewra rock salts, 
-                United Foods has been delivering purity and rich culinary heritage to homes and kitchens globally.
+                United Foods™ has been delivering purity and rich culinary heritage to homes and kitchens globally.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-2">
@@ -257,7 +257,7 @@ export default function HomePage() {
               className="px-6 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-sm flex items-center gap-2 shadow-xl transition-all"
             >
               <Phone className="w-4 h-4" />
-              <span>WhatsApp Direct (+92 300 8292550)</span>
+              <span>WhatsApp (+92 300 8292550)</span>
             </a>
 
             <a

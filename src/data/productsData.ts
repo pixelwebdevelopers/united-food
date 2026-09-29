@@ -701,8 +701,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "group": "oils",
     "tag": "Cold Pressed / Refined",
     "packSize": "Standard Pack",
-    "image": "/assets/06_Edible_Oils/Pure_Mustard_Oil_Sarson_Ka_Tel_Bottle_01.jpeg",
-    "file": "Pure_Mustard_Oil_Sarson_Ka_Tel_Bottle_01.jpeg",
+    "image": "/assets/06_Edible_Oils/mustard-oil.jpeg",
+    "file": "mustard-oil.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -713,8 +713,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "group": "oils",
     "tag": "Cold Pressed / Refined",
     "packSize": "Standard Pack",
-    "image": "/assets/06_Edible_Oils/Refined_Sunflower_Oil_Healthy_Heart_Bottle_01.jpeg",
-    "file": "Refined_Sunflower_Oil_Healthy_Heart_Bottle_01.jpeg",
+    "image": "/assets/06_Edible_Oils/sunflower-oil.jpeg",
+    "file": "sunflower-oil.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -977,7 +977,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   {
     "id": "uf-089",
     "name": "Dates Saffron Cardamom Health Drink Bottle",
-    "category": "Tea & Kashmiri Qahwa",
+    "category": "Fruit Juices & Beverages",
     "group": "beverages",
     "tag": "Royal Wellness",
     "packSize": "Standard Pack",
@@ -989,7 +989,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   {
     "id": "uf-090",
     "name": "Dates and Saffron Mix Juice Bottle 250ml 01",
-    "category": "Tea & Kashmiri Qahwa",
+    "category": "Fruit Juices (250ml Single)",
     "group": "beverages",
     "tag": "Royal Wellness",
     "packSize": "250ML",
@@ -1001,9 +1001,9 @@ export const ALL_PRODUCTS: ProductItem[] = [
   {
     "id": "uf-091",
     "name": "Dates, Saffron & Cardamom Powder",
-    "category": "Tea & Kashmiri Qahwa",
-    "group": "beverages",
-    "tag": "Royal Wellness",
+    "category": "Specialty & Natural Sweeteners",
+    "group": "sweeteners",
+    "tag": "Chemical Free",
     "packSize": "200G",
     "image": "/assets/07_Beverages_and_Dairy/Tea_and_Qahwa/Dates_and_Saffron_Mix_Juice_Bottle_250ml_02.jpeg",
     "file": "Dates_and_Saffron_Mix_Juice_Bottle_250ml_02.jpeg",
@@ -1013,7 +1013,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   {
     "id": "uf-092",
     "name": "Dates and Saffron Mix Juice Bottle 750ml",
-    "category": "Tea & Kashmiri Qahwa",
+    "category": "Fruit Juices (750ml Family)",
     "group": "beverages",
     "tag": "Royal Wellness",
     "packSize": "750ML",
@@ -1025,8 +1025,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
   {
     "id": "uf-094",
     "name": "Royal Kashmiri Qahwa Saffron Cardamom Jar",
-    "category": "Tea & Kashmiri Qahwa",
-    "group": "beverages",
+    "category": "Tea & Kashmiri Qehwa",
+    "group": "qehwa",
     "tag": "Royal Wellness",
     "packSize": "Standard Pack",
     "image": "/assets/07_Beverages_and_Dairy/Tea_and_Qahwa/Royal_Kashmiri_Qahwa_Saffron_Cardamom_Jar_01.jpeg",
@@ -1037,8 +1037,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
   {
     "id": "uf-095",
     "name": "United Foods Premium Tea Dust Leaves Pack 200g",
-    "category": "Tea & Kashmiri Qahwa",
-    "group": "beverages",
+    "category": "Tea & Kashmiri Qehwa",
+    "group": "qehwa",
     "tag": "Royal Wellness",
     "packSize": "200G",
     "image": "/assets/07_Beverages_and_Dairy/Tea_and_Qahwa/United_Foods_Premium_Tea_Dust_Leaves_Pack_200g.jpeg",
@@ -1137,9 +1137,9 @@ export const ALL_PRODUCTS: ProductItem[] = [
   {
     "id": "uf-105",
     "name": "Pure Psyllium Husk Ispaghol Chilka Pack 200g",
-    "category": "Specialty & Natural Sweeteners",
-    "group": "sweeteners",
-    "tag": "Chemical Free",
+    "category": "Tea & Kashmiri Qehwa",
+    "group": "qehwa",
+    "tag": "Royal Wellness",
     "packSize": "200G",
     "image": "/assets/08_Specialty_and_Sweeteners/Pure_Psyllium_Husk_Ispaghol_Chilka_Pack_200g.jpeg",
     "file": "Pure_Psyllium_Husk_Ispaghol_Chilka_Pack_200g.jpeg",
@@ -1668,12 +1668,13 @@ export const CATEGORIES_LIST = [
   { id: "chutneys", name: "Pastes & Chutneys", icon: "Flame", count: 6 },
   { id: "rice", name: "Basmati Rice & Grains", icon: "Wheat", count: 4 },
   { id: "oils", name: "Pure Edible Oils", icon: "Droplet", count: 3 },
-  { id: "beverages", name: "Juices, Milks & Tea", icon: "Coffee", count: 26 },
-  { id: "sweeteners", name: "Natural Sweeteners & Powders", icon: "Heart", count: 8 }
+  { id: "qehwa", name: "Tea & Kashmiri Qehwa", icon: "Coffee", count: 3 },
+  { id: "beverages", name: "Juices & Flavored Milks", icon: "Coffee", count: 23 },
+  { id: "sweeteners", name: "Natural Sweeteners & Jaggery", icon: "Heart", count: 8 }
 ];
 
 export const COMPANY_INFO = {
-  name: "United Foods",
+  name: "United Foods™",
   tagline: "Global Flavors, Authentic Tastes",
   slogan: "Spice Up Your Life",
   legacy: "Since 2005 (25+ Years Legacy of Trust)",

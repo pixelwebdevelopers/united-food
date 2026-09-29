@@ -60,7 +60,7 @@ export default function HeritagePage() {
             </h1>
 
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              At United Foods, we believe that real food is born from respect for natural ingredients. 
+              At United Foods™, we believe that real food is born from respect for natural ingredients. 
               Under our proud heritage brand <strong>Buttar (Since 2005)</strong>, we have spent decades perfecting 
               the art of traditional pickle preservation, spice grinding, and pristine mineral harvesting.
             </p>
@@ -94,7 +94,7 @@ export default function HeritagePage() {
                   BUTTAR BRAND SEAL
                 </h3>
                 <p className="text-xs text-[#34070c] font-bold">
-                  Quality Guaranteed by United Foods
+                  Quality Guaranteed by United Foods™
                 </p>
               </div>
 

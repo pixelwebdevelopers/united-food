@@ -37,13 +37,16 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <h3 className="font-heading text-lg font-bold text-white tracking-wider">UNITED FOODS</h3>
+                <h3 className="font-heading text-lg font-bold text-white tracking-wider inline-flex items-center">
+                  <span>UNITED FOODS</span>
+                  <sup className="text-[10px] text-[#fde68a] ml-0.5 align-super font-semibold">TM</sup>
+                </h3>
                 <p className="text-xs text-[#fde68a] font-semibold">Global Flavors, Authentic Tastes</p>
               </div>
             </Link>
 
             <p className="text-xs text-slate-300 leading-relaxed max-w-sm">
-              United Foods is a premier food enterprise providing traditional slow-cured pickles (achar), 
+              United Foods™ is a premier food enterprise providing traditional slow-cured pickles (achar), 
               pure ground and whole spices, Himalayan salts, extra long-grain Basmati rice, cold-pressed oils, 
               and refreshing fruit juices.
             </p>
@@ -88,7 +91,9 @@ export default function Footer() {
               <li><Link href="/products?category=salts" className="text-slate-300 hover:text-[#fde68a] transition-colors">Himalayan Pink Salt & Lamps</Link></li>
               <li><Link href="/products?category=rice" className="text-slate-300 hover:text-[#fde68a] transition-colors">Long-Grain Basmati Rice</Link></li>
               <li><Link href="/products?category=oils" className="text-slate-300 hover:text-[#fde68a] transition-colors">Pure Olive & Mustard Oils</Link></li>
+              <li><Link href="/products?category=qehwa" className="text-slate-300 hover:text-[#fde68a] transition-colors">Tea & Kashmiri Qehwa</Link></li>
               <li><Link href="/products?category=beverages" className="text-slate-300 hover:text-[#fde68a] transition-colors">Natural Fruit Juices & Milks</Link></li>
+              <li><Link href="/products?category=sweeteners" className="text-slate-300 hover:text-[#fde68a] transition-colors">Natural Sweeteners & Jaggery</Link></li>
             </ul>
           </div>
 
@@ -146,7 +151,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           
           <div>
-            <p>© {new Date().getFullYear()} <strong>United Foods</strong>. All Rights Reserved.</p>
+            <p>© {new Date().getFullYear()} <strong>United Foods™</strong>. All Rights Reserved.</p>
           </div>
 
           {/* DEVELOPER CREDIT REQUIREMENT */}
