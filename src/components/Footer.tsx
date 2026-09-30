@@ -37,9 +37,8 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <h3 className="font-heading text-base font-bold text-white tracking-wider inline-flex items-center">
-                  <span>CAMEL UNITED FOODS</span>
-                  <sup className="text-[9px] text-[#fde68a] ml-0.5 align-super font-semibold">TM</sup>
+                <h3 className="font-heading text-sm sm:text-base font-bold text-white tracking-wider inline-flex items-center">
+                  <span>CAMEL UNITED FOODS (Pvt) LTD</span>
                 </h3>
                 <p className="text-xs text-[#fde68a] font-semibold">Global Flavors, Authentic Tastes</p>
               </div>

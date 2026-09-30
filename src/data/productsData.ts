@@ -108,7 +108,7 @@ export const BRAND_LOGOS = [
 
 export const ALL_PRODUCTS: ProductItem[] = [
   // ==========================================
-  // 1. PICKLES (ACHAR) - 9 Items
+  // 1. PICKLES (ACHAR) - 8 Items
   // ==========================================
   {
     "id": "uf-007",
@@ -196,18 +196,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
 
-  {
-    "id": "uf-020",
-    "name": "Piyaz Lehsan Pickle Onion Garlic Achar Jar",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "Standard Pack",
-    "image": "/assets/02_Pickles/Piyaz_Lehsan_Pickle_Onion_Garlic_Achar_Jar.jpeg",
-    "file": "Piyaz_Lehsan_Pickle_Onion_Garlic_Achar_Jar.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
+
   {
     "id": "uf-021",
     "name": "Green Chilli Pickle Jar",
@@ -535,13 +524,13 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-059",
-    "name": "Premium Long Grain Basmati Rice Bag 20kg",
+    "name": "Camel Super Kernel Basmati Rice Premium Long Grain Bag",
     "category": "Premium Basmati Rice",
     "group": "rice",
     "tag": "Extra Long Grain",
-    "packSize": "20KG",
-    "image": "/assets/05_Rice_and_Grains/Premium_Long_Grain_Basmati_Rice_Bag_20kg.jpeg",
-    "file": "Premium_Long_Grain_Basmati_Rice_Bag_20kg.jpeg",
+    "packSize": "Standard Bag",
+    "image": "/assets/05_Rice_and_Grains/Camel_Basmati_Rice_Premium_Long_Grain.jpeg",
+    "file": "Camel_Basmati_Rice_Premium_Long_Grain.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -909,7 +898,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
 
   // ==========================================
-  // 11. RECIPE MASALA MIXES - 14 Items
+  // 11. RECIPE MASALA MIXES - 16 Items
   // ==========================================
   {
     "id": "uf-126",
@@ -947,6 +936,19 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "image": "/assets/11_Recipe_Masalas/Kofta_Recipe_Mix_Box.jpeg",
     "file": "Kofta_Recipe_Mix_Box.jpeg",
     "description": "United Foods Kofta Recipe Mix (کوفتہ) formulated for delicious, tender spiced meatballs in luscious savory gravy.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-128-b",
+    "name": "Masalajat Excellence Complete Recipe Mixes Range Poster",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Flagship Recipe Range",
+    "packSize": "Full Collection",
+    "image": "/assets/11_Recipe_Masalas/United_Foods_Masalajat_Excellence_Range_Poster_01.jpeg",
+    "file": "United_Foods_Masalajat_Excellence_Range_Poster_01.jpeg",
+    "description": "United Foods Masalajat Excellence Showcase, featuring our comprehensive authentic Recipe Mix range including Biryani, Karahi, Haleem, Tikka, Pulao, Korma, and Chapli Kabab.",
     "isHalal": true,
     "isNatural": true
   },
@@ -1090,6 +1092,19 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "image": "/assets/11_Recipe_Masalas/Kasuri_Meethi_Powder_Box.jpeg",
     "file": "Kasuri_Meethi_Powder_Box.jpeg",
     "description": "United Foods Kasuri Meethi Box (قصوری میتھی), hand-picked and naturally dried fenugreek leaves providing distinct aroma to curries and breads.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-139-b",
+    "name": "Masalajat Master Recipe Mixes & Condiments Showcase",
+    "category": "Recipe Masala Mixes",
+    "group": "masalas",
+    "tag": "Culinary Excellence",
+    "packSize": "Full Collection",
+    "image": "/assets/11_Recipe_Masalas/United_Foods_Masalajat_Excellence_Range_Poster_02.jpeg",
+    "file": "United_Foods_Masalajat_Excellence_Range_Poster_02.jpeg",
+    "description": "United Foods Culinary Creations Showcase, highlighting premium roasted recipe spice blends and traditional condiments crafted for royal feasts.",
     "isHalal": true,
     "isNatural": true
   },
@@ -1434,9 +1449,9 @@ export const BRAND_VIDEOS: VideoItem[] = [
 
 export const CATEGORIES_LIST = [
   { id: "all", name: "All Products", icon: "Grid" },
-  { id: "masalas", name: "Recipe Masala Mixes", icon: "Flame", count: 14 },
+  { id: "masalas", name: "Recipe Masala Mixes", icon: "Flame", count: 16 },
   { id: "desserts", name: "Desserts & Custards", icon: "Sparkles", count: 5 },
-  { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 9 },
+  { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 8 },
   { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 16 },
   { id: "salts", name: "Himalayan Pink Salt", icon: "Mountain", count: 7 },
   { id: "rice", name: "Basmati Rice & Grains", icon: "Wheat", count: 4 },

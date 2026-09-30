@@ -19,12 +19,12 @@ export default function HomePage() {
 
   // Curate 8 featured flagship bestsellers for the homepage
   const featuredProducts = [
-    ALL_PRODUCTS.find(p => p.id === 'uf-006') || ALL_PRODUCTS[0],
+    ALL_PRODUCTS.find(p => p.id === 'uf-059') || ALL_PRODUCTS[0],
     ALL_PRODUCTS.find(p => p.id === 'uf-094') || ALL_PRODUCTS[1],
     ALL_PRODUCTS.find(p => p.id === 'uf-033') || ALL_PRODUCTS[7],
-    ALL_PRODUCTS.find(p => p.id === 'uf-036') || ALL_PRODUCTS[20],
+    ALL_PRODUCTS.find(p => p.id === 'uf-015') || ALL_PRODUCTS[2],
     ALL_PRODUCTS.find(p => p.id === 'uf-061') || ALL_PRODUCTS[30],
-    ALL_PRODUCTS.find(p => p.id === 'uf-059') || ALL_PRODUCTS[28],
+    ALL_PRODUCTS.find(p => p.id === 'uf-036') || ALL_PRODUCTS[20],
     ALL_PRODUCTS.find(p => p.id === 'uf-073') || ALL_PRODUCTS[40],
     ALL_PRODUCTS.find(p => p.id === 'uf-105') || ALL_PRODUCTS[70],
   ].filter(Boolean);
