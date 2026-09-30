@@ -255,97 +255,10 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
 
-  // ==========================================
-  // 2. PASTES & CHUTNEYS - 6 Items
-  // ==========================================
-  {
-    "id": "uf-009",
-    "name": "Garlic Chutney Jar 400g",
-    "category": "Pastes & Chutneys",
-    "group": "chutneys",
-    "tag": "Sweet & Tangy",
-    "packSize": "400G",
-    "image": "/assets/02_Pickles/Garlic_Pickle_Lehsan_Achar_Jar_400g.jpeg",
-    "file": "Garlic_Pickle_Lehsan_Achar_Jar_400g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-011",
-    "name": "Garlic & Vinegar Paste Jar 500g",
-    "category": "Pastes & Chutneys",
-    "group": "chutneys",
-    "tag": "Traditional Paste",
-    "packSize": "500G",
-    "image": "/assets/02_Pickles/Garlic_in_Vinegar_Preserve_Jar_500g.jpeg",
-    "file": "Garlic_in_Vinegar_Preserve_Jar_500g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-013",
-    "name": "Green Chilli & Raw Mango Chutney Jar 400g",
-    "category": "Pastes & Chutneys",
-    "group": "chutneys",
-    "tag": "Sweet & Tangy",
-    "packSize": "400G",
-    "image": "/assets/02_Pickles/Hari_Mirch_Kacha_Aam_Pickle_Green_Chilli_Raw_Mango_Jar_400g.jpeg",
-    "file": "Hari_Mirch_Kacha_Aam_Pickle_Green_Chilli_Raw_Mango_Jar_400g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-022",
-    "name": "Allobakara Plum Chutney Jar 400g",
-    "category": "Pastes & Chutneys",
-    "group": "chutneys",
-    "tag": "Sweet & Tangy",
-    "packSize": "400G",
-    "image": "/assets/03_Pastes_and_Chutneys/Allobakara_Plum_Chutney_Jar_400g.jpeg",
-    "file": "Allobakara_Plum_Chutney_Jar_400g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-023",
-    "name": "Imli Chutney Tamarind Sauce Jar Sweet and Tangy",
-    "category": "Pastes & Chutneys",
-    "group": "chutneys",
-    "tag": "Sweet & Tangy",
-    "packSize": "Standard Pack",
-    "image": "/assets/03_Pastes_and_Chutneys/Imli_Chutney_Tamarind_Sauce_Jar_Sweet_and_Tangy.jpeg",
-    "file": "Imli_Chutney_Tamarind_Sauce_Jar_Sweet_and_Tangy.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-024",
-    "name": "Mango Chutney Aam Ki Chatni Jar 400g",
-    "category": "Pastes & Chutneys",
-    "group": "chutneys",
-    "tag": "Sweet & Tangy",
-    "packSize": "400G",
-    "image": "/assets/03_Pastes_and_Chutneys/Mango_Chutney_Aam_Ki_Chatni_Jar_400g.jpeg",
-    "file": "Mango_Chutney_Aam_Ki_Chatni_Jar_400g.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
 
   // ==========================================
-  // 3. SPICES & SEASONINGS - 17 Items
+  // 3. SPICES & SEASONINGS - 16 Items
   // ==========================================
-  {
-    "id": "uf-025",
-    "name": "Crispy Fried Onions Baryani Pack 100Percent Natural",
-    "category": "Fried Onions",
-    "group": "spices",
-    "tag": "Crispy & Golden",
-    "packSize": "Standard Pack",
-    "image": "/assets/04_Spices_and_Seasonings/Crispy_Fried_Onions/Crispy_Fried_Onions_Baryani_Pack_100Percent_Natural.jpeg",
-    "file": "Crispy_Fried_Onions_Baryani_Pack_100Percent_Natural.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
   {
     "id": "uf-026",
     "name": "Black Pepper Powder Kali Mirch Jar 200g",
@@ -720,7 +633,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
 
   // ==========================================
-  // 7. BEVERAGES, JUICES & TEA - 26 Items
+  // 7. BEVERAGES, JUICES & TEA - 16 Items
   // ==========================================
   {
     "id": "uf-068",
@@ -866,114 +779,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
-  {
-    "id": "uf-080",
-    "name": "Apple Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Apple_Juice_Bottle_750ml.jpeg",
-    "file": "Apple_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-081",
-    "name": "Beetroot Carrot Mint Lemon Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Beetroot_Carrot_Mint_Lemon_Juice_Bottle_750ml.jpeg",
-    "file": "Beetroot_Carrot_Mint_Lemon_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-082",
-    "name": "Green Grape Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Green_Grape_Juice_Bottle_750ml.jpeg",
-    "file": "Green_Grape_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-083",
-    "name": "Guava Juice Amrood Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Guava_Juice_Amrood_Bottle_750ml.jpeg",
-    "file": "Guava_Juice_Amrood_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-084",
-    "name": "Jamun Black Plum Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Jamun_Black_Plum_Juice_Bottle_750ml.jpeg",
-    "file": "Jamun_Black_Plum_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-085",
-    "name": "Malta Orange Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Malta_Orange_Juice_Bottle_750ml.jpeg",
-    "file": "Malta_Orange_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-086",
-    "name": "Mango Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Mango_Juice_Bottle_750ml.jpeg",
-    "file": "Mango_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-087",
-    "name": "Red Grape Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Red_Grape_Juice_Bottle_750ml.jpeg",
-    "file": "Red_Grape_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-  {
-    "id": "uf-088",
-    "name": "Sugarcane Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Family Pack",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Fruit_Juices_750ml/Sugarcane_Juice_Bottle_750ml.jpeg",
-    "file": "Sugarcane_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
+
   {
     "id": "uf-089",
     "name": "Dates Saffron Cardamom Health Drink Bottle",
@@ -1010,18 +816,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
-  {
-    "id": "uf-092",
-    "name": "Dates and Saffron Mix Juice Bottle 750ml",
-    "category": "Fruit Juices (750ml Family)",
-    "group": "beverages",
-    "tag": "Royal Wellness",
-    "packSize": "750ML",
-    "image": "/assets/07_Beverages_and_Dairy/Tea_and_Qahwa/Dates_and_Saffron_Mix_Juice_Bottle_750ml.jpeg",
-    "file": "Dates_and_Saffron_Mix_Juice_Bottle_750ml.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
+
   {
     "id": "uf-094",
     "name": "Royal Kashmiri Qahwa Saffron Cardamom Jar",
@@ -1663,13 +1458,12 @@ export const CATEGORIES_LIST = [
   { id: "masalas", name: "Recipe Masala Mixes", icon: "Flame", count: 14 },
   { id: "desserts", name: "Desserts & Custards", icon: "Sparkles", count: 5 },
   { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 12 },
-  { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 17 },
+  { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 16 },
   { id: "salts", name: "Himalayan Pink Salt", icon: "Mountain", count: 7 },
-  { id: "chutneys", name: "Pastes & Chutneys", icon: "Flame", count: 6 },
   { id: "rice", name: "Basmati Rice & Grains", icon: "Wheat", count: 4 },
   { id: "oils", name: "Pure Edible Oils", icon: "Droplet", count: 3 },
   { id: "qehwa", name: "Tea & Kashmiri Qehwa", icon: "Coffee", count: 3 },
-  { id: "beverages", name: "Juices & Flavored Milks", icon: "Coffee", count: 23 },
+  { id: "beverages", name: "Juices & Flavored Milks", icon: "Coffee", count: 14 },
   { id: "sweeteners", name: "Natural Sweeteners & Jaggery", icon: "Heart", count: 8 }
 ];
 

@@ -21,7 +21,6 @@ const normalizeCategory = (cat: string): string => {
   if (['pickles', 'pickle', 'achar'].includes(lower)) return 'pickles';
   if (['spices', 'spice', 'seasonings', 'seasoning', 'groundspices'].includes(lower)) return 'spices';
   if (['salts', 'salt', 'himalayansalt', 'himalayansalts', 'pinksalt'].includes(lower)) return 'salts';
-  if (['chutneys', 'chutney', 'pastes', 'paste'].includes(lower)) return 'chutneys';
   if (['rice', 'grains', 'grain', 'basmati', 'basmatirice'].includes(lower)) return 'rice';
   if (['oils', 'oil', 'edibleoils', 'edibleoil', 'oliveoil'].includes(lower)) return 'oils';
   if (['qehwa', 'qahwa', 'tea', 'teas', 'kashmiriqehwa', 'kashmiriqahwa', 'herbaltea', 'qehwas'].includes(lower)) return 'qehwa';
