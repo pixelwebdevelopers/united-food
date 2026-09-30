@@ -70,11 +70,11 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="font-heading text-lg md:text-xl font-extrabold tracking-wider !text-[#f5d77f] flex items-center">
-                <span>UNITED <span className="!text-[#f5d77f]">FOODS</span></span>
-                <sup className="text-[9px] md:text-[10px] font-bold text-[#f5d77f] tracking-normal ml-0.5 align-super opacity-90">TM</sup>
+              <span className="font-heading text-base md:text-lg font-extrabold tracking-wider !text-[#f5d77f] flex items-center">
+                <span>CAMEL UNITED <span className="!text-[#f5d77f]">FOODS</span></span>
+                <sup className="text-[8px] md:text-[9px] font-bold text-[#f5d77f] tracking-normal ml-0.5 align-super opacity-90">TM</sup>
               </span>
-              <span className="text-[10px] md:text-[11px] text-[#f9e390] font-semibold tracking-widest uppercase opacity-90">
+              <span className="text-[9px] md:text-[10px] text-[#f9e390] font-semibold tracking-widest uppercase opacity-90">
                 Spice Up Your Life
               </span>
             </div>
@@ -160,11 +160,11 @@ export default function Navbar() {
                 />
               </div>
               <div>
-                <h3 className="font-heading text-sm font-extrabold !text-[#f5d77f] tracking-wider inline-flex items-center">
-                  <span>UNITED FOODS</span>
-                  <sup className="text-[8px] font-bold text-[#f5d77f] ml-0.5 align-super">TM</sup>
+                <h3 className="font-heading text-xs sm:text-sm font-extrabold !text-[#f5d77f] tracking-wider inline-flex items-center">
+                  <span>CAMEL UNITED FOODS</span>
+                  <sup className="text-[7px] font-bold text-[#f5d77f] ml-0.5 align-super">TM</sup>
                 </h3>
-                <p className="text-[10px] text-[#fde68a]">Global Flavors, Authentic Tastes</p>
+                <p className="text-[9px] text-[#fde68a]">Global Flavors, Authentic Tastes</p>
               </div>
             </div>
 

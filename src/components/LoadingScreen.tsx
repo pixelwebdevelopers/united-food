@@ -120,17 +120,6 @@ export default function LoadingScreen() {
         onEnded={handleFinish}
         className="block md:hidden w-full h-full object-cover object-center pointer-events-none"
       />
-
-      {/* Subtle Skip button in the top right corner */}
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          handleFinish();
-        }}
-        className="absolute top-6 right-6 px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white/80 hover:text-white text-xs font-semibold backdrop-blur-md transition-all z-20"
-      >
-        Skip Intro &times;
-      </button>
     </div>
   );
 }
