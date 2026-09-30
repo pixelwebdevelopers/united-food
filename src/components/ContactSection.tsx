@@ -1,7 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Phone, Mail, Send, MessageCircle, Sparkles, CheckCircle2, Clock, Globe } from 'lucide-react';
+import { 
+  Phone, Mail, Send, MessageCircle, Sparkles, CheckCircle2, Clock, Globe, 
+  MapPin, Navigation, ExternalLink 
+} from 'lucide-react';
 import { COMPANY_INFO } from '@/data/productsData';
 
 export default function ContactSection() {
@@ -82,6 +85,28 @@ export default function ContactSection() {
             {/* Direct Info List */}
             <div className="glass-card p-6 rounded-2xl border border-slate-200 space-y-5 bg-white shadow-sm">
               
+              {/* Address / Location */}
+              <div className="flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#34070c]/20 flex items-center justify-center text-[#34070c] flex-shrink-0 mt-0.5">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                <div>
+                  <p className="text-xs text-slate-500 font-medium">Head Office / Location</p>
+                  <p className="text-sm font-bold text-slate-900 leading-snug">
+                    {COMPANY_INFO.address}
+                  </p>
+                  <a
+                    href={COMPANY_INFO.mapsDirectionsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#34070c] hover:text-[#b8860b] mt-1 transition-colors"
+                  >
+                    <span>View on Google Maps</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              </div>
+
               <div className="flex items-start gap-3.5">
                 <div className="w-10 h-10 rounded-xl bg-red-50 border border-[#34070c]/20 flex items-center justify-center text-[#34070c] flex-shrink-0 mt-0.5">
                   <Phone className="w-4 h-4" />
@@ -241,6 +266,65 @@ export default function ContactSection() {
             </div>
           </div>
 
+        </div>
+
+        {/* Interactive Google Map Section */}
+        <div className="mt-16 pt-10 border-t border-slate-200">
+          <div className="rounded-3xl overflow-hidden border border-slate-200 bg-slate-50 shadow-md">
+            
+            {/* Map Header Bar */}
+            <div className="p-6 sm:p-8 bg-white border-b border-slate-200 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div className="space-y-1.5">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-[#34070c]/20 text-[11px] font-bold text-[#34070c]">
+                  <MapPin className="w-3.5 h-3.5 text-[#34070c]" />
+                  <span>HEADQUARTERS & CORPORATE OFFICE</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-extrabold font-heading text-slate-900">
+                  OUR LOCATION IN <span className="crimson-gradient-text">ISLAMABAD</span>
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 flex items-center gap-1.5">
+                  <MapPin className="w-4 h-4 text-[#b8860b] flex-shrink-0" />
+                  <span className="font-medium text-slate-800">{COMPANY_INFO.address}</span>
+                </p>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-2.5">
+                <a
+                  href={COMPANY_INFO.mapsDirectionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary text-xs !py-2.5 !px-5 inline-flex items-center gap-2 shadow-md"
+                >
+                  <Navigation className="w-4 h-4" />
+                  <span>Get Directions</span>
+                  <ExternalLink className="w-3.5 h-3.5 ml-0.5 opacity-80" />
+                </a>
+                
+                <a
+                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20United%20Foods,%20I%20am%20visiting%20your%20office%20at%20Rehmat%20Plaza%20Islamabad.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2.5 px-4 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-all"
+                >
+                  <Phone className="w-3.5 h-3.5" />
+                  <span>WhatsApp Office</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Map Iframe */}
+            <div className="relative w-full h-[380px] sm:h-[460px] bg-slate-100">
+              <iframe
+                title="United Foods Corporate Office Location - Rehmat Plaza D Chowk Blue Area Islamabad Pakistan"
+                src={COMPANY_INFO.mapsEmbedUrl}
+                className="w-full h-full border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+          </div>
         </div>
 
       </div>

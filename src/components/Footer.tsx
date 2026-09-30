@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Phone, Mail, Globe, Sparkles, Heart, ShieldCheck, ArrowUp } from 'lucide-react';
+import { Phone, Mail, Globe, MapPin, Sparkles, Heart, ShieldCheck, ArrowUp } from 'lucide-react';
 import { COMPANY_INFO, CATEGORIES_LIST } from '@/data/productsData';
 
 export default function Footer() {
@@ -105,6 +105,16 @@ export default function Footer() {
             </h4>
             
             <div className="space-y-2.5 text-xs">
+              <a 
+                href={COMPANY_INFO.mapsDirectionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2 text-slate-300 hover:text-[#fde68a] transition-colors leading-relaxed"
+              >
+                <MapPin className="w-4 h-4 text-[#f3cf65] flex-shrink-0 mt-0.5" />
+                <span>{COMPANY_INFO.address}</span>
+              </a>
+
               <a 
                 href={`tel:${COMPANY_INFO.phone}`}
                 className="flex items-center gap-2 text-slate-300 hover:text-[#fde68a] transition-colors"

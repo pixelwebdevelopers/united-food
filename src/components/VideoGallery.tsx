@@ -89,7 +89,7 @@ function VideoGalleryContent() {
                 : 'bg-slate-100 text-slate-700 hover:text-[#34070c] hover:bg-slate-200'
             }`}
           >
-            Brand Promo HD (4)
+            Brand Promo HD ({BRAND_VIDEOS.filter((v) => v.name.includes('Promo')).length})
           </button>
           <button
             onClick={() => setFilterType('reels')}
@@ -99,7 +99,7 @@ function VideoGalleryContent() {
                 : 'bg-slate-100 text-slate-700 hover:text-[#34070c] hover:bg-slate-200'
             }`}
           >
-            Product Reels (5)
+            Product Reels ({BRAND_VIDEOS.filter((v) => v.name.includes('Reel')).length})
           </button>
         </div>
 

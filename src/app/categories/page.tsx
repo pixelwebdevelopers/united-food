@@ -29,7 +29,7 @@ export default function CategoriesPage() {
       name: 'Pickles (Achar)',
       tagline: 'Traditional Slow-Cured Authentic Recipes',
       description: 'Handcrafted traditional mango, mixed, garlic, green chilli, lemon, and stuffed red chilli pickles preserved in rich mustard oil and secret spice blends.',
-      itemCount: 12,
+      itemCount: 9,
       image: '/assets/02_Pickles/Green_Chilli_Pickle_Hari_Mirch_Achar_Jar.jpeg',
       badge: 'Bestseller',
     },

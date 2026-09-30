@@ -108,20 +108,8 @@ export const BRAND_LOGOS = [
 
 export const ALL_PRODUCTS: ProductItem[] = [
   // ==========================================
-  // 1. PICKLES (ACHAR) - 12 Items
+  // 1. PICKLES (ACHAR) - 9 Items
   // ==========================================
-  {
-    "id": "uf-006",
-    "name": "Adrak Lehsan Pickle Ginger Garlic Achar Jar",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "Standard Pack",
-    "image": "/assets/02_Pickles/Adrak_Lehsan_Pickle_Ginger_Garlic_Achar_Jar.jpeg",
-    "file": "Adrak_Lehsan_Pickle_Ginger_Garlic_Achar_Jar.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
   {
     "id": "uf-007",
     "name": "Amla Pickle Gooseberry Achar Jar",
@@ -146,18 +134,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
-  {
-    "id": "uf-010",
-    "name": "Garlic in Vinegar Preserve Jar 100Percent Natural",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "Standard Pack",
-    "image": "/assets/02_Pickles/Garlic_in_Vinegar_Preserve_Jar_100Percent_Natural.jpeg",
-    "file": "Garlic_in_Vinegar_Preserve_Jar_100Percent_Natural.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
+
   {
     "id": "uf-012",
     "name": "Mixed Pickle Achar Jar",
@@ -218,18 +195,7 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
-  {
-    "id": "uf-019",
-    "name": "Mixed Vegetable Pickle Mix Sabziyan Achar Jar",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "Standard Pack",
-    "image": "/assets/02_Pickles/Mixed_Vegetable_Pickle_Mix_Sabziyan_Achar_Jar.jpeg",
-    "file": "Mixed_Vegetable_Pickle_Mix_Sabziyan_Achar_Jar.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
+
   {
     "id": "uf-020",
     "name": "Piyaz Lehsan Pickle Onion Garlic Achar Jar",
@@ -1387,6 +1353,19 @@ export const BRAND_VIDEOS: VideoItem[] = [
     "videoUrl": "/assets/10_Videos/United_Foods_Brand_Promo_Video_04.mp4"
   },
   {
+    "id": "uf-126",
+    "name": "United Foods Brand Promo Video 05",
+    "category": "Videos & Reels",
+    "group": "videos",
+    "tag": "HD Video",
+    "packSize": "Standard Pack",
+    "image": "/assets/10_Videos/United_Foods_Brand_Promo_Video_05.mp4",
+    "file": "United_Foods_Brand_Promo_Video_05.mp4",
+    "isHalal": true,
+    "isNatural": true,
+    "videoUrl": "/assets/10_Videos/United_Foods_Brand_Promo_Video_05.mp4"
+  },
+  {
     "id": "uf-121",
     "name": "United Foods Product Reel 01",
     "category": "Videos & Reels",
@@ -1457,7 +1436,7 @@ export const CATEGORIES_LIST = [
   { id: "all", name: "All Products", icon: "Grid" },
   { id: "masalas", name: "Recipe Masala Mixes", icon: "Flame", count: 14 },
   { id: "desserts", name: "Desserts & Custards", icon: "Sparkles", count: 5 },
-  { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 12 },
+  { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 9 },
   { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 16 },
   { id: "salts", name: "Himalayan Pink Salt", icon: "Mountain", count: 7 },
   { id: "rice", name: "Basmati Rice & Grains", icon: "Wheat", count: 4 },
@@ -1472,10 +1451,13 @@ export const COMPANY_INFO = {
   tagline: "Global Flavors, Authentic Tastes",
   slogan: "Spice Up Your Life",
   legacy: "Since 2005 (25+ Years Legacy of Trust)",
+  address: "Rehmat Plaza, D-Chowk, Blue Area, Islamabad, Pakistan",
   email: "camelunitedfoods@gmail.com",
   phone: "+92 300 8292550",
   whatsapp: "923008292550",
   website: "www.camelunitedfoods.com",
+  mapsEmbedUrl: "https://maps.google.com/maps?q=Rehmat%20Plaza%20D%20chowk%20Blue%20Area%20Islamabad%20Pakistan&t=&z=16&ie=UTF8&iwloc=&output=embed",
+  mapsDirectionsUrl: "https://www.google.com/maps/search/?api=1&query=Rehmat+Plaza+D+chowk+Blue+Area+Islamabad+Pakistan",
   developer: {
     name: "Pixel Web Developers",
     url: "https://pixelwebdevelopes.com"

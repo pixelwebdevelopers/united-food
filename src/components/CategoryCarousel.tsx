@@ -36,7 +36,7 @@ const CATEGORY_CARDS: CategoryCard[] = [
     id: 'pickles',
     name: 'Pickles (Achar)',
     tagline: 'Traditional Slow-Cured Recipes',
-    itemCount: 12,
+    itemCount: 9,
     image: '/assets/02_Pickles/Green_Chilli_Pickle_Hari_Mirch_Achar_Jar.jpeg',
     accent: 'from-amber-600/10 to-[#34070c]/10',
   },
