@@ -108,7 +108,7 @@ export const BRAND_LOGOS = [
 
 export const ALL_PRODUCTS: ProductItem[] = [
   // ==========================================
-  // 1. PICKLES (ACHAR) - 8 Items
+  // 1. PICKLES (ACHAR) - 10 Items
   // ==========================================
   {
     "id": "uf-007",
@@ -134,16 +134,51 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isHalal": true,
     "isNatural": true
   },
-
   {
-    "id": "uf-012",
-    "name": "Mixed Pickle Achar Jar",
+    "id": "uf-009",
+    "name": "Delicious Carrot Pickle (Gajar Ka Achar) Jar",
     "category": "Pickles (Achar)",
     "group": "pickles",
     "tag": "Traditional Recipe",
     "packSize": "Standard Pack",
-    "image": "/assets/02_Pickles/Green_Chilli_Pickle_Hari_Mirch_Achar_Jar.jpeg",
-    "file": "Green_Chilli_Pickle_Hari_Mirch_Achar_Jar.jpeg",
+    "image": "/assets/02_Pickles/Delicious_Carrot_Pickle_Gajar_Achar_Jar.jpeg",
+    "file": "Delicious_Carrot_Pickle_Gajar_Achar_Jar.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-010",
+    "name": "Delicious Lasode Pickle (Lasoora Achar) Jar",
+    "category": "Pickles (Achar)",
+    "group": "pickles",
+    "tag": "Traditional Recipe",
+    "packSize": "Standard Pack",
+    "image": "/assets/02_Pickles/Delicious_Lasode_Pickle_Achar_Jar.jpeg",
+    "file": "Delicious_Lasode_Pickle_Achar_Jar.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-011",
+    "name": "Delicious Green Chilli Pickle (Hari Mirch Achar) Jar",
+    "category": "Pickles (Achar)",
+    "group": "pickles",
+    "tag": "Traditional Recipe",
+    "packSize": "Standard Pack",
+    "image": "/assets/02_Pickles/Delicious_Green_Chilli_Pickle_Hari_Mirch_Achar_Jar.jpeg",
+    "file": "Delicious_Green_Chilli_Pickle_Hari_Mirch_Achar_Jar.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-013",
+    "name": "Lahore Style Lahsun Ka Achar (Garlic Pickle)",
+    "category": "Pickles (Achar)",
+    "group": "pickles",
+    "tag": "Traditional Recipe",
+    "packSize": "Standard Pack",
+    "image": "/assets/02_Pickles/Lahore_Style_Lahsun_Achar_Garlic_Pickle_Jar.jpeg",
+    "file": "Lahore_Style_Lahsun_Achar_Garlic_Pickle_Jar.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -161,13 +196,13 @@ export const ALL_PRODUCTS: ProductItem[] = [
   },
   {
     "id": "uf-015",
-    "name": "Mango Pickle (Aam Ka Achar) Jar",
+    "name": "Mango Pickle (Aam Ka Achar) Jar Premium",
     "category": "Pickles (Achar)",
     "group": "pickles",
     "tag": "Traditional Recipe",
     "packSize": "Standard Pack",
-    "image": "/assets/02_Pickles/Lasoora_Pickle_Gunda_Achar_Jar.jpeg",
-    "file": "Lasoora_Pickle_Gunda_Achar_Jar.jpeg",
+    "image": "/assets/02_Pickles/Mango_Pickle_Aam_Ka_Achar_Jar_Premium.jpeg",
+    "file": "Mango_Pickle_Aam_Ka_Achar_Jar_Premium.jpeg",
     "isHalal": true,
     "isNatural": true
   },
@@ -184,22 +219,8 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "isNatural": true
   },
   {
-    "id": "uf-018",
-    "name": "Premium Achar Jar",
-    "category": "Pickles (Achar)",
-    "group": "pickles",
-    "tag": "Traditional Recipe",
-    "packSize": "Standard Pack",
-    "image": "/assets/02_Pickles/Mango_Pickle_Aam_Ka_Achar_Jar_Premium.jpeg",
-    "file": "Mango_Pickle_Aam_Ka_Achar_Jar_Premium.jpeg",
-    "isHalal": true,
-    "isNatural": true
-  },
-
-
-  {
     "id": "uf-021",
-    "name": "Green Chilli Pickle Jar",
+    "name": "Red Chilli Pickle Lal Mirch Achar Jar",
     "category": "Pickles (Achar)",
     "group": "pickles",
     "tag": "Traditional Recipe",
@@ -355,6 +376,19 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "packSize": "200G",
     "image": "/assets/04_Spices_and_Seasonings/Vegetable_and_Herb_Powders/Pure_Moringa_Superfood_Powder_Jar_200g.jpeg",
     "file": "Pure_Moringa_Superfood_Powder_Jar_200g.jpeg",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-156",
+    "name": "Pure Beetroot Powder Chukandar Powder Jar",
+    "category": "Herbal & Vegetable Powders",
+    "group": "spices",
+    "tag": "Superfood",
+    "packSize": "200G",
+    "image": "/assets/04_Spices_and_Seasonings/Vegetable_and_Herb_Powders/Beetroot_Powder_Chukandar_Powder_Superfood_Jar.jpeg",
+    "file": "Beetroot_Powder_Chukandar_Powder_Superfood_Jar.jpeg",
+    "description": "United Foods Pure Beetroot Powder (چقندر پاؤڈر) - 100% natural premium superfood rich in antioxidants, nitric oxide, and essential nutrients to boost stamina and vitality.",
     "isHalal": true,
     "isNatural": true
   },
@@ -1176,6 +1210,88 @@ export const ALL_PRODUCTS: ProductItem[] = [
     "description": "United Foods Strawberry Flavored Custard Powder Box (سٹرابیری کسٹرد پاؤڈر), vibrant pink dessert powder with sweet berry aroma.",
     "isHalal": true,
     "isNatural": true
+  },
+
+  // ==========================================
+  // 13. KETCHUP & JAMS - 6 Items
+  // ==========================================
+  {
+    "id": "uf-150",
+    "name": "Tomato Ketchup (Rich & Thick)",
+    "category": "Ketchup & Jams",
+    "group": "ketchup-jams",
+    "tag": "100% Real Tomatoes",
+    "packSize": "500g Pouch / 3kg Can",
+    "image": "/assets/13_Ketchup_and_Jams/Tomato_Ketchup_Rich_Thick_Pouch_and_Can.jpeg",
+    "file": "Tomato_Ketchup_Rich_Thick_Pouch_and_Can.jpeg",
+    "description": "United Foods Premium Rich & Thick Tomato Ketchup (ٹماٹر کیچپ), crafted from 100% ripe farm-fresh tomatoes with no artificial preservatives or colors.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-151",
+    "name": "Delicious Chilli Garlic Sauce Pouch",
+    "category": "Ketchup & Jams",
+    "group": "ketchup-jams",
+    "tag": "Zesty & Spicy",
+    "packSize": "500g Pouch",
+    "image": "/assets/13_Ketchup_and_Jams/Delicious_Chilli_Garlic_Sauce_Pouch.jpeg",
+    "file": "Delicious_Chilli_Garlic_Sauce_Pouch.jpeg",
+    "description": "United Foods Delicious Chilli Garlic Sauce (چلی گارلک ساس), made from sun-ripened red chillies and fresh garlic for a fiery, savory kick.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-152",
+    "name": "Delicious Mango Jam (Fresh Mangoes)",
+    "category": "Ketchup & Jams",
+    "group": "ketchup-jams",
+    "tag": "100% Natural Fruit",
+    "packSize": "450g Jar",
+    "image": "/assets/13_Ketchup_and_Jams/Delicious_Mango_Jam_Fresh_Mangoes_Jar.jpeg",
+    "file": "Delicious_Mango_Jam_Fresh_Mangoes_Jar.jpeg",
+    "description": "United Foods Delicious Mixed Mango Jam (مینگو جام), cooked from golden sun-kissed mangoes for a sweet, smooth, all-natural breakfast spread.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-153",
+    "name": "Delicious Apple Jam (Fresh Apples)",
+    "category": "Ketchup & Jams",
+    "group": "ketchup-jams",
+    "tag": "100% Natural Fruit",
+    "packSize": "450g Jar",
+    "image": "/assets/13_Ketchup_and_Jams/Delicious_Apple_Jam_Fresh_Apples_Jar.jpeg",
+    "file": "Delicious_Apple_Jam_Fresh_Apples_Jar.jpeg",
+    "description": "United Foods Delicious Mixed Apple Jam (ایپل جام), prepared with crisp orchard apples, providing rich natural pectin and orchard-fresh fruity aroma.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-154",
+    "name": "Delicious Orange Jam (Fresh Oranges)",
+    "category": "Ketchup & Jams",
+    "group": "ketchup-jams",
+    "tag": "100% Natural Fruit",
+    "packSize": "450g Jar",
+    "image": "/assets/13_Ketchup_and_Jams/Delicious_Orange_Jam_Fresh_Oranges_Jar.jpeg",
+    "file": "Delicious_Orange_Jam_Fresh_Oranges_Jar.jpeg",
+    "description": "United Foods Delicious Orange Jam / Marmalade (اورنج جام), bursting with zesty citrus flavor made from the finest ripe oranges.",
+    "isHalal": true,
+    "isNatural": true
+  },
+  {
+    "id": "uf-155",
+    "name": "Delicious Mixed Fruit Jam (Fresh Fruit)",
+    "category": "Ketchup & Jams",
+    "group": "ketchup-jams",
+    "tag": "100% Natural Fruit",
+    "packSize": "450g Jar",
+    "image": "/assets/13_Ketchup_and_Jams/Delicious_Mixed_Fruit_Jam_Fresh_Fruit_Jar.jpeg",
+    "file": "Delicious_Mixed_Fruit_Jam_Fresh_Fruit_Jar.jpeg",
+    "description": "United Foods Delicious Mixed Fruit Jam (مکسڈ فروٹ جام), a luscious blend of orchard apples, oranges, berries, and pineapples.",
+    "isHalal": true,
+    "isNatural": true
   }
 ];
 
@@ -1335,45 +1451,6 @@ export const BRAND_VIDEOS: VideoItem[] = [
     "group": "videos",
     "tag": "HD Video",
     "packSize": "Standard Pack",
-    "image": "/assets/10_Videos/United_Foods_Brand_Promo_Video_02.mp4",
-    "file": "United_Foods_Brand_Promo_Video_02.mp4",
-    "isHalal": true,
-    "isNatural": true,
-    "videoUrl": "/assets/10_Videos/United_Foods_Brand_Promo_Video_02.mp4"
-  },
-  {
-    "id": "uf-119",
-    "name": "United Foods Brand Promo Video 03",
-    "category": "Videos & Reels",
-    "group": "videos",
-    "tag": "HD Video",
-    "packSize": "Standard Pack",
-    "image": "/assets/10_Videos/United_Foods_Brand_Promo_Video_03.mp4",
-    "file": "United_Foods_Brand_Promo_Video_03.mp4",
-    "isHalal": true,
-    "isNatural": true,
-    "videoUrl": "/assets/10_Videos/United_Foods_Brand_Promo_Video_03.mp4"
-  },
-  {
-    "id": "uf-120",
-    "name": "United Foods Brand Promo Video 04",
-    "category": "Videos & Reels",
-    "group": "videos",
-    "tag": "HD Video",
-    "packSize": "Standard Pack",
-    "image": "/assets/10_Videos/United_Foods_Brand_Promo_Video_04.mp4",
-    "file": "United_Foods_Brand_Promo_Video_04.mp4",
-    "isHalal": true,
-    "isNatural": true,
-    "videoUrl": "/assets/10_Videos/United_Foods_Brand_Promo_Video_04.mp4"
-  },
-  {
-    "id": "uf-126",
-    "name": "United Foods Brand Promo Video 05",
-    "category": "Videos & Reels",
-    "group": "videos",
-    "tag": "HD Video",
-    "packSize": "Standard Pack",
     "image": "/assets/10_Videos/United_Foods_Brand_Promo_Video_05.mp4",
     "file": "United_Foods_Brand_Promo_Video_05.mp4",
     "isHalal": true,
@@ -1444,6 +1521,71 @@ export const BRAND_VIDEOS: VideoItem[] = [
     "isHalal": true,
     "isNatural": true,
     "videoUrl": "/assets/10_Videos/United_Foods_Product_Reel_05.mp4"
+  },
+  {
+    "id": "uf-126",
+    "name": "United Foods Product Reel 06",
+    "category": "Videos & Reels",
+    "group": "videos",
+    "tag": "HD Video",
+    "packSize": "Standard Pack",
+    "image": "/assets/10_Videos/United_Foods_Product_Reel_06.mp4",
+    "file": "United_Foods_Product_Reel_06.mp4",
+    "isHalal": true,
+    "isNatural": true,
+    "videoUrl": "/assets/10_Videos/United_Foods_Product_Reel_06.mp4"
+  },
+  {
+    "id": "uf-127",
+    "name": "United Foods Product Reel 07",
+    "category": "Videos & Reels",
+    "group": "videos",
+    "tag": "HD Video",
+    "packSize": "Standard Pack",
+    "image": "/assets/10_Videos/United_Foods_Product_Reel_07.mp4",
+    "file": "United_Foods_Product_Reel_07.mp4",
+    "isHalal": true,
+    "isNatural": true,
+    "videoUrl": "/assets/10_Videos/United_Foods_Product_Reel_07.mp4"
+  },
+  {
+    "id": "uf-128",
+    "name": "United Foods Product Reel 08",
+    "category": "Videos & Reels",
+    "group": "videos",
+    "tag": "HD Video",
+    "packSize": "Standard Pack",
+    "image": "/assets/10_Videos/United_Foods_Product_Reel_08.mp4",
+    "file": "United_Foods_Product_Reel_08.mp4",
+    "isHalal": true,
+    "isNatural": true,
+    "videoUrl": "/assets/10_Videos/United_Foods_Product_Reel_08.mp4"
+  },
+  {
+    "id": "uf-129",
+    "name": "United Foods Product Reel 09",
+    "category": "Videos & Reels",
+    "group": "videos",
+    "tag": "HD Video",
+    "packSize": "Standard Pack",
+    "image": "/assets/10_Videos/United_Foods_Product_Reel_09.mp4",
+    "file": "United_Foods_Product_Reel_09.mp4",
+    "isHalal": true,
+    "isNatural": true,
+    "videoUrl": "/assets/10_Videos/United_Foods_Product_Reel_09.mp4"
+  },
+  {
+    "id": "uf-130",
+    "name": "United Foods Product Reel 10",
+    "category": "Videos & Reels",
+    "group": "videos",
+    "tag": "HD Video",
+    "packSize": "Standard Pack",
+    "image": "/assets/10_Videos/United_Foods_Product_Reel_10.mp4",
+    "file": "United_Foods_Product_Reel_10.mp4",
+    "isHalal": true,
+    "isNatural": true,
+    "videoUrl": "/assets/10_Videos/United_Foods_Product_Reel_10.mp4"
   }
 ];
 
@@ -1451,8 +1593,9 @@ export const CATEGORIES_LIST = [
   { id: "all", name: "All Products", icon: "Grid" },
   { id: "masalas", name: "Recipe Masala Mixes", icon: "Flame", count: 16 },
   { id: "desserts", name: "Desserts & Custards", icon: "Sparkles", count: 5 },
-  { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 8 },
-  { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 16 },
+  { id: "pickles", name: "Pickles (Achar)", icon: "Utensils", count: 10 },
+  { id: "ketchup-jams", name: "Ketchup & Jams", icon: "UtensilsCrossed", count: 6 },
+  { id: "spices", name: "Spices & Seasonings", icon: "Sparkles", count: 17 },
   { id: "salts", name: "Himalayan Pink Salt", icon: "Mountain", count: 7 },
   { id: "rice", name: "Basmati Rice & Grains", icon: "Wheat", count: 4 },
   { id: "oils", name: "Pure Edible Oils", icon: "Droplet", count: 3 },
