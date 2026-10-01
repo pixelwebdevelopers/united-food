@@ -1471,19 +1471,6 @@ export const BRAND_VIDEOS: VideoItem[] = [
     "videoUrl": "/assets/10_Videos/United_Foods_Product_Reel_01.mp4"
   },
   {
-    "id": "uf-122",
-    "name": "United Foods Product Reel 02",
-    "category": "Videos & Reels",
-    "group": "videos",
-    "tag": "HD Video",
-    "packSize": "Standard Pack",
-    "image": "/assets/10_Videos/United_Foods_Product_Reel_02.mp4",
-    "file": "United_Foods_Product_Reel_02.mp4",
-    "isHalal": true,
-    "isNatural": true,
-    "videoUrl": "/assets/10_Videos/United_Foods_Product_Reel_02.mp4"
-  },
-  {
     "id": "uf-123",
     "name": "United Foods Product Reel 03",
     "category": "Videos & Reels",
