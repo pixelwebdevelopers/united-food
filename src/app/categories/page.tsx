@@ -162,7 +162,7 @@ export default function CategoriesPage() {
                   {/* Count */}
                   <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-slate-900 border border-slate-200 text-[11px] font-bold shadow-md z-10 flex items-center gap-1.5">
                     <PackageCheck className="w-3.5 h-3.5 text-[#34070c]" />
-                    <span>{cat.itemCount} Products</span>
+                    <span>{cat.itemCount}+ Items</span>
                   </div>
                 </div>
 

@@ -130,7 +130,7 @@ export default function ProductExplorer({ activeCategory, setActiveCategory }: P
                   <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
                     isActive ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'
                   }`}>
-                    {cat.id === 'all' ? ALL_PRODUCTS.length : cat.count}
+                    {cat.id === 'all' ? `${ALL_PRODUCTS.length}+` : `${cat.count}+`}
                   </span>
                 </button>
               );

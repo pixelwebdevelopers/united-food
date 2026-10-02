@@ -5,6 +5,7 @@ import {
   Award, ShieldCheck, HeartPulse, Clock, CheckCircle2, Globe, 
   Sparkles, ArrowLeft, ArrowRight, Factory, Users, Check
 } from 'lucide-react';
+import CertificationsMarquee from '@/components/CertificationsMarquee';
 import { COMPANY_INFO } from '@/data/productsData';
 
 export default function HeritagePage() {
@@ -180,6 +181,11 @@ export default function HeritagePage() {
           </div>
         </div>
 
+      </div>
+
+      {/* Global Certifications & Quality Accreditations Marquee */}
+      <div className="mt-16">
+        <CertificationsMarquee theme="subtle" />
       </div>
     </div>
   );

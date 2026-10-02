@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import CategoryCarousel from '@/components/CategoryCarousel';
+import CertificationsMarquee from '@/components/CertificationsMarquee';
 import HomeVideoCarousel from '@/components/HomeVideoCarousel';
 import ProductModal from '@/components/ProductModal';
 import LoadingScreen from '@/components/LoadingScreen';
@@ -157,7 +158,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Brand Legacy Teaser */}
+      {/* 4. Global Certifications & Quality Marquee */}
+      <CertificationsMarquee />
+
+      {/* 5. Brand Legacy Teaser */}
       <section className="py-20 bg-slate-50 border-b border-slate-200">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">

@@ -367,7 +367,7 @@ export default function CategoryCarousel({ onSelectCategory }: { onSelectCategor
 
                 {/* Badge for Item Count */}
                 <div className="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full bg-[#34070c] text-white text-[10px] font-bold shadow-md z-10">
-                  {card.itemCount} Items
+                  {card.itemCount}+ Items
                 </div>
               </div>
 

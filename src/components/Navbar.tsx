@@ -218,7 +218,7 @@ export default function Navbar() {
                     className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 hover:border-[#34070c] hover:bg-[#34070c]/5 transition-all text-xs flex flex-col gap-0.5 text-slate-700 hover:text-[#34070c]"
                   >
                     <span className="font-bold truncate">{cat.name}</span>
-                    <span className="text-[10px] text-[#34070c] font-semibold">{cat.count} Items</span>
+                    <span className="text-[10px] text-[#34070c] font-semibold">{cat.count}+ Items</span>
                   </Link>
                 ))}
               </div>
