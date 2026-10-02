@@ -78,9 +78,13 @@ export default function HeroSection() {
           <div className="lg:col-span-7 flex flex-col items-start text-left space-y-5 sm:space-y-6 max-w-2xl z-10">
             
             {/* Top Eyebrow Tag */}
-            <div className="inline-block">
+            <div className="inline-flex items-center gap-2.5 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#250508]/85 border border-[#d4af37]/40 backdrop-blur-md shadow-sm">
               <span className="text-[11px] sm:text-[13px] font-bold tracking-[0.22em] text-[#d4af37] uppercase drop-shadow-sm">
                 PAKISTANI FOOD EXPORTS
+              </span>
+              <span className="text-[#d4af37]/50 text-xs">•</span>
+              <span className="text-sm sm:text-base font-semibold text-[#f5d77f] tracking-normal drop-shadow-sm" dir="rtl">
+                آصلی ولذیذ وطبیعی
               </span>
             </div>
 
@@ -249,6 +253,9 @@ export default function HeroSection() {
                 Tradition <br />
                 Trust
               </p>
+              <p className="text-lg xl:text-xl font-bold text-[#f5d77f] mt-2 tracking-wide drop-shadow-md" dir="rtl">
+                آصلی ولذیذ وطبیعی
+              </p>
             </div>
 
           </div>
@@ -337,10 +344,14 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom Right Sign-off (Floating directly on image) */}
-        <div className="absolute bottom-3 right-4 text-right select-none bg-[#34070c]/50 backdrop-blur-xs px-3 py-1 rounded-full border border-[#f5d77f]/20 z-20">
+        <div className="absolute bottom-3 right-4 text-right select-none bg-[#34070c]/70 backdrop-blur-xs px-3.5 py-1.5 rounded-full border border-[#f5d77f]/30 z-20 flex items-center gap-2">
           <p className="font-serif italic text-xs sm:text-sm text-[#f5d77f] tracking-wide font-normal leading-tight drop-shadow-md">
             Taste • Tradition • Trust
           </p>
+          <span className="text-[#f5d77f]/60 text-xs">•</span>
+          <span className="text-xs sm:text-sm font-bold text-[#f5d77f] leading-tight" dir="rtl">
+            آصلی ولذیذ وطبیعی
+          </span>
         </div>
 
       </div>

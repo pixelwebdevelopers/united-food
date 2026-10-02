@@ -233,9 +233,11 @@ export default function HomePage() {
       {/* 6. Quick CTA Banner */}
       <section className="py-16 bg-gradient-to-r from-[#34070c] via-[#4e0b12] to-[#200407] text-white">
         <div className="container text-center max-w-3xl space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-xs font-bold text-[#fde68a] border border-[#fde68a]/30">
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-xs font-bold text-[#fde68a] border border-[#fde68a]/30 shadow-sm">
             <MessageCircle className="w-4 h-4" />
-            <span>WHOLESALE & EXPORT INQUIRIES</span>
+            <span>WHOLESALE &amp; EXPORT INQUIRIES</span>
+            <span className="opacity-40">•</span>
+            <span className="text-sm font-bold text-[#fde68a]" dir="rtl">آصلی ولذیذ وطبیعی</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white">

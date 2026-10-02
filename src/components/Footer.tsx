@@ -40,7 +40,11 @@ export default function Footer() {
                 <h3 className="font-heading text-sm sm:text-base font-bold text-white tracking-wider inline-flex items-center">
                   <span>CAMEL UNITED FOODS (Pvt) LTD</span>
                 </h3>
-                <p className="text-xs text-[#fde68a] font-semibold">Global Flavors, Authentic Tastes</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-xs text-[#fde68a] font-semibold">Global Flavors, Authentic Tastes</p>
+                  <span className="text-[#fde68a]/50 text-xs">•</span>
+                  <p className="text-xs text-[#fde68a] font-bold" dir="rtl">آصلی ولذیذ وطبیعی</p>
+                </div>
               </div>
             </Link>
 
